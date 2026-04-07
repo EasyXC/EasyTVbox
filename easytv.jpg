@@ -175,160 +175,6 @@
 		},
 
 		{
-			"key": "裤佬-EmbyJS",
-			"name": "EMBY丨测试4K",
-			"type": 3,
-			"api": "https://mpimg.cn/down.php/40d30fe3d9671e0d700f1c272bb20aaa.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 0
-		},
-		{
-			"key": "墨c-drpyS_人人影视[优]",
-			"name": "人人丨测试4K",
-			"type": 4,
-			"api": "http://115.191.55.109:9097/api/人人影视[优]?pwd=50721480be241243",
-			"searchable": 1,
-			"filterable": 1,
-			"quickSearch": 0,
-			"title": "人人影视[优]",
-			"author": "EylinSir",
-			"类型": "影视",
-			"lang": "ds",
-			"ext": ""
-		},
-		{
-			"key": "suisui-岁-至臻清风-7",
-			"name": "清风丨测试4K",
-			"type": 4,
-			"api": "http://sspa8.top:8100/php/清风.php",
-			"searchable": 1,
-			"quickSearch": 1,
-			"changeable": 0
-		},
-		{
-			"key": "MOChen-drpyS_泥视频[优]",
-			"name": "泥泥丨有4K",
-			"type": 4,
-			"api": "http://115.191.55.109:9097/api/泥视频[优]?pwd=50721480be241243",
-			"searchable": 1,
-			"filterable": 1,
-			"quickSearch": 1,
-			"title": "泥视频[优]",
-			"author": "eylinsir",
-			"类型": "影视",
-			"lang": "ds",
-			"ext": ""
-		},
-		{
-			"key": "KUlao永乐JS",
-			"name": "永乐丨有4K",
-			"type": 3,
-			"api": "https://mpimg.cn/down.php/0338609bd59d7b27226f5a269ec97936.js",
-			"style": {
-				"type": "rect",
-				"ratio": 1.33
-			},
-			"changeable": 1
-		},
-		{
-			"key": "yim爱影视",
-			"name": "盈盈丨有4K",
-			"type": 3,
-			"api": "csp_AppGet",
-			"changeable": "1",
-			"quickSearch": 0,
-			"filterable": 1,
-			"ext": "https://aysappto.oss-cn-chengdu.aliyuncs.com/q20.txt|ada211sdfsff3261|122",
-			"jar": "https://img2.gelonghui.com/library/959e6-f0a23ae5-25df-4079-8a35-00fd433101cc.png;md5;959e6f78c90fcfbf9309f05b226891c0"
-		},
-		{
-			"key": "yim金牌csp_Jpys",
-			"name": "金牌丨有4K",
-			"type": 3,
-			"api": "csp_AppGet",
-			"changeable": "1",
-			"quickSearch": 0,
-			"filterable": 1,
-			"ext": "https://qj3.ggtvb.cc|eecbio48dsq13kkk|122",
-			"jar": "https://img2.gelonghui.com/library/28e33-d7f6e0ad-8de5-4829-b42c-bcdeaae1ed42.png;md5;28e33eb59669c994ca140064ad4a1eef"
-		},
-		{
-			"key": "墨C-baidu_cloud",
-			"name": "百度丨原画4K",
-			"type": 4,
-			"api": "http://115.191.55.109:7023/api/tvbox/drive/baidu?token=7rR2WatVaVGQdxlqCgiyilNePwHb8gMb",
-			"searchable": 1,
-			"changeable": 0
-		},
-		{
-			"key": "xmi-独家csp_XBPQ2",
-			"name": "独佳｜蓝光",
-			"type": 3,
-			"api": "csp_XBPQ",
-			"timeout": 12,
-			"jar": "https://img2.gelonghui.com/library/1fdce-37f3cc0f-eca7-4efa-ad79-b86d68bde3b5.jpg;md5;1fdce64a3b67359e8f6f9ea64a3326f5",
-			"ext": "{\"模板\":\"https://gitee.com/smallmi1007/mimi/raw/master/nox.json\",\"域名-c\":\"https://xdsj.xywla.com\",\"xas\":\"7D:69:AF:92:9A:9F:A6:88:65:07:B2:DB:50:FC:CD:DD:2D:C2:9A:E4:01:9C:ED:56:12:2C:50:6D:E3:CD:38:F6\",\"xavn\":\"1.0.6\",\"xap\":\"com.xiaodoshijie.app\",\"xavc\":\"16\"}"
-		},
-		{
-			"key": "多duo-橘皮",
-			"name": "橘皮｜蓝光",
-			"type": 3,
-			"api": "csp_Jpys",
-			"playerType": 1,
-			"jar": "https://ncstatic.clewm.net/rsrc/2026/0321/14/08ddeb54bc5e4c67b24f9ee0dfa280d2.png;md5;bb437516bc7187c2271e946909156c47",
-			"ext": "7lj763gg402i7942463j9j9jh8579590k3hjii5gi4i73l2k5l"
-		},
-		{
-			"key": "多duo-huomaoys",
-			"name": "火猫｜蓝光",
-			"type": 3,
-			"api": "csp_Nox",
-			"playerType": 2,
-			"jar": "https://ncstatic.clewm.net/rsrc/2026/0321/14/08ddeb54bc5e4c67b24f9ee0dfa280d2.png;md5;bb437516bc7187c2271e946909156c47",
-			"ext": "7lj763gg402i79425h3gjl9jh75h9884l0k6i95kj0927i63514k15k7li194l430l8l4jh2jg08j3i63g0jgj8lllll19l3l96l7g11kkg1i4l264i97jh177k04i50kghgj1ghl179236i8g503917i8h70g3723khgg3h7jh3kil6j5gk73854i45423h3h9306g2kg1jki14j7732k7557h63jil8l4076i7278i286klk2h19ig8107364g1j1k3j516j9j6kjj86i70813896k7ik83151j10ljj462gki5531h8150h39804j27l0ij80719l28kk0550l70l829328376k2k6548j2k600404i86j15ig372j3322g0g55443kh630305515j3illl99k35k7623k9g65j978g5l7i2j468gkg8k93l9lg8156l210ikl6j46522g88k258888jk0525760l298hhl941990g0ik6gjj47i0k6ghg47k595jgk177gi4kig1j24470410g2h4g4igj5344l80151358k3h1896i4jj358k2ll9l6g70995hi6410kjg00ii986hg7i702k67497h4993i61j85j7j2kj6i9k17"
-		},
-		{
-			"key": "QIST-金jincan",
-			"name": "金蝉｜官方",
-			"type": 4,
-			"api": "https://zy.jinchancaiji.com/api.php/provide/vod",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"changeable": 1
-		},
-		{
-			"key": "QIST-新闪雷",
-			"name": "闪雷｜蓝光",
-			"type": 3,
-			"api": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-			"ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/js/新闪雷.js",
-			"header": {
-				"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
-			}
-		},
-		{
-			"key": "yim壹米csp_Wwys",
-			"name": "一米｜蓝光",
-			"type": 3,
-			"api": "csp_Wwys",
-			"jar": "https://img2.gelonghui.com/library/959e6-f0a23ae5-25df-4079-8a35-00fd433101cc.png;md5;959e6f78c90fcfbf9309f05b226891c0",
-			"ext": "https://vip.wwgz.cn:5200"
-		},
-		{
-			"key": "咕噜vox映画",
-			"name": "咕噜｜蓝光4k",
-			"type": 3,
-			"changeable": 0,
-			"api": "https://17264.kstore.space/Appfox.min.js",
-			"ext": {
-				"host": "http://www.yingsw.top",
-				"key": "guluyinghua_123",
-				"sign": "679543610991810f19698c187e5e106e"
-			}
-		},
-		{
 			"key": "xsa玩偶",
 			"name": "玩偶丨扫码4K",
 			"type": 3,
@@ -594,6 +440,162 @@
 			},
 			"timeout": 60
 		},
+
+		{
+			"key": "裤佬-EmbyJS",
+			"name": "EMBY丨测试4K",
+			"type": 3,
+			"api": "https://mpimg.cn/down.php/40d30fe3d9671e0d700f1c272bb20aaa.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0
+		},
+		{
+			"key": "墨c-drpyS_人人影视[优]",
+			"name": "人人丨测试4K",
+			"type": 4,
+			"api": "http://115.191.55.109:9097/api/人人影视[优]?pwd=50721480be241243",
+			"searchable": 1,
+			"filterable": 1,
+			"quickSearch": 0,
+			"title": "人人影视[优]",
+			"author": "EylinSir",
+			"类型": "影视",
+			"lang": "ds",
+			"ext": ""
+		},
+		{
+			"key": "suisui-岁-至臻清风-7",
+			"name": "清风丨测试4K",
+			"type": 4,
+			"api": "http://sspa8.top:8100/php/清风.php",
+			"searchable": 1,
+			"quickSearch": 1,
+			"changeable": 0
+		},
+		{
+			"key": "MOChen-drpyS_泥视频[优]",
+			"name": "泥泥丨有4K",
+			"type": 4,
+			"api": "http://115.191.55.109:9097/api/泥视频[优]?pwd=50721480be241243",
+			"searchable": 1,
+			"filterable": 1,
+			"quickSearch": 1,
+			"title": "泥视频[优]",
+			"author": "eylinsir",
+			"类型": "影视",
+			"lang": "ds",
+			"ext": ""
+		},
+		{
+			"key": "KUlao永乐JS",
+			"name": "永乐丨有4K",
+			"type": 3,
+			"api": "https://mpimg.cn/down.php/0338609bd59d7b27226f5a269ec97936.js",
+			"style": {
+				"type": "rect",
+				"ratio": 1.33
+			},
+			"changeable": 1
+		},
+		{
+			"key": "yim爱影视",
+			"name": "盈盈丨有4K",
+			"type": 3,
+			"api": "csp_AppGet",
+			"changeable": "1",
+			"quickSearch": 0,
+			"filterable": 1,
+			"ext": "https://aysappto.oss-cn-chengdu.aliyuncs.com/q20.txt|ada211sdfsff3261|122",
+			"jar": "https://img2.gelonghui.com/library/959e6-f0a23ae5-25df-4079-8a35-00fd433101cc.png;md5;959e6f78c90fcfbf9309f05b226891c0"
+		},
+		{
+			"key": "yim金牌csp_Jpys",
+			"name": "金牌丨有4K",
+			"type": 3,
+			"api": "csp_AppGet",
+			"changeable": "1",
+			"quickSearch": 0,
+			"filterable": 1,
+			"ext": "https://qj3.ggtvb.cc|eecbio48dsq13kkk|122",
+			"jar": "https://img2.gelonghui.com/library/28e33-d7f6e0ad-8de5-4829-b42c-bcdeaae1ed42.png;md5;28e33eb59669c994ca140064ad4a1eef"
+		},
+		{
+			"key": "墨C-baidu_cloud",
+			"name": "百度丨原画4K",
+			"type": 4,
+			"api": "http://115.191.55.109:7023/api/tvbox/drive/baidu?token=7rR2WatVaVGQdxlqCgiyilNePwHb8gMb",
+			"searchable": 1,
+			"changeable": 0
+		},
+		{
+			"key": "xmi-独家csp_XBPQ2",
+			"name": "独佳｜蓝光",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"timeout": 12,
+			"jar": "https://img2.gelonghui.com/library/1fdce-37f3cc0f-eca7-4efa-ad79-b86d68bde3b5.jpg;md5;1fdce64a3b67359e8f6f9ea64a3326f5",
+			"ext": "{\"模板\":\"https://gitee.com/smallmi1007/mimi/raw/master/nox.json\",\"域名-c\":\"https://xdsj.xywla.com\",\"xas\":\"7D:69:AF:92:9A:9F:A6:88:65:07:B2:DB:50:FC:CD:DD:2D:C2:9A:E4:01:9C:ED:56:12:2C:50:6D:E3:CD:38:F6\",\"xavn\":\"1.0.6\",\"xap\":\"com.xiaodoshijie.app\",\"xavc\":\"16\"}"
+		},
+		{
+			"key": "多duo-橘皮",
+			"name": "橘皮｜蓝光",
+			"type": 3,
+			"api": "csp_Jpys",
+			"playerType": 1,
+			"jar": "https://ncstatic.clewm.net/rsrc/2026/0321/14/08ddeb54bc5e4c67b24f9ee0dfa280d2.png;md5;bb437516bc7187c2271e946909156c47",
+			"ext": "7lj763gg402i7942463j9j9jh8579590k3hjii5gi4i73l2k5l"
+		},
+		{
+			"key": "多duo-huomaoys",
+			"name": "火猫｜蓝光",
+			"type": 3,
+			"api": "csp_Nox",
+			"playerType": 2,
+			"jar": "https://ncstatic.clewm.net/rsrc/2026/0321/14/08ddeb54bc5e4c67b24f9ee0dfa280d2.png;md5;bb437516bc7187c2271e946909156c47",
+			"ext": "7lj763gg402i79425h3gjl9jh75h9884l0k6i95kj0927i63514k15k7li194l430l8l4jh2jg08j3i63g0jgj8lllll19l3l96l7g11kkg1i4l264i97jh177k04i50kghgj1ghl179236i8g503917i8h70g3723khgg3h7jh3kil6j5gk73854i45423h3h9306g2kg1jki14j7732k7557h63jil8l4076i7278i286klk2h19ig8107364g1j1k3j516j9j6kjj86i70813896k7ik83151j10ljj462gki5531h8150h39804j27l0ij80719l28kk0550l70l829328376k2k6548j2k600404i86j15ig372j3322g0g55443kh630305515j3illl99k35k7623k9g65j978g5l7i2j468gkg8k93l9lg8156l210ikl6j46522g88k258888jk0525760l298hhl941990g0ik6gjj47i0k6ghg47k595jgk177gi4kig1j24470410g2h4g4igj5344l80151358k3h1896i4jj358k2ll9l6g70995hi6410kjg00ii986hg7i702k67497h4993i61j85j7j2kj6i9k17"
+		},
+		{
+			"key": "QIST-金jincan",
+			"name": "金蝉｜官方",
+			"type": 4,
+			"api": "https://zy.jinchancaiji.com/api.php/provide/vod",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"changeable": 1
+		},
+		{
+			"key": "QIST-新闪雷",
+			"name": "闪雷｜蓝光",
+			"type": 3,
+			"api": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+			"ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/js/新闪雷.js",
+			"header": {
+				"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+			}
+		},
+		{
+			"key": "yim壹米csp_Wwys",
+			"name": "一米｜蓝光",
+			"type": 3,
+			"api": "csp_Wwys",
+			"jar": "https://img2.gelonghui.com/library/959e6-f0a23ae5-25df-4079-8a35-00fd433101cc.png;md5;959e6f78c90fcfbf9309f05b226891c0",
+			"ext": "https://vip.wwgz.cn:5200"
+		},
+		{
+			"key": "咕噜vox映画",
+			"name": "咕噜｜蓝光",
+			"type": 3,
+			"changeable": 0,
+			"api": "https://17264.kstore.space/Appfox.min.js",
+			"ext": {
+				"host": "http://www.yingsw.top",
+				"key": "guluyinghua_123",
+				"sign": "679543610991810f19698c187e5e106e"
+			}
+		},
+
 		{
 			"key": "py_新韩剧网",
 			"name": "新韩剧网M",
