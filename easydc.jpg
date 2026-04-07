@@ -9,11 +9,6 @@
 			"url": "https://gh-proxy.com/raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg"
 		},
 		{
-			"name": "天神IY",
-			"url": "https://gitee.com/cpu-iy/iy/raw/master/天神IY.json"
-		},
-
-		{
 			"name": "少儿教育",
 			"url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer"
 		},
@@ -78,6 +73,10 @@
 		{
 			"name": "拾光",
 			"url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
+		},
+		{
+			"name": "天神IY",
+			"url": "https://gitee.com/cpu-iy/iy/raw/master/天神IY.json"
 		},
 		{
 			"name": "jsm",
