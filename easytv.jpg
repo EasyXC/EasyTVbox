@@ -530,7 +530,7 @@
 
 		{
 			"key": "xmi-独家csp_XBPQ2",
-			"name": "独佳🪁蓝光",
+			"name": "独佳✨️蓝光",
 			"type": 3,
 			"api": "csp_XBPQ",
 			"timeout": 12,
@@ -539,7 +539,7 @@
 		},
 		{
 			"key": "多duo-橘皮",
-			"name": "橘皮🪁蓝光",
+			"name": "橘皮✨️蓝光",
 			"type": 3,
 			"api": "csp_Jpys",
 			"playerType": 1,
@@ -548,7 +548,7 @@
 		},
 		{
 			"key": "多duo-huomaoys",
-			"name": "火猫🪁蓝光",
+			"name": "火猫✨️蓝光",
 			"type": 3,
 			"api": "csp_Nox",
 			"playerType": 2,
@@ -557,7 +557,7 @@
 		},
 		{
 			"key": "QIST-金jincan",
-			"name": "金蝉🪁官方",
+			"name": "金蝉✨️官方",
 			"type": 4,
 			"api": "https://zy.jinchancaiji.com/api.php/provide/vod",
 			"searchable": 1,
@@ -567,7 +567,7 @@
 		},
 		{
 			"key": "QIST-新闪雷",
-			"name": "闪雷🪁蓝光",
+			"name": "闪雷✨️蓝光",
 			"type": 3,
 			"api": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
 			"ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/js/新闪雷.js",
@@ -577,7 +577,7 @@
 		},
 		{
 			"key": "yim壹米csp_Wwys",
-			"name": "一米🪁蓝光",
+			"name": "一米✨️蓝光",
 			"type": 3,
 			"api": "csp_Wwys",
 			"jar": "https://img2.gelonghui.com/library/959e6-f0a23ae5-25df-4079-8a35-00fd433101cc.png;md5;959e6f78c90fcfbf9309f05b226891c0",
@@ -585,7 +585,7 @@
 		},
 		{
 			"key": "咕噜vox映画",
-			"name": "咕噜🪁蓝光",
+			"name": "咕噜✨️蓝光",
 			"type": 3,
 			"changeable": 0,
 			"api": "https://17264.kstore.space/Appfox.min.js",
@@ -598,26 +598,26 @@
 
 		{
 			"key": "py_新韩剧网",
-			"name": "新韩🪁剧网",
+			"name": "新韩✨️剧网",
 			"type": 4,
 			"api": "https://py.doube.eu.org/v2/spider?site=2a7cc0edf96108c9d57420ff57c654c6"
 		},
 		{
 			"key": "果果",
-			"name": "芒果🪁JX",
+			"name": "芒果✨️JX",
 			"type": 3,
 			"api": "http://rihou.cc:88/js/drpy2.min.js",
 			"ext": "http://rihou.cc:88/js/果果.js"
 		},
 		{
 			"key": "py_官方采集789",
-			"name": "豆瓣🪁采集",
+			"name": "豆瓣✨️采集",
 			"type": 4,
 			"api": "https://py.doube.eu.org/v2/spider?site=006849a2c19a6be413be5017be468c63"
 		},
 		{
 			"key": "裤佬永乐JS",
-			"name": "永乐🪁JS",
+			"name": "永乐✨️JS",
 			"type": 3,
 			"api": "https://mpimg.cn/down.php/0338609bd59d7b27226f5a269ec97936.js",
 			"style": {
@@ -628,7 +628,7 @@
 		},
 		{
 			"key": "裤佬EmbyJS",
-			"name": "Emby丨JS",
+			"name": "Emby✨️JS",
 			"type": 3,
 			"api": "https://mpimg.cn/down.php/40d30fe3d9671e0d700f1c272bb20aaa.js",
 			"searchable": 1,
@@ -637,7 +637,7 @@
 		},
 		{
 			"key": "裤佬采集聚合",
-			"name": "采集丨聚合",
+			"name": "采集✨️聚合",
 			"type": 4,
 			"api": "http://zhangqun1818.serv00.net/cj/cjjh.php",
 			"searchable": 1,
@@ -650,7 +650,7 @@
 		},
 		{
 			"key": "裤佬JS聚合",
-			"name": "JS丨聚合",
+			"name": "JS✨️聚合",
 			"type": 4,
 			"api": "http://zhangqun1818.serv00.net/js.php",
 			"searchable": 1,
@@ -662,7 +662,7 @@
 		},
 		{
 			"key": "裤佬PY聚合",
-			"name": "PY丨聚合",
+			"name": "PY✨️聚合",
 			"type": 4,
 			"api": "http://zhangqun1818.serv00.net/py.php",
 			"searchable": 1,
@@ -675,7 +675,7 @@
 		},
 		{
 			"key": "裤佬php聚合",
-			"name": "PHP丨聚合",
+			"name": "PHP✨️聚合",
 			"type": 4,
 			"api": "http://zhangqun1818.serv00.net/php.php",
 			"searchable": 1,
@@ -684,7 +684,7 @@
 		},
 		{
 			"key": "百度",
-			"name": "百度🪁资源",
+			"name": "百度✨️资源",
 			"type": 1,
 			"api": "https://api.apibdzy.com/api.php/provide/vod/",
 			"searchable": 1,
@@ -707,7 +707,7 @@
 		},
 		{
 			"key": "虎牙资源",
-			"name": "虎牙🪁资源",
+			"name": "虎牙✨️资源",
 			"type": 1,
 			"api": "https://www.huyaapi.com/api.php/provide/vod/",
 			"playUrl": "",
@@ -749,13 +749,13 @@
 		},
 		{
 			"key": "xingchenyy",
-			"name": "星辰🪁影院",
+			"name": "星辰✨️影院",
 			"type": 3,
 			"api": "http://rihou.cc:88/js/星辰影院.js"
 		},
 		{
 			"key": "黑猫",
-			"name": "黑猫🪁APP",
+			"name": "黑猫✨️APP",
 			"type": 3,
 			"jar": "https://img2.gelonghui.com/library/eadaa-7cea026a-878c-484b-8904-3e1d87a69041.png;md5;eadaaee8e25f5d590dc4f40488207d0d",
 			"api": "csp_AppGet",
@@ -763,20 +763,20 @@
 		},
 		{
 			"key": "肥猫的",
-			"name": "金牌🪁影视",
+			"name": "金牌✨️影视",
 			"type": 3,
 			"jar": "https://img2.gelonghui.com/library/eadaa-7cea026a-878c-484b-8904-3e1d87a69041.png;md5;eadaaee8e25f5d590dc4f40488207d0d",
 			"api": "csp_Jpys"
 		},
 		{
 			"key": "cj_旺旺采集",
-			"name": "旺旺🪁短剧",
+			"name": "旺旺✨️短剧",
 			"type": 1,
 			"api": "https://api.wwzy.tv/api.php/provide/vod/"
 		},
 		{
 			"key": "闪电",
-			"name": "闪电🪁影视",
+			"name": "闪电✨️影视",
 			"type": 3,
 			"api": "csp_PanWebShare",
 			"searchable": 1,
@@ -791,7 +791,7 @@
 		},
 		{
 			"key": "cj_暴风资源",
-			"name": "暴风🪁短剧",
+			"name": "暴风✨️短剧",
 			"type": 1,
 			"api": "https://bfzyapi.com/api.php/provide/vod",
 			"searchable": 0,
