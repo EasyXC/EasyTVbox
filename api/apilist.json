@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "EasyTV | 多仓",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easydc.jpg",
+    "tag": "热门"
+  },
+  {
+    "id": 2,
+    "name": "EasyTV | 4K",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg",
+    "tag": "高清"
+  },
+  {
+    "id": 3,
+    "name": "少儿教育",
+    "url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer",
+    "tag": "教育"
+  },
+  {
+    "id": 4,
+    "name": "饭太硬",
+    "url": "http://www.饭太硬.net/tv",
+    "tag": "稳定"
+  },
+  {
+    "id": 5,
+    "name": "不良帅",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/bzr-zd/blr/main/不良帅.png",
+    "tag": "推荐"
+  },
+  {
+    "id": 6,
+    "name": "哈基米",
+    "url": "https://17264.kstore.space/哈基米1.png",
+    "tag": "推荐"
+  },
+  {
+    "id": 7,
+    "name": "王二小",
+    "url": "http://tvbox.王二小放牛娃.top",
+    "tag": "高清"
+  },
+  {
+    "id": 8,
+    "name": "OK杰克",
+    "url": "http://ok213.top/tv",
+    "tag": "稳定"
+  },
+  {
+    "id": 9,
+    "name": "林中小屋",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/OK/okys.json",
+    "tag": "稳定"
+  },
+  {
+    "id": 10,
+    "name": "巧技",
+    "url": "http://cdn.qiaoji8.com/tvbox.json",
+    "tag": "稳定"
+  },
+  {
+    "id": 11,
+    "name": "摸鱼儿",
+    "url": "http://我不是.摸鱼儿.com",
+    "tag": "稳定"
+  },
+  {
+    "id": 12,
+    "name": "肥猫",
+    "url": "http://肥猫.com",
+    "tag": "稳定"
+  },
+  {
+    "id": 13,
+    "name": "南风",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
+    "tag": "稳定"
+  },
+  {
+    "id": 14,
+    "name": "天神IY",
+    "url": "https://gitee.com/cpu-iy/iy/raw/master/天神IY.json",
+    "tag": "稳定"
+  },
+  {
+    "id": 15,
+    "name": "one",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/leevi0709/one/main/jsm.json",
+    "tag": "稳定"
+  },
+  {
+    "id": 16,
+    "name": "香雅情",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+    "tag": "稳定"
+  },
+  {
+    "id": 17,
+    "name": "潇洒",
+    "url": "https://9877.kstore.space/AnotherD/api.json",
+    "tag": "稳定"
+  },
+  {
+    "id": 18,
+    "name": "拾光",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+    "tag": "稳定"
+  }
+]
