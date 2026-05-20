@@ -1,545 +1,110 @@
-{
- "updateTime": "2026-05-19更新",
- "list": [
+[
   {
-   "id": 1,
-   "name": "EasyTV | 多仓",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easydc.jpg",
-   "tag": "热门"
+    "id": 1,
+    "name": "EasyTV | 多仓",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easydc.jpg",
+    "tag": "热门"
   },
   {
-   "id": 2,
-   "name": "EasyTV | 4K",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg",
-   "tag": "热门"
+    "id": 2,
+    "name": "EasyTV | 4K",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg",
+    "tag": "高清"
   },
   {
-   "id": 3,
-   "name": "少儿教育",
-   "url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer",
-   "tag": "教育"
+    "id": 3,
+    "name": "少儿教育",
+    "url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer",
+    "tag": "教育"
   },
   {
-   "id": 4,
-   "name": "饭太硬",
-   "url": "http://www.饭太硬.net/tv",
-   "tag": "稳定"
+    "id": 4,
+    "name": "饭太硬",
+    "url": "http://www.饭太硬.net/tv",
+    "tag": "稳定"
   },
   {
-   "id": 6,
-   "name": "总有刁民想害朕",
-   "url": "https://wp.kayyw.com/f/MllRc6/%E6%80%BB%E6%9C%89%E5%88%81%E6%B0%91%E6%83%B3%E5%AE%B3%E6%9C%95.json",
-   "tag": "线路"
+    "id": 5,
+    "name": "不良帅",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/bzr-zd/blr/main/不良帅.png",
+    "tag": "推荐"
   },
   {
-   "id": 5,
-   "name": "哈基米",
-   "url": "https://17264.kstore.space/哈基米.png",
-   "tag": "线路"
+    "id": 6,
+    "name": "哈基米",
+    "url": "https://17264.kstore.space/哈基米1.png",
+    "tag": "推荐"
   },
   {
-   "id": 7,
-   "name": "王二小放牛娃",
-   "url": "http://tvbox.王二小放牛娃.top",
-   "tag": "稳定"
+    "id": 7,
+    "name": "王二小",
+    "url": "http://tvbox.王二小放牛娃.top",
+    "tag": "高清"
   },
   {
-   "id": 8,
-   "name": "小虎斑",
-   "url": "http://hb.小虎斑.site:25252/仅供测试",
-   "tag": "线路"
+    "id": 8,
+    "name": "OK杰克",
+    "url": "http://ok213.top/tv",
+    "tag": "稳定"
   },
   {
-   "id": 9,
-   "name": "林中小屋",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/OK/okys.json",
-   "tag": "线路"
+    "id": 9,
+    "name": "林中小屋",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/OK/okys.json",
+    "tag": "稳定"
   },
   {
-   "id": 10,
-   "name": "南风",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
-   "tag": "线路"
+    "id": 10,
+    "name": "巧技",
+    "url": "http://cdn.qiaoji8.com/tvbox.json",
+    "tag": "稳定"
   },
   {
-   "id": 11,
-   "name": "多源版 | TV",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt",
-   "tag": "高清"
+    "id": 11,
+    "name": "摸鱼儿",
+    "url": "http://我不是.摸鱼儿.com",
+    "tag": "稳定"
   },
   {
-   "id": 12,
-   "name": "one",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/leevi0709/one/main/jsm.json",
-   "tag": "线路"
+    "id": 12,
+    "name": "肥猫",
+    "url": "http://肥猫.com",
+    "tag": "稳定"
   },
   {
-   "id": 13,
-   "name": "香雅情",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
-   "tag": "线路"
+    "id": 13,
+    "name": "南风",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
+    "tag": "稳定"
   },
   {
-   "id": 14,
-   "name": "肥猫",
-   "url": "http://肥猫.net",
-   "tag": "线路"
+    "id": 14,
+    "name": "天神IY",
+    "url": "https://gitee.com/cpu-iy/iy/raw/master/天神IY.json",
+    "tag": "稳定"
   },
   {
-   "id": 15,
-   "name": "拾光",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-   "tag": "线路"
+    "id": 15,
+    "name": "one",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/leevi0709/one/main/jsm.json",
+    "tag": "稳定"
   },
   {
-   "id": 16,
-   "name": "yingm|动漫",
-   "url": "https://www.yingm.cc/dm/dm.json",
-   "tag": "线路"
+    "id": 16,
+    "name": "香雅情",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+    "tag": "稳定"
   },
   {
-   "id": 17,
-   "name": "影视仓接口",
-   "url": "http://影视仓接口.top",
-   "tag": "线路"
+    "id": 17,
+    "name": "潇洒",
+    "url": "https://9877.kstore.space/AnotherD/api.json",
+    "tag": "稳定"
   },
   {
-   "id": 18,
-   "name": "TYY",
-   "url": "http://825826.xyz:666/tvbox/TYY2/SS.txt",
-   "tag": "线路"
-  },
-  {
-   "id": 19,
-   "name": "liu673cn",
-   "url": "https://fastly.jsdelivr.net/gh/liu673cn/box@main/m.json",
-   "tag": "线路"
-  },
-  {
-   "id": 20,
-   "name": "电视家 | TV",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/wujiangliu/live-sources/main/%E7%94%B5%E8%A7%86%E5%AE%B6.m3u",
-   "tag": "高清"
-  },
-  {
-   "id": 21,
-   "name": "xiongjian83",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xiongjian83/TvBox/main/X.json",
-   "tag": "线路"
-  },
-  {
-   "id": 22,
-   "name": "幸福年年",
-   "url": "http://150.158.52.248/tgyg/bbm.json",
-   "tag": "线路"
-  },
-  {
-   "id": 23,
-   "name": "duomv",
-   "url": "https://gitlab.com/duomv/dzhipy/-/raw/main/index.json",
-   "tag": "线路"
-  },
-  {
-   "id": 24,
-   "name": "驸马影视",
-   "url": "http://fmys.top/fmys.json",
-   "tag": "线路"
-  },
-  {
-   "id": 25,
-   "name": "天天开心",
-   "url": "https://play.iptv365.org/天天开心/api.json",
-   "tag": "高清"
-  },
-  {
-   "id": 26,
-   "name": "盒子迷",
-   "url": "https://盒子迷.top/禁止贩卖",
-   "tag": "线路"
-  },
-  {
-   "id": 27,
-   "name": "菠菜资源",
-   "url": "https://idw.xx.kg/github?key=xklm&path=data/zjysjk.json",
-   "tag": "线路"
-  },
-  {
-   "id": 28,
-   "name": "非凡小小",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/jigedos/1024/master/jsm.json",
-   "tag": "线路"
-  },
-  {
-   "id": 29,
-   "name": "hg菠菜源",
-   "url": "https://api.hgyx.vip/hgyx.json",
-   "tag": "线路"
-  },
-  {
-   "id": 30,
-   "name": "菜妮丝",
-   "url": "https://tv.菜妮丝.top",
-   "tag": "稳定"
-  },
-  {
-   "id": 31,
-   "name": "noimank",
-   "url": "https://gitlab.com/noimank/tvbox/-/raw/main/tvbox1.json",
-   "tag": "线路"
-  },
-  {
-   "id": 32,
-   "name": "letian1650",
-   "url": "https://gh-proxy.com/raw.githubusercontent.com/letian1650/mybox/main/m.json",
-   "tag": "线路"
-  },
-  {
-   "id": 33,
-   "name": "软件小哥哥",
-   "url": "http://47.96.82.41:5188/svip/svip.json",
-   "tag": "线路"
-  },
-  {
-   "id": 34,
-   "name": "传说",
-   "url": "https://chuanshuo.77blog.cn/tv.json",
-   "tag": "线路"
-  },
-  {
-   "id": 35,
-   "name": "高天流云",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json",
-   "tag": "线路"
-  },
-  {
-   "id": 36,
-   "name": "jsm",
-   "url": "https://tv.sxi.qzz.io/jsm.json",
-   "tag": "线路"
-  },
-  {
-   "id": 37,
-   "name": "苍蓝",
-   "url": "https://13537.kstore.vip/tvbox/test.json",
-   "tag": "线路"
-  },
-  {
-   "id": 38,
-   "name": "无名",
-   "url": "http://47.96.82.41:10/pg/api.json",
-   "tag": "线路"
-  },
-  {
-   "id": 39,
-   "name": "不会唱歌的鱼妖",
-   "url": "https://cyao2q.github.io/files/n.json",
-   "tag": "线路"
-  },
-  {
-   "id": 40,
-   "name": "宝盒接口",
-   "url": "http://宝盒接口.top",
-   "tag": "线路"
-  },
-  {
-   "id": 41,
-   "name": "mido影视",
-   "url": "http://mido.ittun.com/bh/box.json",
-   "tag": "线路"
-  },
-  {
-   "id": 42,
-   "name": "dxawi",
-   "url": "https://dxawi.github.io/0/0.json",
-   "tag": "线路"
-  },
-  {
-   "id": 43,
-   "name": "酷云七七",
-   "url": "https://9xi4o.tk/0725.json",
-   "tag": "线路"
-  },
-  {
-   "id": 44,
-   "name": "zheng197600",
-   "url": "https://gh-proxy.com/raw.githubusercontent.com/zheng197600/tvbox/main/0820.json",
-   "tag": "线路"
-  },
-  {
-   "id": 45,
-   "name": "tushen6_Tomorrow",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/tushen6/Tomorrow/master/tvbox.json",
-   "tag": "线路"
-  },
-  {
-   "id": 46,
-   "name": "ACE",
-   "url": "https://8815.kstore.vip/tvbox/Ace",
-   "tag": "线路"
-  },
-  {
-   "id": 47,
-   "name": "央卫1 | TV",
-   "url": "http://wangziduoqing.com/yuan/zb.txt",
-   "tag": "高清"
-  },
-  {
-   "id": 48,
-   "name": "初心",
-   "url": "https://gh-proxy.com/https://raw.giteeusercontent.com/wpider/original-aspiration/raw/master/%E5%88%9D%E5%BF%83.json",
-   "tag": "线路"
-  },
-  {
-   "id": 49,
-   "name": "夏夏qk4k",
-   "url": "https://11405.kstore.space/xiaye/qk4k.json",
-   "tag": "线路"
-  },
-  {
-   "id": 50,
-   "name": "海豚影视18+",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/FG/main/%E6%B5%B7%E8%B1%9A%E5%BD%B1%E8%A7%86.json",
-   "tag": "稳定"
-  },
-  {
-   "id": 51,
-   "name": "PG",
-   "url": "https://play.iptv365.org/PG/api.json",
-   "tag": "线路"
-  },
-  {
-   "id": 52,
-   "name": "七星影仓",
-   "url": "http://7337.kstore.space/qxys/禁止传播.json",
-   "tag": "线路"
-  },
-  {
-   "id": 53,
-   "name": "无名3",
-   "url": "https://tv.203511.xyz/0821.json",
-   "tag": "线路"
-  },
-  {
-   "id": 54,
-   "name": "supermeguo",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/supermeguo/BoxRes/main/Myuse/catcr.json",
-   "tag": "线路"
-  },
-  {
-   "id": 55,
-   "name": "其人之道",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/qirenzhidao/tvbox18/main/pg/jsm.json",
-   "tag": "线路"
-  },
-  {
-   "id": 56,
-   "name": "御清弦",
-   "url": "https://gh-proxy.com/https://github.com/1115501230/laoyutvjson/blob/main/yqx.json",
-   "tag": "线路"
-  },
-  {
-   "id": 57,
-   "name": "讴歌",
-   "url": "http://tv.nxog.top/m/",
-   "tag": "稳定"
-  },
-  {
-   "id": 58,
-   "name": "荷城",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/XiaoYiChaHang/tvbox/main/ysj.json",
-   "tag": "线路"
-  },
-  {
-   "id": 59,
-   "name": "央卫2 | TV",
-   "url": "https://fastly.jsdelivr.net/gh/ls125781003/dmtg@master/zy.json",
-   "tag": "高清"
-  },
-  {
-   "id": 60,
-   "name": "高兴",
-   "url": "https://18189.kstore.space/高兴/高兴.php",
-   "tag": "线路"
-  },
-  {
-   "id": 61,
-   "name": "网络收集1有18+",
-   "url": "https://d.kstore.dev/download/17135/%E8%87%AA%E7%94%A8.json",
-   "tag": "线路"
-  },
-  {
-   "id": 62,
-   "name": "18+线路2-18+",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/yigedashu/xwck/refs/heads/main/20260103.json",
-   "tag": "稳定"
-  },
-  {
-   "id": 63,
-   "name": "黄蚂蚁先锋推流源| TV",
-   "url": "http://ge.html-5.me//ii/黄蚂蚁先锋推流源.txt",
-   "tag": "高清"
-  },
-  {
-   "id": 64,
-   "name": "央卫3| TV",
-   "url": "https://mpimg.cn/down.php/8f4d44220555d8090879cb45224b861e.txt",
-   "tag": "高清"
-  },
-  {
-   "id": 65,
-   "name": "陆城影视",
-   "url": "https://jianhancloud.cn/lcys/lcjk.json",
-   "tag": "线路"
-  },
-  {
-   "id": 66,
-   "name": "18+熊猫18+",
-   "url": "http://ko.zoho.to/ii/63143.txt",
-   "tag": "稳定"
-  },
-  {
-   "id": 67,
-   "name": "牛马",
-   "url": "http://nn.4688888.xyz/common.json",
-   "tag": "线路"
-  },
-  {
-   "id": 68,
-   "name": "老白",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zqs1qiwan/laobaitv/refs/heads/main/test/test/tvbox/laobaitvbox.json",
-   "tag": "线路"
-  },
-  {
-   "id": 69,
-   "name": "18+一个大叔18+",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/yigedashu/xwck/refs/heads/main/peek1.json",
-   "tag": "稳定"
-  },
-  {
-   "id": 70,
-   "name": "蓝天",
-   "url": "http://103.163.47.120:666/蓝天/wu.json",
-   "tag": "线路"
-  },
-  {
-   "id": 71,
-   "name": "小苹果",
-   "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
-   "tag": "线路"
-  },
-  {
-   "id": 72,
-   "name": "leevi0709",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/leevi0709/one/main/jsm.json",
-   "tag": "线路"
-  },
-  {
-   "id": 73,
-   "name": "玄珠",
-   "url": "https://jihulab.com/xuanzhuapp/xzys/-/raw/main/xzvip.json",
-   "tag": "线路"
-  },
-  {
-   "id": 74,
-   "name": "VOX",
-   "url": "http://rihou.cc:88/demo.php",
-   "tag": "线路"
-  },
-  {
-   "id": 75,
-   "name": "凯弟",
-   "url": "https://jihulab.com/jyqhkd/kd/-/raw/main/kai.json",
-   "tag": "线路"
-  },
-  {
-   "id": 76,
-   "name": "老虎-小脑斧",
-   "url": "http://cnmb.cc.cd/jk/xnf.json",
-   "tag": "线路"
-  },
-  {
-   "id": 77,
-   "name": "liu",
-   "url": "https://raw.liucn.cc/box/m.json",
-   "tag": "线路"
-  },
-  {
-   "id": 78,
-   "name": "真心",
-   "url": "https://www.252035.xyz/z/FongMi.json",
-   "tag": "线路"
-  },
-  {
-   "id": 79,
-   "name": "如意",
-   "url": "https://gitee.com/wynp/ys/raw/master/yc.json",
-   "tag": "线路"
-  },
-  {
-   "id": 80,
-   "name": "颜如玉",
-   "url": "https://fastly.jsdelivr.net/gh/liu673cn/box@main/m.json",
-   "tag": "线路"
-  },
-  {
-   "id": 81,
-   "name": "蜗牛影视",
-   "url": "https://tv.蜗牛.top/svip",
-   "tag": "线路"
-  },
-  {
-   "id": 82,
-   "name": "张群",
-   "url": "http://zhangqun1818.serv00.net/zq/api.json",
-   "tag": "线路"
-  },
-  {
-   "id": 83,
-   "name": "nzk",
-   "url": "http://rihou.cc:555/nzk/nzk0722.json",
-   "tag": "线路"
-  },
-  {
-   "id": 84,
-   "name": "央卫4|TV",
-   "url": "https://tv.anbox.ip-ddns.com/live20",
-   "tag": "高清"
-  },
-  {
-   "id": 85,
-   "name": "月儿|TV",
-   "url": "http://xclasvgas.sylu.net:8080/smt.php",
-   "tag": "高清"
-  },
-  {
-   "id": 86,
-   "name": "潇洒",
-   "url": "https://9877.kstore.space/ONE/one.json",
-   "tag": "线路"
-  },
-  {
-   "id": 87,
-   "name": "天神IY",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/IY-CPU/IY/main/%E5%A4%A9%E7%A5%9EIY.png",
-   "tag": "线路"
-  },
-  {
-   "id": 88,
-   "name": "干货老苏",
-   "url": "https://www.ls660.com/TV/TV.json",
-   "tag": "线路"
-  },
-  {
-   "id": 89,
-   "name": "重兴",
-   "url": "https://pan.szfx.top/down.php/daee0d2b5ddbe2de5b2639fe1273b247.json",
-   "tag": "线路"
-  },
-  {
-   "id": 90,
-   "name": "老猫迷",
-   "url": "https://d.kstore.dev/download/12020/t4.json",
-   "tag": "线路"
+    "id": 18,
+    "name": "拾光",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+    "tag": "稳定"
   }
- ]
-}
+]
