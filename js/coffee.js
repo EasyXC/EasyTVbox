@@ -402,15 +402,12 @@ function filterLiveItems(items = [], league = '', type = '', isHot = false) {
 
 async function fetchLiveByApi(page = 1, size = 30, league = '', type = '', isHot = false) {
     const date = todayString();
-    
     const urls = [
         `${host}/api/v1/live`,
         `${host}/api/v1/matches/live`,
         `${host}/api/v1/lives`,
-        `${host}/api/v1/rooms`,
-        `${host}/api/v1/live/list`
+        `${host}/api/v1/rooms`
     ];
-    
     const paramList = [
         { page, size, league, type, date },
         { page, size, league, type, is_live: 1 },
@@ -419,16 +416,19 @@ async function fetchLiveByApi(page = 1, size = 30, league = '', type = '', isHot
 
     for (const url of urls) {
         for (const params of paramList) {
-            const data = await requestJsonSafe(url, params, {
+            const cleanParams = {};
+            Object.keys(params).forEach(key => {
+                if (params[key] !== undefined && params[key] !== null && params[key] !== '') {
+                    cleanParams[key] = params[key];
+                }
+            });
+            const data = await requestJsonSafe(url, cleanParams, {
                 Referer: host + '/pc/live'
             });
-            if (!data) continue;
-            
             const arr = getDataArray(data);
-            if (arr.length > 0) {
-                const filtered = filterLiveItems(arr, league, type, isHot);
-                if (filtered.length) return filtered.slice(0, size);
-            }
+            if (!arr.length) continue;
+            const filtered = filterLiveItems(arr, league, type, isHot);
+            if (filtered.length) return filtered.slice(0, size);
         }
     }
     return [];
