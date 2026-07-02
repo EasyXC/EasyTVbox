@@ -5,7 +5,7 @@
     "sites": [
         {
             "key": "Tg豆瓣",
-            "name": "EasyTV|Q807916734",
+            "name": "EasyTV|Q：807916734",
             "type": 3,
             "api": "csp_TgYunDouBanPan",
             "searchable": 1,
@@ -276,11 +276,11 @@
             }
         },
         {
-            "key": "枫叶",
-            "name": "枫叶❤｜免扫4K",
+            "key": "重理电影",
+            "name": "枫叶❤免扫4K",
             "type": 3,
             "api": "csp_XBPQ",
-            "jar": "./jar/XBPQ.jar",
+            "jar": "https://pan.szfx.top/down.php/a81c03da23212c9ffc8a699465dedc8b.jar",
             "ext": {
                 "分类url": "https://www.chongliski.net/{cateId}",
                 "分类": "电影$type/1.html#电视剧$type/2.html#综艺$type/3.html#动漫$type/4.html#热门短剧$type/5.html#腾讯SVIP$label/qq.html#优酷SVIP$label/youku.html#B站SVIP$label/bli.html#红果短剧$label/duanju.html",
@@ -288,17 +288,6 @@
                 "剧集反转": "1",
                 "播放反转": "1",
                 "列表反转": "1"
-            }
-        },
-        {
-            "key": "快映",
-            "name": "快映❤免扫4K",
-            "type": 3,
-            "changeable": 0,
-            "api": "https://17264.kstore.space/Appfox.min.js",
-            "ext": {
-                "host": "https://www.baidukuaiy.top",
-                "ver": 3
             }
         },
         {
@@ -318,27 +307,6 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0
-        },
-        {
-            "key": "哔哩幕",
-            "name": "哔哩❤免扫4K",
-            "type": 3,
-            "api": "csp_Bilimd",
-            "jar": "https://pan.szfx.top/down.php/14fce8ef9e7e8a40719c801ec3077b8c.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "cookie": "SESSDATA=8f3ff69f%2C1794310143%2C53c01%2A52CjBX4vniMP8UbH-FHHxtImWyVMCf_NkAmIFpLXuK3B9TH1uSPOG3A5ST5nKXpP5b06gSVmx2Q2FWY0xPY19yaGxqOUNoRnZuLVhselJhVXU5UWlQb093RnprU2xpLVk5bmpwWjZ6bEhLZWt2RTIwbVpHaFJsYXJVeGtGRnFMcTd1OHRoZ24zN2ZRIIEC; bili_jct=27dfcc874d1a3c0fe39b9651ca436394; DedeUserID=3546629682497943; DedeUserID__ckMd5=b11f007e7707c2a6; sid=pey664gw; b_lsid=922FAEA2_19E263F56EF;"
-            },
-            "timeout": 10
-        },
-        {
-            "key": "桔子",
-            "name": "桔子❤免扫4K",
-            "type": 3,
-            "api": "https://pan.szfx.top/down.php/1d1ec49276f6668d766af6376b3cfc94.py",
-            "ext": "https://dmc.yy-fun.cc/feiapp"
         },
         {
             "key": "网盘集合",
