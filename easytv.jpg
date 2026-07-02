@@ -5,7 +5,7 @@
     "sites": [
         {
             "key": "Tg豆瓣",
-            "name": "EasyTV|🐧807916734",
+            "name": "EasyTV|Q807916734",
             "type": 3,
             "api": "csp_TgYunDouBanPan",
             "searchable": 1,
@@ -276,6 +276,71 @@
             }
         },
         {
+            "key": "枫叶",
+            "name": "枫叶❤｜免扫4K",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./jar/XBPQ.jar",
+            "ext": {
+                "分类url": "https://www.chongliski.net/{cateId}",
+                "分类": "电影$type/1.html#电视剧$type/2.html#综艺$type/3.html#动漫$type/4.html#热门短剧$type/5.html#腾讯SVIP$label/qq.html#优酷SVIP$label/youku.html#B站SVIP$label/bli.html#红果短剧$label/duanju.html",
+                "倒序": "1",
+                "剧集反转": "1",
+                "播放反转": "1",
+                "列表反转": "1"
+            }
+        },
+        {
+            "key": "快映",
+            "name": "快映❤免扫4K",
+            "type": 3,
+            "changeable": 0,
+            "api": "https://17264.kstore.space/Appfox.min.js",
+            "ext": {
+                "host": "https://www.baidukuaiy.top",
+                "ver": 3
+            }
+        },
+        {
+            "key": "九灵移动",
+            "name": "九灵❤免扫4K",
+            "type": 3,
+            "jar": "https://fastlink.cokey.xyz/f/1LmEH5/yunY.jar",
+            "api": "csp_YDjisu",
+            "searchable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "裤佬-EmbyJS",
+            "name": "EMBY❤免扫4K",
+            "type": 3,
+            "api": "https://mpimg.cn/down.php/40d30fe3d9671e0d700f1c272bb20aaa.js",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+        {
+            "key": "哔哩幕",
+            "name": "哔哩❤免扫4K",
+            "type": 3,
+            "api": "csp_Bilimd",
+            "jar": "https://pan.szfx.top/down.php/14fce8ef9e7e8a40719c801ec3077b8c.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "cookie": "SESSDATA=8f3ff69f%2C1794310143%2C53c01%2A52CjBX4vniMP8UbH-FHHxtImWyVMCf_NkAmIFpLXuK3B9TH1uSPOG3A5ST5nKXpP5b06gSVmx2Q2FWY0xPY19yaGxqOUNoRnZuLVhselJhVXU5UWlQb093RnprU2xpLVk5bmpwWjZ6bEhLZWt2RTIwbVpHaFJsYXJVeGtGRnFMcTd1OHRoZ24zN2ZRIIEC; bili_jct=27dfcc874d1a3c0fe39b9651ca436394; DedeUserID=3546629682497943; DedeUserID__ckMd5=b11f007e7707c2a6; sid=pey664gw; b_lsid=922FAEA2_19E263F56EF;"
+            },
+            "timeout": 10
+        },
+        {
+            "key": "桔子",
+            "name": "桔子❤免扫4K",
+            "type": 3,
+            "api": "https://pan.szfx.top/down.php/1d1ec49276f6668d766af6376b3cfc94.py",
+            "ext": "https://dmc.yy-fun.cc/feiapp"
+        },
+        {
             "key": "网盘集合",
             "name": "🅿网盘集合|4K",
             "type": 3,
@@ -343,24 +408,6 @@
                 "跳转播放链接": "var player_*\"url\":\"&&\"",
                 "分类url": "https://www.pkmp4.xyz/ms/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
                 "分类": "电影$1#剧集$2#综艺$3#动漫$4#短剧$30"
-            }
-        },
-        {
-            "key": "枫叶电影",
-            "name": "🍁枫叶",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "ext": {
-                "请求头": "User-Agent$MOBILE_UA",
-                "简介": "剧情介绍:+text cor3\">[*],&&</div>",
-                "图片": "data-src=\"&&\"[替换:amp;>>空]",
-                "主页url": "https://www.budaichuchen.net/label/qq.html",
-                "副标题": "ft2\">&&</i>",
-                "线路数组": "<i class=\"fa ds-dianying\">&&</span>",
-                "播放数组": "anthology-list-play size\">&&</ul>",
-                "线路标题": "EasyTV专线",
-                "分类url": "https://www.budaichuchen.net/cupfox-list/{cateId}-{area}--{class}-----{catePg}---{year}.html",
-                "分类": "电影$5#电视剧$2#动漫$1#综艺$4#短剧$3"
             }
         },
         {
