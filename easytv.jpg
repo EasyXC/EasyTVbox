@@ -136,8 +136,8 @@
             }
         },
         {
-            "key": "傻样",
-            "name": "❤傻样|4K",
+            "key": "国风",
+            "name": "❤国风|4K",
             "type": 3,
             "api": "csp_kongbai",
             "searchable": 1,
@@ -252,17 +252,6 @@
             }
         },
         {
-            "key": "FourKZN",
-            "name": "️❤4k指南|4K",
-            "type": 3,
-            "api": "csp_FourKZN",
-            "searchable": 1,
-            "changeable": 0,
-            "ext": {
-                "commonConfig": "./json/peizhi.json"
-            }
-        },
-        {
             "key": "盘Ta",
             "name": "❤盘Ta|4K",
             "type": 3,
@@ -276,18 +265,14 @@
             }
         },
         {
-            "key": "重理电影",
-            "name": "枫叶❤免扫4K",
+            "key": "FourKZN",
+            "name": "️❤指南|4K",
             "type": 3,
-            "api": "csp_XBPQ",
-            "jar": "https://pan.szfx.top/down.php/a81c03da23212c9ffc8a699465dedc8b.jar",
+            "api": "csp_FourKZN",
+            "searchable": 1,
+            "changeable": 0,
             "ext": {
-                "分类url": "https://www.chongliski.net/{cateId}",
-                "分类": "电影$type/1.html#电视剧$type/2.html#综艺$type/3.html#动漫$type/4.html#热门短剧$type/5.html#腾讯SVIP$label/qq.html#优酷SVIP$label/youku.html#B站SVIP$label/bli.html#红果短剧$label/duanju.html",
-                "倒序": "1",
-                "剧集反转": "1",
-                "播放反转": "1",
-                "列表反转": "1"
+                "commonConfig": "./json/peizhi.json"
             }
         },
         {
@@ -307,6 +292,12 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0
+        },
+        {
+            "key": "枫叶",
+            "name": "枫叶❤免扫4",
+            "type": 3,
+            "api": "./jar/枫叶.py"
         },
         {
             "key": "网盘集合",
