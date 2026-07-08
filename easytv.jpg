@@ -27,7 +27,7 @@
         },
         {
             "key": "ConfigCenter",
-            "name": "网盘配置|2026-7-7",
+            "name": "网盘配置|2026-7-8",
             "type": 3,
             "api": "csp_ConfigCenter",
             "searchable": 0,
