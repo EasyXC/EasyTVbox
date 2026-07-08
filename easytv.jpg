@@ -1,5 +1,5 @@
 {
-    "spider": "./easytv.jar",
+    "spider": "./jar/easy.jar",
     "wallpaper": "https://饭的动态壁纸.xxooo.cf/",
     "warningText": "Easy提醒：所有资源来于网络，仅作学习交流测试使用！勿贩卖",
     "sites": [
