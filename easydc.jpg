@@ -2,11 +2,19 @@
 	"urls": [
 
 		{
-			"name": "EasyTV永久线路",
+			"name": "EasyTV永久线路-org加速",
 			"url": "https://gh-proxy.org/raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg"
 		},
 		{
-			"name": "防失联官网：easy321.top，此处无接口，2026-7-8更新",
+			"name": "EasyTV永久线路-net加速",
+			"url": "https://ghproxy.net/raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg"
+		},
+		{
+			"name": "EasyTV永久线路-easy加速",
+			"url": "https://ghproxy.easy666.dpdns.org/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easydc.jpg"
+		},
+		{
+			"name": "防失联官网：easy321.top，此处无接口，2026-7-9更新",
 			"url": ""
 		},
 		{
