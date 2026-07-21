@@ -1,7 +1,7 @@
 {
     "spider": "./jar/easy.jar",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
-    "logo": "https://ghproxy.net/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/logo.gif",
+    "logo": "./logo.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
     "sites": [
         {
@@ -13,7 +13,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置 | 中心",
+            "name": "配置 | 2026-7-21",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
