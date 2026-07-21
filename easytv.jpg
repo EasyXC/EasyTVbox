@@ -431,7 +431,7 @@
         },
         {
             "key": "爱营",
-            "name": "💥爱影┃热门4K",
+            "name": "爱影 | 热门4K",
             "type": 3,
             "searchable": 1,
             "changeable": 1,
@@ -440,7 +440,7 @@
         },
         {
             "key": "新首发",
-            "name": "🏵️首发┃热门4K",
+            "name": "首发 | 热门4K",
             "type": 3,
             "api": "csp_AppGet",
             "ext": "https://yun-1316442804.cos.ap-guangzhou.myqcloud.com/603.txt|FTgP4Gq8zPiqbt7M|V122|okhttp/3.10.0"
