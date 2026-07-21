@@ -39,7 +39,7 @@
         },
         {
             "key": "玩偶",
-            "name": "玩偶 | 4K",
+            "name": "玩偶❤ | 4K",
             "type": 3,
             "api": "csp_Wogg",
             "searchable": 1,
@@ -57,7 +57,7 @@
         },
         {
             "key": "快映",
-            "name": "快映 | 4K",
+            "name": "快映❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -73,7 +73,7 @@
         },
         {
             "key": "木偶",
-            "name": "木偶 | 4K",
+            "name": "木偶❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -92,7 +92,7 @@
         },
         {
             "key": "蜡笔",
-            "name": "蜡笔 | 4K",
+            "name": "蜡笔❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -112,7 +112,7 @@
         },
         {
             "key": "至臻",
-            "name": "至臻 | 4K",
+            "name": "至臻❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -130,7 +130,7 @@
         },
         {
             "key": "多多",
-            "name": "多多 | 4K",
+            "name": "多多❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -148,7 +148,7 @@
         },
         {
             "key": "欧哥",
-            "name": "欧哥 | 4K",
+            "name": "欧哥❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -167,7 +167,7 @@
         },
         {
             "key": "二小",
-            "name": "二小 | 4K",
+            "name": "二小❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -187,7 +187,7 @@
         },
         {
             "key": "虎斑",
-            "name": "虎斑 | 4K",
+            "name": "虎斑❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -203,7 +203,7 @@
         },
         {
             "key": "短木",
-            "name": "短木 | 4K",
+            "name": "短木❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -219,7 +219,7 @@
         },
         {
             "key": "夸父",
-            "name": "夸父 | 4K",
+            "name": "夸父❤ | 4K",
             "type": 3,
             "api": "csp_PanWebShareKF",
             "searchable": 1,
@@ -239,7 +239,7 @@
         },
         {
             "key": "指南",
-            "name": "指南 | 4K",
+            "name": "指南❤ | 4K",
             "type": 3,
             "api": "csp_4KZhinan",
             "searchable": 1,
@@ -249,7 +249,7 @@
         },
         {
             "key": "人人",
-            "name": "人人 | 4K",
+            "name": "人人❤ | 4K",
             "type": 3,
             "api": "csp_RenRen",
             "searchable": 1,
@@ -259,7 +259,7 @@
         },
         {
             "key": "即刻",
-            "name": "即刻 | 4K",
+            "name": "即刻❤ | 4K",
             "type": 3,
             "api": "csp_Jike",
             "searchable": 1,
@@ -272,7 +272,7 @@
         },
         {
             "key": "双星",
-            "name": "双星 | 4K",
+            "name": "双星❤ | 4K",
             "type": 3,
             "api": "csp_ShuangXing",
             "searchable": 1,
@@ -285,13 +285,13 @@
         },
         {
             "key": "山楂影视",
-            "name": "山楂 | 免扫4K",
+            "name": "❤山楂 | 免扫4K",
             "type": 3,
             "api": "csp_PianKu8"
         },
         {
             "key": "YunDuo",
-            "name": "云朵 | 免扫4K",
+            "name": "❤云朵 | 免扫4K",
             "type": 3,
             "api": "csp_YunDuo",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
@@ -301,7 +301,7 @@
         },
         {
             "key": "CupFox",
-            "name": "茶杯 | 免扫4K",
+            "name": "❤茶杯 | 免扫4K",
             "type": 3,
             "api": "csp_CupFox",
             "searchable": 1,
@@ -310,7 +310,7 @@
         },
         {
             "key": "FengYe",
-            "name": "枫叶 | 免扫4K",
+            "name": "❤枫叶 | 免扫4K",
             "type": 3,
             "api": "csp_CupFox",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
@@ -321,7 +321,7 @@
         },
         {
             "key": "PianKu8",
-            "name": "片库 | 免扫4K",
+            "name": "❤片库 | 免扫4K",
             "type": 3,
             "api": "csp_PianKu8",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
@@ -332,7 +332,7 @@
         },
         {
             "key": "BuBu",
-            "name": "布布 | 免扫4K",
+            "name": "❤布布 | 免扫4K",
             "type": 3,
             "api": "csp_BuBu",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
@@ -342,7 +342,7 @@
         },
         {
             "key": "huaisang",
-            "name": "怀桑 | 免扫4K",
+            "name": "❤怀桑 | 免扫4K",
             "type": 3,
             "api": "csp_AppQi",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
@@ -352,7 +352,7 @@
         },
         {
             "key": "景仪",
-            "name": "景仪 | 免扫4K",
+            "name": "❤景仪 | 免扫4K",
             "type": 3,
             "api": "csp_App88",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
@@ -362,7 +362,7 @@
         },
         {
             "key": "枫眠",
-            "name": "枫眠 | 免扫4K",
+            "name": "❤枫眠 | 免扫4K",
             "type": 3,
             "api": "csp_App88",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
@@ -370,7 +370,7 @@
         },
         {
             "key": "悯善",
-            "name": "悯善 | 免扫4K",
+            "name": "❤悯善 | 免扫4K",
             "type": 3,
             "api": "csp_App88",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
@@ -378,7 +378,7 @@
         },
         {
             "key": "长泽",
-            "name": "长泽 | 免扫4K",
+            "name": "❤长泽 | 免扫4K",
             "type": 3,
             "api": "csp_App88",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
@@ -386,7 +386,7 @@
         },
         {
             "key": "清沅",
-            "name": "清沅 | 免扫4K",
+            "name": "❤清沅 | 免扫4K",
             "api": "csp_AppNox",
             "jar": "https://qiniu.gongxueyun.com/upload/4861227/2026-07-20/noknow/879949887_1_1784533310607.jar",
             "type": 3,
