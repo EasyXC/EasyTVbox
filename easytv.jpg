@@ -6,7 +6,7 @@
     "sites": [
         {
             "key": "豆瓣",
-            "name": "EasyTV | easy321.top",
+            "name": "EasyTV | 官网easy321.top/jk",
             "type": 3,
             "api": "csp_Douban",
             "searchable": 0
