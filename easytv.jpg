@@ -218,26 +218,6 @@
             "timeout": 60
         },
         {
-            "key": "夸父",
-            "name": "夸父 | 4K",
-            "type": 3,
-            "api": "csp_PanWebShareKF",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            },
-            "ext": {
-                "site": [
-                    "https://www.kfzys.net"
-                ],
-                "cookie": "bbs_sid=p5mugcm9r147o1d3qpi0su1ucm; bbs_token=gDMAOehNUQetTJv9Lnet0J_2FGJmgdvnx90iTZqzU_2FnO0_3D"
-            },
-            "timeout": 60
-        },
-        {
             "key": "光鸭臻影社",
             "name": "光鸭 | 4K",
             "type": 3,
@@ -245,10 +225,6 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 0,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            },
             "timeout": 60
         },
         {
