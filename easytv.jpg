@@ -424,22 +424,6 @@
             }
         },
         {
-            "key": "爱营",
-            "name": "💥爱影┃热门4K",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": "https://aysappto.oss-cn-chengdu.aliyuncs.com/q23.txt|nzEqOgYk3QzHuEP8|V122|okhttp/3.10.0"
-        },
-        {
-            "key": "新首发",
-            "name": "🏵️首发┃热门4K",
-            "type": 3,
-            "api": "csp_AppGet",
-            "ext": "https://yun-1316442804.cos.ap-guangzhou.myqcloud.com/603.txt|FTgP4Gq8zPiqbt7M|V122|okhttp/3.10.0"
-        },
-        {
             "key": "少儿教育",
             "name": "少儿 | 教育",
             "type": 3,
