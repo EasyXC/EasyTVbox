@@ -13,7 +13,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置中心 | 0723",
+            "name": "配置中心 | 0724",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
@@ -690,7 +690,7 @@
         },
         {
             "key": "麻花",
-            "name": "麻花 • APP",
+            "name": "麻花 | APP",
             "type": 3,
             "api": "csp_AppGet",
             "searchable": 1,
@@ -703,7 +703,7 @@
         },
         {
             "key": "不戳",
-            "name": "不戳 • APP",
+            "name": "不戳 | APP",
             "type": 3,
             "api": "csp_AppGet",
             "searchable": 1,
@@ -712,19 +712,6 @@
                 "url": "https://appcmszbc.zbc4k.app",
                 "dataKey": "pYrEkiWRYhBLTUTC",
                 "dataIv": "pYrEkiWRYhBLTUTC"
-            }
-        },
-        {
-            "key": "魔方",
-            "name": "魔方 | APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "url": "https://www.douy32mf.top",
-                "dataKey": "1234567887654321",
-                "dataIv": "1234567887654321"
             }
         },
         {
