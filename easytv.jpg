@@ -274,15 +274,6 @@
             "filterable": 1
         },
         {
-            "key": "CupFox",
-            "name": "茶杯 | 免扫4K",
-            "type": 3,
-            "api": "csp_CupFox",
-            "searchable": 1,
-            "changeable": 1,
-            "filterable": 1
-        },
-        {
             "key": "FengYe",
             "name": "枫叶 | 免扫4K",
             "type": 3,
