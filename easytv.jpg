@@ -783,19 +783,15 @@
             "api": "csp_SP360"
         },
         {
-            "key": "HonHon",
-            "name": "红红 | 短剧",
+            "key": "果果短剧",
+            "name": "果果 • 短剧",
             "type": 3,
-            "api": "csp_HonHon",
-            "jar": "https://qiniu.gongxueyun.com/upload/1175457/2026-07-25/avatar/569288413_5_1784984049293.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "genre": "shortdrama",
-            "filterable": 1,
+            "api": "csp_XBPQ",
             "ext": {
-                "host": "https://short.fishcloud.top",
-                "quality": "1080p",
-                "danmu": false
+                "请求头": "User-Agent$MOBILE_UA",
+                "编码": "UTF-8",
+                "分类": "重生$1#穿越$2#爽剧$3#言情$4#都市$5#古装$6#悬疑$7#剧情$8",
+                "分类url": "https://www.mochadj.com/i/{cateId}-{catePg}.html"
             }
         },
         {
