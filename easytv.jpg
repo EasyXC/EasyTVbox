@@ -13,7 +13,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置中心 | 729",
+            "name": "配置中心 | 07.29",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
@@ -338,6 +338,41 @@
             "api": "csp_App88",
             "jar": "https://media.meilinvps.com/download.php?key=MzlmMTAyZjliODI3M2Y3ZDhkMDI4ZDI1OTU5MzY3ODU6NmU1MThlNjdlNWNkODZjZTc0YmY3OTMxMzIyYzUwNzdiM2Y5OGMxMTQ3NDYwZWY0ODFlN2EwMDYzNTYyOTkyMGM2ZmY2ZDk5NzRlODcyMjhlMjg0ZTllZjI0NWYyZGU4YTVlMDcyNWQ4MTAzNTFmMTgyYzYxMTFiNWNhNTJlOWM0YTljMjAyNjI5OTU0MDMxOWUwZGJiMTRhODdkZmE5Yg",
             "ext": "Aa+WBBIIxghmbVYkWqlC4wrZvlocl4rSZS9+QyJDF6RgWFfYSb+nEM6WkMHPVbQFva551Srt16FqFroyjNssEXemH+xC5pCMj/ewgFuLEIbY2mXCVJ1bJxWRJAggNgH1f3mjwrBxlZA0kGgfAd0os29Mdi3RNJilSo5VMkPpcQPMeF8/PTbZHNymotiTwtICNcA5Q0WXsqe/wJ3HoLU4gBYQs1lBmYdxtAuvsnte3SbumQEFlaQnygFscx6EGrwKMFZLVcmu9egAXxygsf5PmyzN/xvOr+b+HslccoKqDbHNU/C6yWFwaHBawww0ckXRtoJ8fFbV7Xv4NiRcEf6ePm/cd06xYiZmjRts11gE0r8f7D0vx/TgigmU3v8nrgNYDokUGl/jDdza3o7BXyQumCWRD45wYbmKJ1LKb0ybRvNt"
+        },
+        {
+            "key": "腾讯视频",
+            "name": "📺️腾讯 | 官方",
+            "type": 3,
+            "api": "./js/drpy2.min.js",
+            "ext": "./lib/腾讯.png"
+        },
+        {
+            "key": "爱奇艺视频",
+            "name": "📺️爱奇艺 | 官方",
+            "type": 3,
+            "api": "./js/drpy2.min.js",
+            "ext": "./lib/爱奇艺.png"
+        },
+        {
+            "key": "优酷视频",
+            "name": "📺️优酷 | 官方",
+            "type": 3,
+            "api": "./js/drpy2.min.js",
+            "ext": "./lib/优酷.png"
+        },
+        {
+            "key": "芒果视频",
+            "name": "📺️芒果 | 官方",
+            "type": 3,
+            "api": "./js/drpy2.min.js",
+            "ext": "./lib/芒果.png"
+        },
+        {
+            "key": "哔哩哔哩",
+            "name": "📺️B站 | 官方",
+            "type": 3,
+            "api": "./js/drpy2.min.js",
+            "ext": "./lib/B站.png"
         },
         {
             "key": "少儿教育",
