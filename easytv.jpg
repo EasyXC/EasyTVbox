@@ -13,7 +13,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置中心 | 07-31",
+            "name": "配置中心 | 07-31-2",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
@@ -305,7 +305,7 @@
             "name": "云朵 | 免扫4K",
             "type": 3,
             "api": "csp_YunDuo",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "searchable": 1,
             "changeable": 1,
             "filterable": 1
@@ -315,7 +315,7 @@
             "name": "枫叶 | 免扫4K",
             "type": 3,
             "api": "csp_CupFox",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "searchable": 1,
             "changeable": 1,
             "filterable": 1,
@@ -326,7 +326,7 @@
             "name": "片库 | 免扫4K",
             "type": 3,
             "api": "csp_PianKu8",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
@@ -337,7 +337,7 @@
             "name": "布布 | 免扫4K",
             "type": 3,
             "api": "csp_BuBu",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "searchable": 1,
             "changeable": 1,
             "filterable": 1
@@ -347,7 +347,7 @@
             "name": "怀桑 | 免扫4K",
             "type": 3,
             "api": "csp_AppQi",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "searchable": 1,
             "changeable": 1,
             "ext": "AdYEovlEKsDy77+R58YGahWCxrDZyBxExcQNC2NSeH0n1b5mu6tvh8b4Eh0RCpoPF6eivKdrR1Hsb8X4sSVBS8zF6jkwLW+wze9yh+hSY5iimm4gM9mAtmt0obTi+6Iox/Jp4GCsN4MQyFebMK162SKnILklpXc1UMiJv9gnPOe5aOPUxCftL+x7/UGhBdFYWIegpiHvKeavUtCUkhxtDyC8KqVVPPW0StI5GdmUA3WBbnnrNiKqNc5GBmrffd6pDN+Cf9IIjzNNvos/5KXJmBbe/baAzTLkoafeIoDhO451"
@@ -357,7 +357,7 @@
             "name": "枫眠 | 免扫4K",
             "type": 3,
             "api": "csp_App88",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "ext": "AdzbT8Ti+fGJ2PrJDEahdT7+zU3sFruyF0fAaUTWAUOCrbG/s0KhC5zQusyXAkmDYai/yhecQAtwKkDfTqbVCQT15T0FDK1GX9GLxT9V3XyFRDT0ATcwcFfw5joxSB+YLlez1nGpT2AW5KomI3yNv3ORTd4B3NqAcM34Cioc6+xwfj3HJ4JO6kQvv4solNApeP7CqF/Ecpt1BCgvvPzswMOr+kgVG/Iu8btrVQFO+pRpY7cfpc/Y59ZqaJlrCTDNLxgwuG20RZ9gVWsW+vd3A9lRgeTiJ39vJPoK46+9LnYGWU9dlDR1qRg4y5ILVQjEnT4el2cKSZexf7nrXHVfF3nOmHH/w/R/OSGllwUB7FCHDMc7eDY7haDYHWAQpEmcn4+BfbC4cipsdZ+nVieVVuuaWSF9s+0xYPWdSYLJMxApplTYkO+/h5z9atdURJUMGQ=="
         },
         {
@@ -365,7 +365,7 @@
             "name": "悯善 | 免扫4K",
             "type": 3,
             "api": "csp_App88",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "ext": "AY/LmvuAAyhXffcGv5StyHm1MkGdY4inQLRC3KICnxUJBpq0d5dLhvE0+MW8XruH+M/Q/Ruqd6NayN9rihHGuotzXSTrDHgoZ2/dm2JlJ7GYOYfBorPhMPjuOhTNMg9w/J6oP4DXluvDpXNj9uOKq7g/Cx7vrKF6utOSaE1gUgDQwT251mOGTzGsd3ZrtEeepgI6hOdB2gJ4hHRumNhlbVtWDdpnVMYvhCIuH2HUqJFZWM5T+gEZTMLfeUEJt7ScfaQp90qNZID1YNo/tQOaFLGN12o4CkPtCNoYs+emjhVVqIjJzgfplCPIEyjRADqhur0c48FwCiJyp/XGZFmsMJaPKqvOkO+0H5YMKsR+EMmXCr6n0n1VnwGGpYl3maiq1SB78yDnh16291IjwXdERP1csTe41Vg3ppIixtk6q1etAikUle+6fjSFGvAvDYNr2Q=="
         },
         {
@@ -373,7 +373,7 @@
             "name": "长泽 | 免扫4K",
             "type": 3,
             "api": "csp_App88",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "ext": "Aa+WBBIIxghmbVYkWqlC4wrZvlocl4rSZS9+QyJDF6RgWFfYSb+nEM6WkMHPVbQFva551Srt16FqFroyjNssEXemH+xC5pCMj/ewgFuLEIbY2mXCVJ1bJxWRJAggNgH1f3mjwrBxlZA0kGgfAd0os29Mdi3RNJilSo5VMkPpcQPMeF8/PTbZHNymotiTwtICNcA5Q0WXsqe/wJ3HoLU4gBYQs1lBmYdxtAuvsnte3SbumQEFlaQnygFscx6EGrwKMFZLVcmu9egAXxygsf5PmyzN/xvOr+b+HslccoKqDbHNU/C6yWFwaHBawww0ckXRtoJ8fFbV7Xv4NiRcEf6ePm/cd06xYiZmjRts11gE0r8f7D0vx/TgigmU3v8nrgNYDokUGl/jDdza3o7BXyQumCWRD45wYbmKJ1LKb0ybRvNt"
         },
         {
@@ -790,7 +790,7 @@
             "name": "短剧 | 聚合",
             "type": 3,
             "api": "csp_DJHub",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "searchable": 1,
             "quickSearch": 1,
             "genre": "shortdrama",
@@ -802,7 +802,7 @@
             "name": "红果果 | 短剧",
             "type": 3,
             "api": "csp_HonHon",
-            "jar": "https://qiniu.gongxueyun.com/upload/2740904/2026-07-29/leave/770140555_2_1785328889671.jar",
+            "jar": "https://aly2.tuchuangyun.top/autoupload/k2fxc/20260731/hGQc/fish07310942.jar",
             "searchable": 1,
             "quickSearch": 1,
             "genre": "shortdrama",
