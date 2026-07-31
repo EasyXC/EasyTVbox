@@ -13,7 +13,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置中心 | 07-30",
+            "name": "配置中心 | 07-31",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
@@ -23,6 +23,14 @@
                 "type": "rect",
                 "ratio": 1.597
             }
+        },
+        {
+            "key": "csp_BinMarket",
+            "name": "环境市场┃[环境与切包]",
+            "api": "csp_BinMarket",
+            "jar": "./bin/yt.jar",
+            "type": "3",
+            "ext": "./bin/lab.json"
         },
         {
             "key": "本地",
@@ -246,7 +254,8 @@
                 "site": [
                     "https://sidhub.cc",
                     "https://seeduck.cc",
-                    "https://hubdog.cc"
+                    "https://hubdog.cc",
+                    "http://104.243.25.80"
                 ]
             },
             "timeout": 60
@@ -290,12 +299,6 @@
             "quickSearch": 0,
             "filterable": 0,
             "timeout": 60
-        },
-        {
-            "key": "山楂影视",
-            "name": "山楂 | 免扫4K",
-            "type": 3,
-            "api": "csp_PianKu8"
         },
         {
             "key": "YunDuo",
@@ -504,15 +507,15 @@
             }
         },
         {
-          "key": "酷猫影视",
-          "name": "酷猫 | APP",
-          "type": 3,
-          "api": "https://cdn.jsdmirror.com/gh/ouhaibo1980/tvbox@main/js/drpy2.min.js",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "changeable": 0,
-          "ext": "https://wp.kayyw.com/f/almPHj/%E9%85%B7%E7%8C%AB.js"
+            "key": "酷猫影视",
+            "name": "酷猫 | APP",
+            "type": 3,
+            "api": "https://cdn.jsdmirror.com/gh/ouhaibo1980/tvbox@main/js/drpy2.min.js",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 0,
+            "ext": "https://wp.kayyw.com/f/almPHj/%E9%85%B7%E7%8C%AB.js"
         },
         {
             "key": "热播影视",
@@ -822,7 +825,6 @@
             "genre": "shortdrama"
         },
         {
- 
             "key": "河马短剧",
             "name": "河马 | 短剧",
             "type": 3,
@@ -845,7 +847,6 @@
             "genre": "shortdrama"
         },
         {
- 
             "key": "好看短剧",
             "name": "好看 | 短剧",
             "type": 3,
@@ -1033,7 +1034,6 @@
             "ext": "./js/Anime1.js"
         },
         {
- 
             "key": "喵呜动漫",
             "name": "喵呜 | 动漫",
             "type": 3,
