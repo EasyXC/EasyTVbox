@@ -1,0 +1,1557 @@
+{
+    "version": "1.1",
+    "groups": [
+        {
+            "id": "runtime",
+            "name": "运行环境",
+            "order": 1
+        },
+        {
+            "id": "tools",
+            "name": "工具插件",
+            "order": 2
+        },
+        {
+            "id": "network",
+            "name": "网络工具",
+            "order": 3
+        }
+    ],
+    "lists": [
+        {
+            "name": "php",
+            "group": "runtime",
+            "version": "7.3.22",
+            "icon": "http://0.0.0.0:8901/lib/icon/php.png",
+            "auto_install": true,
+            "available": true,
+            "show": true,
+            "info": "爬虫运行时，支持多架构，适合低版本安卓和性能较差的设备，此运行时强制静默无感安装。\nsite配置：\n    {\n      \"key\": \"php甜圈短剧\",\n      \"name\": \"php | 甜圈短剧\",\n      \"api\": \"./vod/甜圈短剧.php\",\n      \"type\": \"3\"\n    }",
+            "binary_path": "bin/php",
+            "var_path": {
+                "LD_LIBRARY_PATH": "bin"
+            },
+            "commands": [
+                {
+                    "id": "server",
+                    "name": "轻量服务器",
+                    "description": "php内置服务器，可以跑任何php脚本。",
+                    "command": "php -S 0.0.0.0:8901 -t /storage/emulated/0/OKYL/wwwroot -d error_log=/storage/emulated/0/OKYL/logs/php_error.log",
+                    "auto_execute": true,
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "key": "port",
+                            "name": "端口号",
+                            "type": "number",
+                            "default": "8901",
+                            "hint": "服务器监听端口",
+                            "required": true,
+                            "min": 1024,
+                            "max": 65535
+                        },
+                        {
+                            "key": "root_dir",
+                            "name": "根目录",
+                            "type": "directory",
+                            "default": "/storage/emulated/0/OKYL/wwwroot",
+                            "hint": "Web 服务器根目录",
+                            "required": true
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "打开首页",
+                            "action": "open",
+                            "value": "http://0.0.0.0:{port}"
+                        },
+                        {
+                            "title": "打开T4代理接口",
+                            "action": "open",
+                            "value": "http://0.0.0.0:{port}/vod.php?key=站源key&ac=list"
+                        }
+                    ]
+                },
+                {
+                    "id": "t4proxy_php",
+                    "name": "T4代理服务器PHP版",
+                    "description": "代理服务器",
+                    "command": "php -S 0.0.0.0:10999 /storage/emulated/0/OKYL/T4Proxy.php",
+                    "auto_execute": false,
+                    "background": true,
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "key": "port",
+                            "name": "端口号",
+                            "type": "number",
+                            "default": "10999",
+                            "hint": "服务器监听端口",
+                            "required": true,
+                            "min": 1024,
+                            "max": 65535
+                        },
+                        {
+                            "key": "script_path",
+                            "name": "脚本路径",
+                            "type": "file",
+                            "default": "/storage/emulated/0/OKYL/T4Proxy.php",
+                            "hint": "选择 T4Proxy.php 文件",
+                            "required": true,
+                            "filter": "*.php"
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "打开代理接口",
+                            "action": "open",
+                            "value": "http://0.0.0.0:{port}/?ac=config"
+                        },
+                        {
+                            "title": "复制地址",
+                            "action": "copy",
+                            "value": "http://0.0.0.0:{port}/?ac=config"
+                        }
+                    ],
+                    "download": {
+                        "url": "https://yydf.540734621.xyz/ejz/T4Proxy-php.zip",
+                        "extract_to": "wwwroot",
+                        "check_file": "T4Proxy.php",
+                        "size": "15.39 KB",
+                        "mirrors": {}
+                    }
+                },
+                {
+                    "id": "modules",
+                    "name": "查看模块",
+                    "description": "查看已加载的 PHP 模块",
+                    "command": "php -m",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": []
+                },
+                {
+                    "id": "test_all_types",
+                    "name": "测试所有变量类型",
+                    "description": "用于测试对话框 UI 的命令",
+                    "command": "php -r \"echo '{text_val} {num_val} {select_val} {switch_val} {file_val} {dir_val} {multiline_val}';\"",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "key": "text_val",
+                            "name": "文本输入",
+                            "type": "text",
+                            "default": "hello",
+                            "hint": "普通文本输入框",
+                            "required": true
+                        },
+                        {
+                            "key": "num_val",
+                            "name": "数字输入",
+                            "type": "number",
+                            "default": "8080",
+                            "hint": "端口号",
+                            "required": true,
+                            "min": 1024,
+                            "max": 65535
+                        },
+                        {
+                            "key": "select_val",
+                            "name": "下拉选择",
+                            "type": "select",
+                            "default": "dev",
+                            "hint": "选择运行环境",
+                            "required": true,
+                            "options": [
+                                {
+                                    "label": "开发环境",
+                                    "value": "dev"
+                                },
+                                {
+                                    "label": "测试环境",
+                                    "value": "test"
+                                },
+                                {
+                                    "label": "生产环境",
+                                    "value": "prod"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "switch_val",
+                            "name": "开关选项",
+                            "type": "switch",
+                            "default": "true",
+                            "hint": "启用调试模式",
+                            "required": false
+                        },
+                        {
+                            "key": "file_val",
+                            "name": "文件选择",
+                            "type": "file",
+                            "default": "/sdcard/test.php",
+                            "hint": "选择 PHP 文件",
+                            "required": false,
+                            "filter": "*.php"
+                        },
+                        {
+                            "key": "dir_val",
+                            "name": "目录选择",
+                            "type": "directory",
+                            "default": "/sdcard/www",
+                            "hint": "选择工作目录",
+                            "required": false
+                        },
+                        {
+                            "key": "multiline_val",
+                            "name": "多行文本",
+                            "type": "text_multiline",
+                            "default": "line1\nline2",
+                            "hint": "输入多行内容",
+                            "required": false
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "测试链接",
+                            "action": "open",
+                            "value": "http://0.0.0.0:{num_val}"
+                        },
+                        {
+                            "title": "复制命令",
+                            "action": "copy",
+                            "value": "php -r \"echo '{text_val}'\""
+                        },
+                        {
+                            "title": "内置浏览",
+                            "action": "webview",
+                            "value": "http://0.0.0.0:{num_val}",
+                            "style": "dialog",
+                            "content": "在应用内打开网页"
+                        },
+                        {
+                            "title": "二维码",
+                            "action": "qrcode",
+                            "value": "http://0.0.0.0:{num_val}",
+                            "content": "扫码访问服务"
+                        },
+                        {
+                            "title": "分享",
+                            "action": "share",
+                            "value": "http://0.0.0.0:{num_val}"
+                        },
+                        {
+                            "title": "使用说明",
+                            "action": "alert",
+                            "value": "本命令用于测试所有变量类型，包括文本、数字、选择、开关、文件、目录、多行文本等。",
+                            "content": "请根据需要填写各项参数后运行命令"
+                        },
+                        {
+                            "title": "提示",
+                            "action": "toast",
+                            "value": "当前文本值: {text_val}"
+                        }
+                    ]
+                }
+            ],
+            "downloads": [
+                {
+                    "arch": "arm64-v8a",
+                    "url": "https://hhy.sogoucdn.com/wsbff/wsbaike/2025121313/5d66d880-d7e1-11f0-9c92-bb466718b950.jpeg",
+                    "size": "15.2 MB",
+                    "mirrors": {
+                        "github": "https://yydf.540734621.xyz/ejz/php_armv8a.zip",
+                        "gitlab": "https://gitlab.com/ccfork/binary/-/raw/3ec029a37bc2b9515d245b2500a32867434f7e3a/files/php_armv8a.zip"
+                    }
+                },
+                {
+                    "arch": "armeabi-v7a",
+                    "url": "https://yydf.540734621.xyz/ejz/php_armv7a.zip",
+                    "size": "14.8 MB",
+                    "mirrors": {
+                        "github": "https://github.com/example/php/releases/download/php-android-armeabi-v7a.tar.gz",
+                        "gitlab": "https://gitlab.example.com/php/php-android-armeabi-v7a.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "nodejs",
+            "group": "runtime",
+            "cmd_name": "node",
+            "version": "25.2.1",
+            "icon": "http://0.0.0.0:8901/lib/icon/js.png",
+            "auto_install": false,
+            "available": true,
+            "show": true,
+            "info": "Node.js静态编译版本，适用于Android ARM架构",
+            "binary_path": "bin/node",
+            "var_path": {
+                "LD_LIBRARY_PATH": "lib",
+                "OPENSSL_CONF": "/dev/null",
+                "NODE_PATH": "lib/node_modules"
+            },
+            "commands": [
+                {
+                    "id": "version",
+                    "name": "查看版本",
+                    "description": "显示 Node.js 版本信息",
+                    "command": "node -v",
+                    "auto_execute": false,
+                    "show_output": true
+                },
+                {
+                    "id": "list_modules",
+                    "name": "查看模块",
+                    "description": "列出已安装的 Node.js 模块",
+                    "command": "node -e \"require('fs').readdirSync('{envRootPath}/lib/node_modules').forEach(m => console.log(m))\"",
+                    "auto_execute": false,
+                    "show_output": true
+                },
+                {
+                    "id": "run_script",
+                    "name": "运行脚本",
+                    "description": "执行指定的 JavaScript 脚本",
+                    "command": "node {script_path}",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "key": "script_path",
+                            "name": "脚本路径",
+                            "type": "file",
+                            "default": "",
+                            "hint": "选择要执行的 JS 脚本",
+                            "required": true,
+                            "filter": "*.js"
+                        }
+                    ]
+                },
+                {
+                    "id": "run_migu",
+                    "name": "运行咪咕直播服务",
+                    "description": "运行咪咕服务",
+                    "command": "node /storage/emulated/0/OKYL/Proxy/migu_video-main/app.js",
+                    "auto_execute": true,
+                    "show_output": true,
+                    "variables": [],
+                    "clicks": [
+                        {
+                            "title": "打开web链接",
+                            "action": "webview",
+                            "style": "dialog",
+                            "value": "http://127.0.0.1:1234"
+                        }
+                    ]
+                },
+                {
+                    "id": "t4_proxy",
+                    "name": "T4代理服务器",
+                    "description": "启动 Spider API Type 4 代理服务器，支持将壳子当前的所有数据(py,php,js,jar以及t1和t4)暴露为T4接口,",
+                    "command": "node /storage/emulated/0/OKYL/Proxy/T4Proxy.js --port 10998",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "download": {
+                        "url": "https://yydf.540734621.xyz/ejz/T4Proxy.zip",
+                        "extract_to": "Proxy",
+                        "check_file": "Proxy/T4Proxy.js",
+                        "size": "120 KB",
+                        "mirrors": {
+                            "github": "https://raw.githubusercontent.com/example/proxy/main/T4Proxy.zip"
+                        }
+                    },
+                    "variables": [
+                        {
+                            "key": "script_dir",
+                            "name": "脚本目录",
+                            "type": "directory",
+                            "default": "/storage/emulated/0/OKYL/Proxy",
+                            "hint": "T4Proxy.js 所在目录",
+                            "required": true
+                        },
+                        {
+                            "key": "port",
+                            "name": "端口号",
+                            "type": "number",
+                            "default": "10998",
+                            "hint": "服务器监听端口",
+                            "required": true,
+                            "min": 1024,
+                            "max": 65535
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "配置接口",
+                            "action": "webview",
+                            "value": "http://0.0.0.0:{port}?ac=config",
+                            "style": "dialog",
+                            "content": "查看所有站源配置"
+                        },
+                        {
+                            "title": "接口文档",
+                            "action": "alert",
+                            "value": "T4代理接口说明：\n\n• 配置接口: /?ac=config\n• 首页接口: /站源key\n• 分类接口: /站源key?t=分类ID&pg=页码\n• 详情接口: /站源key?ids=视频ID\n• 搜索接口: /站源key?wd=关键词&pg=页码\n• 播放接口: /站源key?flag=播放源&id=播放ID\n\n提示：ac参数可省略，系统会自动识别接口类型\n筛选参数：area=地区&year=年份&type=类型&class=剧情&lang=语言",
+                            "content": "详细接口说明"
+                        },
+                        {
+                            "title": "打开首页",
+                            "action": "open",
+                            "value": "http://0.0.0.0:{port}"
+                        },
+                        {
+                            "title": "生成二维码",
+                            "action": "qrcode",
+                            "value": "http://0.0.0.0:{port}?ac=config",
+                            "content": "扫码访问配置接口"
+                        },
+                        {
+                            "title": "复制地址",
+                            "action": "copy",
+                            "value": "http://0.0.0.0:{port}"
+                        }
+                    ]
+                },
+                {
+                    "id": "dz_drpy_node",
+                    "name": "道长Drpy一键运行",
+                    "description": "啥都不说了,内置一堆源,运行后复制配置到设置点播中粘贴即可",
+                    "command": "node /storage/emulated/0/VodPlus/drpy_node/index.js",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "min_version": 110,
+                    "clicks": [
+                        {
+                            "title": "复制配置",
+                            "action": "copy",
+                            "value": "http://127.0.0.1:5757/config/1"
+                        }
+                    ],
+                    "download": {
+                        "title": "下载地址",
+                        "url": "https://git-proxy.playdreamer.cn/hjdhnx/drpy-node/releases/download/V1.3.27/drpy-node-20260301.7z",
+                        "extract_to": "drpy_node",
+                        "check_file": "drpy_node/index.js",
+                        "size": "25Mb",
+                        "mirrors": {
+                            "github": "https://github.com/hjdhnx/drpy-node/releases/download/V1.3.27/drpy-node-20260301.7z"
+                        }
+                    }
+                },
+                {
+                    "id": "vodplus_web",
+                    "name": "VodPlus Web",
+                    "description": "网页版（VodPlus Web服务）",
+                    "command": "node /storage/emulated/0/OKYL/vodplus-web/serve.js 3000",
+                    "auto_execute": true,
+                    "background": true,
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "key": "script_path",
+                            "name": "脚本路径",
+                            "type": "file",
+                            "default": "/storage/emulated/0/OKYL/vodplus-web/serve.js",
+                            "hint": "选择 serve.js 文件",
+                            "required": true,
+                            "filter": "*.js"
+                        },
+                        {
+                            "key": "port",
+                            "name": "端口号",
+                            "type": "number",
+                            "default": "3000",
+                            "hint": "服务监听端口",
+                            "required": true,
+                            "min": 1024,
+                            "max": 65535
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "打开服务",
+                            "action": "open",
+                            "value": "http://0.0.0.0:{port}"
+                        },
+                        {
+                            "title": "复制地址",
+                            "action": "copy",
+                            "value": "http://0.0.0.0:{port}"
+                        }
+                    ],
+                    "download": {
+                        "url": "https://yydf.540734621.xyz/ejz/vodplus-web.zip",
+                        "extract_to": "vodplus-web",
+                        "check_file": "vodplus-web/serve.js",
+                        "size": "741.43 KB",
+                        "mirrors": {
+                            "github": "https://yydf.540734621.xyz/ejz/vodplus-web.zip"
+                        }
+                    }
+                },
+                {
+                    "id": "danmu_api",
+                    "name": "Danmu API",
+                    "description": "本地弹幕服务",
+                    "command": "node /storage/emulated/0/OKYL/danmu_api/danmu_api/server.js",
+                    "auto_execute": false,
+                    "background": true,
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "key": "script_path",
+                            "name": "脚本路径",
+                            "type": "file",
+                            "default": "/storage/emulated/0/OKYL/danmu_api/danmu_api/server.js",
+                            "hint": "选择 server.js 文件",
+                            "required": true,
+                            "filter": "*.js"
+                        },
+                        {
+                            "key": "port",
+                            "name": "端口号",
+                            "type": "number",
+                            "default": "9321",
+                            "hint": "服务监听端口",
+                            "required": true,
+                            "min": 1024,
+                            "max": 65535
+                        },
+                        {
+                            "key": "token",
+                            "name": "访问令牌 token",
+                            "type": "number",
+                            "default": 87654321,
+                            "hint": "API 访问令牌（数字）",
+                            "required": true
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "打开服务",
+                            "action": "open",
+                            "value": "http://127.0.0.1:{port}/{token}"
+                        },
+                        {
+                            "title": "复制地址",
+                            "action": "copy",
+                            "value": "http://127.0.0.1:{port}/{token}"
+                        }
+                    ],
+                    "download": {
+                        "url": "https://yydf.540734621.xyz/ejz/danmu_api.zip",
+                        "extract_to": "danmu_api",
+                        "check_file": "danmu_api/danmu_api/server.js",
+                        "size": "5.85 MB",
+                        "mirrors": {}
+                    }
+                },
+                {
+                    "id": "yt64",
+                    "name": "yt64 老张二进制服务",
+                    "description": "启动 yt64 二进制服务，支持本地1988端口为T4接口",
+                    "command": "node -e \"const fs=require('fs');const path=require('path');const src='{src_path}';const dst=path.join(process.cwd(),'yt64');fs.writeFileSync(dst,fs.readFileSync(src));fs.chmodSync(dst,0o755);require('child_process').execFileSync(dst,[],{stdio:'inherit'});\"",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "key": "src_path",
+                            "name": "yt64 文件路径",
+                            "type": "file",
+                            "default": "/storage/emulated/0/OKYL/Proxy/yt64",
+                            "hint": "选择 yt64 二进制文件",
+                            "required": true,
+                            "filter": "*"
+                        }
+                    ],
+                    "download": {
+                        "url": "https://yydf.540734621.xyz/ejz/yt64.zip",
+                        "extract_to": "Proxy",
+                        "check_file": "Proxy/yt64",
+                        "size": "7.39 MB",
+                        "mirrors": {
+                            "github": "https://yydf.540734621.xyz/ejz/yt64.zip"
+                        },
+                        "show": true
+                    }
+                },
+                {
+                    "id": "kill_yt64",
+                    "name": "查杀 yt64 进程",
+                    "description": "强制终止所有名为 yt64 的进程（通过读取 /proc 匹配）",
+                    "command": "node -e \"const { execSync } = require('child_process'); const { readdirSync, readFileSync } = require('fs'); const pids = readdirSync('/proc').filter(f => /^\\d+$/.test(f)); pids.forEach(pid => { try { const cmdline = readFileSync('/proc/' + pid + '/cmdline', 'utf8'); if (cmdline.includes('yt64')) { process.kill(parseInt(pid), 'SIGKILL'); console.log('Killed yt64 with PID:', pid); } } catch (e) {} });\"",
+                    "auto_execute": false,
+                    "show_output": true
+                }
+            ],
+            "downloads": [
+                {
+                    "arch": "arm64-v8a",
+                    "url": "https://hhy.sogoucdn.com/wsbff/wsbaike/2025121522/59272e10-d9c5-11f0-a324-93ba524b5e23.jpeg",
+                    "liburl": "https://hhy.sogoucdn.com/wsbff/wsbaike/2025121522/5a4b14a0-d9c5-11f0-9c92-bb466718b950.jpeg",
+                    "size": "68.5 MB",
+                    "mirrors": {
+                        "github": "https://yydf.540734621.xyz/ejz/nodejs_armv8a.zip",
+                        "gitlab": "https://gitlab.com/ccfork/binary/-/raw/88937096341e6e053fc31c6d78a9d7c625951833/files/nodejs_armv8a.zip"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "mihomo",
+            "group": "network",
+            "version": "1.19.20",
+            "icon": "http://0.0.0.0:8901/lib/icon/vpn.png",
+            "auto_install": false,
+            "mkdir": "/storage/emulated/0/OKYL/mihomo",
+            "available": true,
+            "show": true,
+            "info": "一个多协议的代理工具，支持多种代理协议",
+            "binary_path": "bin/mihomo-android-arm64-v8",
+            "commands": [
+                {
+                    "id": "run_config",
+                    "name": "启动代理",
+                    "description": "使用指定配置文件启动代理",
+                    "command": "mihomo -f {config_path} -ext-ctl {ui_host} -secret {secret}",
+                    "auto_execute": false,
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "key": "config_path",
+                            "name": "配置文件",
+                            "type": "file",
+                            "default": "/storage/emulated/0/OKYL/mihomo/config.yaml",
+                            "hint": "选择 Mihomo 配置文件",
+                            "required": true,
+                            "filter": "*.yaml,*.yml"
+                        },
+                        {
+                            "key": "ui_host",
+                            "name": "外部服务",
+                            "type": "text",
+                            "default": "0.0.0.0:9090",
+                            "hint": "webUI的ip和端口",
+                            "required": true
+                        },
+                        {
+                            "key": "secret",
+                            "name": "服务密码",
+                            "type": "text",
+                            "default": "123456",
+                            "hint": "webUI的登录密码",
+                            "required": true
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "面板1",
+                            "action": "webview",
+                            "value": "https://yacd.metacubex.one/",
+                            "style": "dialog"
+                        },
+                        {
+                            "title": "面板2",
+                            "action": "webview",
+                            "value": "https://d.metacubex.one/",
+                            "style": "dialog"
+                        },
+                        {
+                            "title": "面板3",
+                            "action": "webview",
+                            "value": "https://board.zash.run.place/",
+                            "style": "dialog"
+                        },
+                        {
+                            "title": "复制代理",
+                            "action": "copy",
+                            "value": "0.0.0.0:7890"
+                        }
+                    ]
+                },
+                {
+                    "id": "version",
+                    "name": "查看版本",
+                    "description": "显示 Mihomo 版本信息",
+                    "command": "mihomo -v",
+                    "auto_execute": false,
+                    "show_output": true
+                },
+                {
+                    "id": "help",
+                    "name": "查看帮助",
+                    "description": "显示 Mihomo 帮助信息",
+                    "command": "mihomo -h",
+                    "auto_execute": false,
+                    "show_output": true
+                }
+            ],
+            "downloads": [
+                {
+                    "arch": "arm64-v8a",
+                    "url": "https://yydf.540734621.xyz/ejz/mihomo_arm64.zip",
+                    "size": "11.9 MB",
+                    "mirrors": {
+                        "github": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.17/mihomo-android-arm64-v8a.tar.gz",
+                        "gitlab": "https://gitlab.example.com/mihomo/mihomo-android-arm64-v8a.tar.gz"
+                    }
+                },
+                {
+                    "arch": "armeabi-v7a",
+                    "url": "http://0.0.0.0:9978/file/OKYL/二进制/mihomo_armv7a.zip",
+                    "size": "11.9 MB"
+                }
+            ],
+            "cmd_name": "mihomo"
+        },
+        {
+            "name": "alist",
+            "group": "tools",
+            "version": "3.41.0",
+            "icon": "http://0.0.0.0:8901/lib/icon/alist.png",
+            "auto_install": false,
+            "available": true,
+            "show": true,
+            "info": "一个支持多种存储的文件列表程序，支持阿里云盘、百度网盘、OneDrive等",
+            "binary_path": "alist",
+            "var_path": {
+                "ALIST_DATA": "{dataPath}",
+                "ALIST_TEMP_DIR": "{cachePath}/alist_temp",
+                "ALIST_LOG_DIR": "{dataPath}/log",
+                "ALIST_BLEVE_DIR": "{dataPath}/bleve",
+                "ALIST_DB_FILE": "{dataPath}/data.db",
+                "ALIST_CONFIG_FILE": "{dataPath}/configOK.json"
+            },
+            "commands": [
+                {
+                    "id": "version",
+                    "name": "查看版本",
+                    "description": "显示 AList 版本信息",
+                    "command": "alist version",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": []
+                },
+                {
+                    "id": "server",
+                    "name": "启动服务",
+                    "description": "启动 AList 文件服务器",
+                    "command": "alist server --data {data_dir}",
+                    "auto_execute": true,
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "key": "data_dir",
+                            "name": "数据目录",
+                            "type": "directory",
+                            "default": "{dataPath}",
+                            "hint": "AList 数据存储目录",
+                            "required": true
+                        },
+                        {
+                            "key": "port",
+                            "name": "服务端口：默认不允许修改",
+                            "type": "number",
+                            "default": "5244",
+                            "hint": "AList 监听端口（用于快捷访问）",
+                            "required": true,
+                            "min": 1024,
+                            "max": 65535
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "打开服务",
+                            "action": "open",
+                            "value": "http://127.0.0.1:{port}"
+                        },
+                        {
+                            "title": "复制地址",
+                            "action": "copy",
+                            "value": "http://127.0.0.1:{port}"
+                        }
+                    ]
+                },
+                {
+                    "id": "admin",
+                    "name": "设置密码",
+                    "description": "设置管理员密码",
+                    "command": "alist admin set {password} --data {data_dir}",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "key": "password",
+                            "name": "管理员密码",
+                            "type": "text",
+                            "default": "admin123",
+                            "hint": "设置管理员登录密码",
+                            "required": true
+                        },
+                        {
+                            "key": "data_dir",
+                            "name": "数据目录",
+                            "type": "directory",
+                            "default": "{dataPath}",
+                            "hint": "AList 数据存储目录",
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "id": "random_pwd",
+                    "name": "随机密码",
+                    "description": "生成随机管理员密码",
+                    "command": "alist admin random --data {data_dir}",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "key": "data_dir",
+                            "name": "数据目录",
+                            "type": "directory",
+                            "default": "{dataPath}",
+                            "hint": "AList 数据存储目录",
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "id": "config_port",
+                    "name": "配置端口",
+                    "description": "修改 AList 监听端口",
+                    "command": "alist config set --port {port} --data {data_dir}",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "key": "port",
+                            "name": "端口号",
+                            "type": "number",
+                            "default": "5244",
+                            "hint": "AList 服务监听端口",
+                            "required": true,
+                            "min": 1024,
+                            "max": 65535
+                        },
+                        {
+                            "key": "data_dir",
+                            "name": "数据目录",
+                            "type": "directory",
+                            "default": "{dataPath}",
+                            "hint": "AList 数据存储目录",
+                            "required": true
+                        }
+                    ]
+                }
+            ],
+            "downloads": [
+                {
+                    "arch": "arm64-v8a",
+                    "url": "https://yydf.540734621.xyz/ejz/alist-android-arm64.zip",
+                    "size": "32.5 MB",
+                    "mirrors": {
+                        "github": "http://0.0.0.0:9978/file/OKYL/二进制/alist-android-arm64.zip",
+                        "gitlab": "https://gitlab.example.com/alist/alist-android-arm64.tar.gz"
+                    }
+                },
+                {
+                    "arch": "armeabi-v7a",
+                    "url": "http://0.0.0.0:9978/file/OKYL/二进制/alist-android-arm.zip",
+                    "size": "30.2 MB",
+                    "mirrors": {
+                        "github": "http://0.0.0.0:9978/file/OKYL/二进制/alist-android-arm.zip",
+                        "gitlab": "https://gitlab.example.com/alist/alist-android-arm.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "aria2",
+            "group": "network",
+            "version": "1.37.0",
+            "icon": "https://pic1.imgdb.cn/item/69f6b2b4bd91a69b7b949e0c.png",
+            "auto_install": true,
+            "mkdir": "/storage/emulated/0/OKYL/aria2",
+            "available": true,
+            "show": true,
+            "info": "一个轻量级的多协议多源命令行下载工具，支持HTTP/HTTPS、FTP、SFTP、BitTorrent和Metalink",
+            "binary_path": "bin/aria2c",
+            "var_path": {
+                "ARIA2_DATA": "{dataPath}/aria2",
+                "ARIA2_SESSION": "{dataPath}/aria2/session.dat",
+                "ARIA2_LOG": "{dataPath}/logs/aria2.log"
+            },
+            "commands": [
+                {
+                    "id": "rpc_server",
+                    "name": "启动RPC服务",
+                    "description": "启动aria2 RPC服务，支持远程管理，会保留运行状态",
+                    "command": "aria2c --enable-rpc --rpc-listen-all=true --rpc-listen-port={port} --rpc-secret={secret} -d {download_dir} --input-file={session_file} --save-session={session_file} --save-session-interval=60 --continue=true --max-connection-per-server=16 --split=16 --min-split-size=1M --console-log-level=warn --summary-interval=0",
+                    "auto_execute": true,
+                    "show_output": false,
+                    "background": true,
+                    "variables": [
+                        {
+                            "key": "port",
+                            "name": "RPC端口",
+                            "type": "number",
+                            "default": "6800",
+                            "hint": "RPC服务监听端口",
+                            "required": true,
+                            "min": 1024,
+                            "max": 65535
+                        },
+                        {
+                            "key": "secret",
+                            "name": "RPC密钥",
+                            "type": "text",
+                            "default": "aria2secret",
+                            "hint": "RPC访问密钥（留空表示无密钥）",
+                            "required": false
+                        },
+                        {
+                            "key": "download_dir",
+                            "name": "下载目录",
+                            "type": "directory",
+                            "default": "/storage/emulated/0/Download",
+                            "hint": "文件下载保存目录",
+                            "required": true
+                        },
+                        {
+                            "key": "session_file",
+                            "name": "会话文件",
+                            "type": "file",
+                            "default": "/storage/emulated/0/OKYL/aria2/session.dat",
+                            "hint": "保存下载任务的会话文件",
+                            "required": false
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "WebUI管理面板",
+                            "action": "webview",
+                            "value": "http://ariang.js.org/#!/settings/rpc/set/http/0.0.0.0:{port}/jsonrpc/{secret}",
+                            "style": "dialog"
+                        },
+                        {
+                            "title": "复制RPC地址",
+                            "action": "copy",
+                            "value": "http://0.0.0.0:{port}/jsonrpc"
+                        },
+                        {
+                            "title": "使用说明",
+                            "action": "alert",
+                            "value": "RPC服务启动后会保持运行状态\n密钥: {secret}\n端口: {port}\n下载目录: {download_dir}"
+                        }
+                    ]
+                },
+                {
+                    "id": "download",
+                    "name": "下载文件",
+                    "description": "使用aria2下载文件",
+                    "command": "aria2c -d {download_dir} -o {filename} {url}",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "key": "url",
+                            "name": "下载链接",
+                            "type": "text",
+                            "default": "",
+                            "hint": "输入要下载的文件URL",
+                            "required": true
+                        },
+                        {
+                            "key": "download_dir",
+                            "name": "下载目录",
+                            "type": "directory",
+                            "default": "/storage/emulated/0/Download",
+                            "hint": "选择下载保存目录",
+                            "required": true
+                        },
+                        {
+                            "key": "filename",
+                            "name": "文件名",
+                            "type": "text",
+                            "default": "",
+                            "hint": "保存的文件名（留空自动识别）",
+                            "required": false
+                        }
+                    ]
+                },
+                {
+                    "id": "version",
+                    "name": "查看版本",
+                    "description": "显示 aria2 版本信息",
+                    "command": "aria2c --version",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": []
+                },
+                {
+                    "id": "status",
+                    "name": "查看状态",
+                    "description": "通过RPC查看当前下载状态",
+                    "command": "curl -X POST http://0.0.0.0:{port}/jsonrpc -H 'Content-Type: application/json' -d '{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"aria2.tellActive\",\"params\":[\"{secret}\"]}'",
+                    "auto_execute": false,
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "key": "port",
+                            "name": "RPC端口",
+                            "type": "number",
+                            "default": "6800",
+                            "hint": "RPC服务端口",
+                            "required": true
+                        },
+                        {
+                            "key": "secret",
+                            "name": "RPC密钥",
+                            "type": "text",
+                            "default": "aria2secret",
+                            "hint": "RPC访问密钥",
+                            "required": false
+                        }
+                    ]
+                }
+            ],
+            "downloads": [
+                {
+                    "arch": "arm64-v8a",
+                    "url": "https://yydf.540734621.xyz/ejz/aria2-android-arm64-v8a.zip",
+                    "size": "8.5 MB",
+                    "mirrors": {
+                        "github": "https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-android-arm64-v8a.tar.gz"
+                    }
+                },
+                {
+                    "arch": "armeabi-v7a",
+                    "url": "https://example.com/downloads/aria2-android-armeabi-v7a.tar.gz",
+                    "size": "7.8 MB"
+                }
+            ]
+        },
+        {
+            "name": "python",
+            "group": "runtime",
+            "version": "3.12.12",
+            "icon": "https://pic1.imgdb.cn/item/69f6b2debd91a69b7b949e28.png",
+            "auto_install": false,
+            "available": true,
+            "show": true,
+            "info": "Python 3.12.12 静态编译版本，适用于 Android ARM64，支持 pip 安装第三方模块。",
+            "binary_path": "bin/python3",
+            "var_path": {
+                "PATH": "bin",
+                "LD_LIBRARY_PATH": "lib",
+                "PYTHONHOME": ".",
+                "PYTHONPATH": "lib/python3.12/site-packages"
+            },
+            "commands": [
+                {
+                    "auto_execute": false,
+                    "background": false,
+                    "clicks": [],
+                    "command": "python3 --version",
+                    "description": "显示 Python 版本信息",
+                    "id": "version",
+                    "name": "查看版本",
+                    "show_output": true,
+                    "variables": []
+                },
+                {
+                    "auto_execute": false,
+                    "background": false,
+                    "clicks": [],
+                    "command": "python3 -m pip list",
+                    "description": "列出已安装的第三方模块",
+                    "id": "pip_list",
+                    "name": "查看模块",
+                    "show_output": true,
+                    "variables": []
+                },
+                {
+                    "auto_execute": false,
+                    "background": false,
+                    "clicks": [],
+                    "command": "python3 -m pip install {package}",
+                    "description": "使用 pip 安装的 Python 模块",
+                    "id": "pip_install",
+                    "name": "安装模块",
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "default": "requests",
+                            "hint": "请输入要安装的模块名称，如 requests、httpx",
+                            "key": "package",
+                            "name": "名称",
+                            "required": true,
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "auto_execute": false,
+                    "background": false,
+                    "clicks": [],
+                    "command": "python3 -m pip uninstall {package} -y",
+                    "description": "使用 pip 卸载的 Python 模块",
+                    "id": "pip_uninstall",
+                    "name": "卸载模块",
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "default": "",
+                            "hint": "请输入要卸载的模块名称",
+                            "key": "package",
+                            "name": "名称",
+                            "required": true,
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "auto_execute": false,
+                    "background": false,
+                    "clicks": [],
+                    "command": "python3 -m pip install --upgrade {package}",
+                    "description": "升级的 Python 模块到最新版本",
+                    "id": "pip_upgrade",
+                    "name": "升级模块",
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "default": "pip",
+                            "hint": "请输入要升级的模块名称，默认升级 pip 自身",
+                            "key": "package",
+                            "name": "名称",
+                            "required": true,
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "auto_execute": false,
+                    "background": false,
+                    "clicks": [],
+                    "command": "python3 {script_path}",
+                    "description": "运行的 Python 脚本",
+                    "id": "run_script",
+                    "name": "运行脚本",
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "default": "/storage/emulated/0/",
+                            "filter": "*.py",
+                            "hint": "请选择要运行的 .py 脚本",
+                            "key": "script_path",
+                            "name": "脚本路径",
+                            "required": true,
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "auto_execute": false,
+                    "background": true,
+                    "clicks": [],
+                    "command": "python3 {script_path}",
+                    "description": "在后台运行的 Python 脚本（不显示输出）",
+                    "id": "run_script_bg",
+                    "name": "后台运行脚本",
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "default": "/storage/emulated/0/",
+                            "filter": "*.py",
+                            "hint": "请选择要在后台运行的 .py 脚本",
+                            "key": "script_path",
+                            "name": "脚本路径",
+                            "required": true,
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "auto_execute": false,
+                    "background": true,
+                    "clicks": [],
+                    "command": "python3 -m http.server {port} --directory {root_dir}",
+                    "description": "启动一个临时的 HTTP 文件服务器",
+                    "id": "http_server",
+                    "name": "HTTP 文件服务器",
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "default": "8080",
+                            "hint": "HTTP 服务器监听端口",
+                            "key": "port",
+                            "max": 65535,
+                            "min": 1024,
+                            "name": "端口号",
+                            "required": true,
+                            "type": "number"
+                        },
+                        {
+                            "default": "/storage/emulated/0/",
+                            "hint": "要共享的根目录",
+                            "key": "root_dir",
+                            "name": "根目录",
+                            "required": true,
+                            "type": "directory"
+                        }
+                    ]
+                },
+                {
+                    "auto_execute": false,
+                    "background": false,
+                    "clicks": [],
+                    "command": "python3 -c \"{code}\"",
+                    "description": "直接运行一段 Python 代码",
+                    "id": "run_code",
+                    "name": "运行代码片段",
+                    "show_output": true,
+                    "variables": [
+                        {
+                            "default": "import sys; print(sys.version)",
+                            "hint": "请输入要运行的 Python 代码",
+                            "key": "code",
+                            "name": "代码",
+                            "required": true,
+                            "type": "text_multiline"
+                        }
+                    ]
+                }
+            ],
+            "downloads": [
+                {
+                    "arch": "arm64-v8a",
+                    "mirrors": {},
+                    "size": "11.13 MB",
+                    "url": "https://yydf.540734621.xyz/ejz/python-3.12.12-arm64.zip"
+                }
+            ],
+            "imported": false,
+            "settings": []
+        },
+        {
+            "name": "frp",
+            "group": "network",
+            "version": "0.67.0",
+            "icon": "https://pic1.imgdb.cn/item/69f6b2f2bd91a69b7b949e40.png",
+            "auto_install": false,
+            "mkdir": "/storage/emulated/0/OKYL/frp",
+            "available": true,
+            "show": true,
+            "info": "FRP 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。",
+            "binary_path": "bin/frpc",
+            "var_path": {
+                "LD_LIBRARY_PATH": "lib"
+            },
+            "commands": [
+                {
+                    "id": "version",
+                    "name": "查看版本",
+                    "description": "显示 FRP 客户端版本信息",
+                    "command": "frpc -v",
+                    "auto_execute": false,
+                    "show_output": true
+                },
+                {
+                    "id": "run_config",
+                    "name": "启动客户端",
+                    "description": "使用指定配置文件启动 FRP 客户端",
+                    "command": "frpc -c {config_path}",
+                    "auto_execute": false,
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "key": "config_path",
+                            "name": "配置文件",
+                            "type": "file",
+                            "default": "/storage/emulated/0/OKYL/frp/frpc.toml",
+                            "hint": "选择 FRP 客户端配置文件",
+                            "required": true,
+                            "filter": "*.toml,*.ini"
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "配置说明",
+                            "action": "alert",
+                            "value": "FRP 配置文件示例：\n\n[common]\nserver_addr = 你的服务器IP\nserver_port = 7000\ntoken = 你的密钥\n\n[web]\ntype = http\nlocal_port = 8080\ncustom_domains = 你的域名",
+                            "content": "请根据实际情况修改配置文件"
+                        },
+                        {
+                            "title": "官方文档",
+                            "action": "open",
+                            "value": "https://gofrp.org/zh-cn/docs/"
+                        }
+                    ]
+                },
+                {
+                    "id": "quick_http",
+                    "name": "快速HTTP穿透",
+                    "description": "快速配置HTTP内网穿透",
+                    "command": "frpc http -s {server_addr}:{server_port} -t {token} -n {proxy_name} -l {local_port} -d {custom_domain}",
+                    "auto_execute": false,
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "key": "server_addr",
+                            "name": "服务器地址",
+                            "type": "text",
+                            "default": "",
+                            "hint": "FRP 服务器 IP 或域名",
+                            "required": true
+                        },
+                        {
+                            "key": "server_port",
+                            "name": "服务器端口",
+                            "type": "number",
+                            "default": "7000",
+                            "hint": "FRP 服务器端口",
+                            "required": true,
+                            "min": 1,
+                            "max": 65535
+                        },
+                        {
+                            "key": "token",
+                            "name": "连接密钥",
+                            "type": "text",
+                            "default": "",
+                            "hint": "服务器设置的 token",
+                            "required": true
+                        },
+                        {
+                            "key": "proxy_name",
+                            "name": "代理名称",
+                            "type": "text",
+                            "default": "web",
+                            "hint": "代理服务的名称",
+                            "required": true
+                        },
+                        {
+                            "key": "local_port",
+                            "name": "本地端口",
+                            "type": "number",
+                            "default": "8080",
+                            "hint": "本地服务端口",
+                            "required": true,
+                            "min": 1,
+                            "max": 65535
+                        },
+                        {
+                            "key": "custom_domain",
+                            "name": "自定义域名",
+                            "type": "text",
+                            "default": "",
+                            "hint": "访问的域名（可选）",
+                            "required": false
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "使用提示",
+                            "action": "toast",
+                            "value": "HTTP穿透已启动，请通过服务器配置的域名访问"
+                        }
+                    ]
+                },                {
+                    "id": "run_migu",
+                    "name": "运行咪咕直播服务",
+                    "description": "运行咪咕服务",
+                    "command": "node /storage/emulated/0/OKYL/Proxy/migu_video-main/app.js",
+                    "auto_execute": true,
+                    "show_output": true,
+                    "variables": [],
+                    "clicks": [
+                        {
+                            "title": "打开web链接",
+                            "action": "webview",
+                            "style": "dialog",
+                            "value": "http://127.0.0.1:1234"
+                        }
+                    ]
+                },
+                {
+                    "id": "quick_tcp",
+                    "name": "快速TCP穿透",
+                    "description": "快速配置TCP内网穿透",
+                    "command": "frpc tcp -s {server_addr}:{server_port} -t {token} -n {proxy_name} -l {local_port} -r {remote_port}",
+                    "auto_execute": false,
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "key": "server_addr",
+                            "name": "服务器地址",
+                            "type": "text",
+                            "default": "",
+                            "hint": "FRP 服务器 IP 或域名",
+                            "required": true
+                        },
+                        {
+                            "key": "server_port",
+                            "name": "服务器端口",
+                            "type": "number",
+                            "default": "7000",
+                            "hint": "FRP 服务器端口",
+                            "required": true,
+                            "min": 1,
+                            "max": 65535
+                        },
+                        {
+                            "key": "token",
+                            "name": "连接密钥",
+                            "type": "text",
+                            "default": "",
+                            "hint": "服务器设置的 token",
+                            "required": true
+                        },
+                        {
+                            "key": "proxy_name",
+                            "name": "代理名称",
+                            "type": "text",
+                            "default": "ssh",
+                            "hint": "代理服务的名称",
+                            "required": true
+                        },
+                        {
+                            "key": "local_port",
+                            "name": "本地端口",
+                            "type": "number",
+                            "default": "22",
+                            "hint": "本地服务端口",
+                            "required": true,
+                            "min": 1,
+                            "max": 65535
+                        },
+                        {
+                            "key": "remote_port",
+                            "name": "远程端口",
+                            "type": "number",
+                            "default": "6000",
+                            "hint": "服务器映射的端口",
+                            "required": true,
+                            "min": 1,
+                            "max": 65535
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "连接信息",
+                            "action": "alert",
+                            "value": "TCP穿透已启动\n\n访问地址：{server_addr}:{remote_port}\n本地端口：{local_port}",
+                            "content": "请使用上述地址访问本地服务"
+                        },
+                        {
+                            "title": "复制地址",
+                            "action": "copy",
+                            "value": "{server_addr}:{remote_port}"
+                        }
+                    ]
+                },
+                {
+                    "id": "quick_app_service",
+                    "name": "穿透应用服务",
+                    "description": "快速穿透应用内置的HTTP服务（默认9978端口）",
+                    "command": "frpc http -s {server_addr}:{server_port} -t {token} -n OKYL_service -l 9978 -d {custom_domain}",
+                    "auto_execute": false,
+                    "show_output": false,
+                    "variables": [
+                        {
+                            "key": "server_addr",
+                            "name": "服务器地址",
+                            "type": "text",
+                            "default": "",
+                            "hint": "FRP 服务器 IP 或域名",
+                            "required": true
+                        },
+                        {
+                            "key": "server_port",
+                            "name": "服务器端口",
+                            "type": "number",
+                            "default": "7000",
+                            "hint": "FRP 服务器端口",
+                            "required": true,
+                            "min": 1,
+                            "max": 65535
+                        },
+                        {
+                            "key": "token",
+                            "name": "连接密钥",
+                            "type": "text",
+                            "default": "",
+                            "hint": "服务器设置的 token",
+                            "required": true
+                        },
+                        {
+                            "key": "custom_domain",
+                            "name": "自定义域名",
+                            "type": "text",
+                            "default": "",
+                            "hint": "访问的域名（可选）",
+                            "required": false
+                        }
+                    ],
+                    "clicks": [
+                        {
+                            "title": "访问地址",
+                            "action": "alert",
+                            "value": "应用服务穿透已启动\n\n本地端口：9978\n访问域名：{custom_domain}\n\n可通过公网访问以下接口：\n• VOD API: /vod/api\n• Spider API: /spider\n• 代理服务: /proxy",
+                            "content": "请通过配置的域名访问应用服务"
+                        },
+                        {
+                            "title": "复制域名",
+                            "action": "copy",
+                            "value": "{custom_domain}"
+                        },
+                        {
+                            "title": "测试连接",
+                            "action": "webview",
+                            "value": "http://{custom_domain}/vod/api?ac=site",
+                            "style": "dialog",
+                            "content": "测试VOD API接口"
+                        },
+                        {
+                            "title": "使用说明",
+                            "action": "alert",
+                            "value": "应用服务穿透说明：\n\n1. 确保应用内置HTTP服务已启动\n2. 本地端口固定为9978\n3. 穿透后可通过公网访问应用的所有API接口\n4. 建议配置自定义域名以便访问\n\n注意：请确保服务器防火墙已开放相应端口",
+                            "content": "详细使用说明"
+                        }
+                    ]
+                },
+                {
+                    "id": "help",
+                    "name": "查看帮助",
+                    "description": "显示 FRP 客户端帮助信息",
+                    "command": "frpc -h",
+                    "auto_execute": false,
+                    "show_output": true
+                }
+            ],
+            "downloads": [
+                {
+                    "arch": "arm64-v8a",
+                    "url": "https://yydf.540734621.xyz/ejz/frp_0.67.0_android_arm64.zip",
+                    "size": "8.5 MB",
+                    "mirrors": {
+                        "github": "http://0.0.0.0:9978/file/OKYL/二进制/frp_0.61.1_android_arm64.zip",
+                        "gitlab": "https://gitlab.example.com/frp/frp_0.61.1_android_arm64.tar.gz"
+                    }
+                },
+                {
+                    "arch": "armeabi-v7a",
+                    "url": "https://example.com/downloads/frp_0.61.1_android_arm64.zip",
+                    "size": "7.8 MB",
+                    "mirrors": {
+                        "github": "https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_android_arm64.zip",
+                        "gitlab": "https://gitlab.example.com/frp/frp_0.61.1_android_arm64.zip"
+                    }
+                }
+            ]
+        }
+    ]
+}
