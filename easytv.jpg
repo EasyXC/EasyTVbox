@@ -13,7 +13,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置中心 | 07-31-2",
+            "name": "配置中心 | 07-31",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
@@ -885,6 +885,12 @@
             "name": "瓜子 | 影视",
             "type": 3,
             "api": "csp_Gz360"
+        },
+        {
+            "key": "山楂影视",
+            "name": "山楂 | 影视",
+            "type": 3,
+            "api": "csp_PianKu8"
         },
         {
             "key": "飞娱影视",
