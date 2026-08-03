@@ -25,14 +25,6 @@
             }
         },
         {
-            "key": "csp_BinMarket",
-            "name": "环境市场┃[环境与切包]",
-            "api": "csp_BinMarket",
-            "jar": "./bin/yt.jar",
-            "type": "3",
-            "ext": "./bin/lab.json"
-        },
-        {
             "key": "本地",
             "name": "本地 | 视频",
             "type": 3,
