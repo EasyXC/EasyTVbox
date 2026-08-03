@@ -1,5 +1,5 @@
 {
-    "spider": "./spider.jar",
+    "spider": "./easy.jar",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "http://127.0.0.1:9978/file/TVBox/logo.png",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
@@ -13,7 +13,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置中心 | 08-03",
+            "name": "配置中心 | 08-03-1",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
