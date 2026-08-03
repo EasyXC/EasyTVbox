@@ -1,7 +1,8 @@
 {
     "spider": "./jar/easy.jar",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
-    "logo": "http://127.0.0.1:9978/file/TVBox/logo.png",
+    "logo": "    "./logo.gif",
+    "warningText": "Easy提醒：所有资源来于网络，仅作学习交流测试使用！",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
     "sites": [
         {
@@ -13,7 +14,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置中心 | 08-03-1",
+            "name": "配置中心 | 08-03-2",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
