@@ -13,7 +13,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置中心 | 08-03-2",
+            "name": "配置中心 | 08-03-3",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
@@ -1705,7 +1705,14 @@
         }
     ],
     "lives": [
-        {}
+        {
+            "name": "EasyTV",
+            "type": 0,
+            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/api/tv.png",
+            "timeout": 10,
+            "changeable": 1,
+            "playerType": 2
+        }
     ],
     "parses": [
         {
