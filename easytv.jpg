@@ -2,7 +2,6 @@
     "spider": "./jar/easy.jar",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "./logo.gif",
-    "warningText": "Easy提醒：所有资源来于网络，仅作学习交流测试使用！",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
     "sites": [
         {
