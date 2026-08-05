@@ -8,14 +8,14 @@
 
 """
 
-from Crypto.Util.Padding import unpad
-from Crypto.Util.Padding import pad
+from Cryptodome.Util.Padding import unpad
+from Cryptodome.Util.Padding import pad
 from urllib.parse import urlparse
 from urllib.parse import unquote
-from Crypto.Cipher import ARC4
+from Cryptodome.Cipher import ARC4
 from urllib.parse import quote
 from base.spider import Spider
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 from datetime import datetime
 from bs4 import BeautifulSoup
 from base64 import b64decode
@@ -304,7 +304,7 @@ class Spider(Spider):
         return target_key_b64
 
     def fetch_index_page(self, xurl, headerx):
-        resp = requests.get(xurl, headers=headerx)
+        resp = requests.get(xurl, headers=headerx, timeout=10)
         resp.raise_for_status()
         return resp
 
@@ -314,7 +314,7 @@ class Spider(Spider):
         return match.group(1)
 
     def fetch_js_content(self, js_url, headerx):
-        js_resp = requests.get(js_url, headers=headerx)
+        js_resp = requests.get(js_url, headers=headerx, timeout=10)
         js_resp.raise_for_status()
         return js_resp.text
 
@@ -368,7 +368,7 @@ class Spider(Spider):
         return {'functionName': 'getNewsSearchedByCondition','nodeId': cid,'nodeTag': LxType,'yearTag': NdType,'countryTag': DqType,'orderType': '0','pageSize': '40','page': page,'keyword': '','siteId': '1000101',}
 
     def fetch_category_data(self, params, headers):
-        detail = requests.get('https://ups.5g.wasu.tv/rmp-user-suggest/1000101/hzhs/searchServlet', params=params,headers=headers)
+        detail = requests.get('https://ups.5g.wasu.tv/rmp-user-suggest/1000101/hzhs/searchServlet', params=params, headers=headers, timeout=10)
         detail.encoding = "utf-8"
         return detail.json()
 
@@ -411,7 +411,7 @@ class Spider(Spider):
         return {'siteId': '1000101', 'functionName': 'getCurrentNews', 'nodeId': fenge[0], 'newsId': fenge[1],'platform': 'web',}
 
     def fetch_detail_data(self, params, headers):
-        detail = requests.get('https://mcspapp.5g.wasu.tv/bvradio_app/hzhs/newsServlet', params=params, headers=headers)
+        detail = requests.get('https://mcspapp.5g.wasu.tv/bvradio_app/hzhs/newsServlet', params=params, headers=headers, timeout=10)
         detail.encoding = "utf-8"
         return detail.json()
 
@@ -480,7 +480,7 @@ class Spider(Spider):
         return {'playUrl': playUrl, 'platform': 'web', }
 
     def post_play_url_request(self, headers, json_data):
-        response = requests.post('https://mcspapp.5g.wasu.tv/thirdApiFile/file/getPlayUrl', headers=headers, json=json_data)
+        response = requests.post('https://mcspapp.5g.wasu.tv/thirdApiFile/file/getPlayUrl', headers=headers, json=json_data, timeout=10)
         return response.json()
 
     def build_player_result(self, play_url):
@@ -508,7 +508,7 @@ class Spider(Spider):
         return {'functionName': 'getNewsSearched', 'searchNewsType': '3,4,5', 'keyword': key, 'pageSize': 10, 'page': page, 'siteId': 1000101}
 
     def fetch_search_data(self, params, headers):
-        detail = requests.get("https://ups.5g.wasu.tv/rmp-user-suggest/1000101/hzhs/searchServlet", params=params, headers=headers)
+        detail = requests.get("https://ups.5g.wasu.tv/rmp-user-suggest/1000101/hzhs/searchServlet", params=params, headers=headers, timeout=10)
         detail.encoding = "utf-8"
         return detail.json()
 
