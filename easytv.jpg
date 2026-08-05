@@ -1675,28 +1675,19 @@
                 "type": "rect",
                 "ratio": 1.597
             }
-        },
-        {
-            "key": "版本信息",
-            "name": "版本 | 信息",
-            "type": 3,
-            "api": "csp_Market",
-            "searchable": 0,
-            "changeable": 0,
-            "indexs": 0,
-            "ext": "https://oss-v1.wangmeipo.cn/236/single.json"
-        },
-        {
-            "key": "push_agent",
-            "name": "手机 | 推送",
-            "type": 3,
-            "api": "csp_Push",
-            "searchable": 0,
-            "filterable": 0,
-            "changeable": 0
         }
     ],
     "lives": [
+        {
+            "name": "migu",
+            "type": 0,
+            "url": "https://develop202.github.io/migu_video/interface.txt",
+            "playerType": 1,
+            "ua": "okhttp/3.8.1",
+            "timeout": 20,
+            "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}",
+            "logo": "https://logo.wyfc.qzz.io/{name}.png"
+        },
         {
             "name": "EasyTV",
             "type": 0,
