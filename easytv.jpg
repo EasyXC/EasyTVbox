@@ -13,7 +13,7 @@
         },
         {
             "key": "配置中心",
-            "name": "配置中心 | 08-03",
+            "name": "配置中心 | 08-05",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
@@ -23,14 +23,6 @@
                 "type": "rect",
                 "ratio": 1.597
             }
-        },
-        {
-            "key": "csp_BinMarket",
-            "name": "环境市场┃[环境与切包]",
-            "api": "csp_BinMarket",
-            "jar": "./bin/yt.jar",
-            "type": "3",
-            "ext": "./bin/lab.json"
         },
         {
             "key": "本地",
