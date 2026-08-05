@@ -558,7 +558,7 @@
         },
         {
             "key": "一起影视",
-            "name": "一起 • APP",
+            "name": "一起 | APP",
             "type": 3,
             "api": "csp_AppYQK",
             "searchable": 1,
