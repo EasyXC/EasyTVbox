@@ -1679,6 +1679,15 @@
     ],
     "lives": [
         {
+        {
+            "name": "EasyTV",
+            "type": 0,
+            "url": "https://gh-proxy.org/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/api/tv.png",
+            "timeout": 10,
+            "changeable": 1,
+            "playerType": 2
+        },
+        {
             "name": "migu",
             "type": 0,
             "url": "https://develop202.github.io/migu_video/interface.txt",
@@ -1687,14 +1696,6 @@
             "timeout": 20,
             "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}",
             "logo": "https://logo.wyfc.qzz.io/{name}.png"
-        },
-        {
-            "name": "EasyTV",
-            "type": 0,
-            "url": "https://gh-proxy.org/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/api/tv.png",
-            "timeout": 10,
-            "changeable": 1,
-            "playerType": 2
         }
     ],
     "parses": [
