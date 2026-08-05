@@ -1679,7 +1679,6 @@
     ],
     "lives": [
         {
-        {
             "name": "EasyTV",
             "type": 0,
             "url": "https://gh-proxy.org/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/api/tv.png",
