@@ -370,16 +370,6 @@
             "filterable": 1
         },
         {
-            "key": "huaisang",
-            "name": "怀桑 | 免扫4K",
-            "type": 3,
-            "api": "csp_AppQi",
-            "jar": "https://tc-new.z.wiki/autoupload/k2fxc/20260802/826v/fish08022249.jar",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": "AdYEovlEKsDy77+R58YGahWCxrDZyBxExcQNC2NSeH0n1b5mu6tvh8b4Eh0RCpoPF6eivKdrR1Hsb8X4sSVBS8zF6jkwLW+wze9yh+hSY5iimm4gM9mAtmt0obTi+6Iox/Jp4GCsN4MQyFebMK162SKnILklpXc1UMiJv9gnPOe5aOPUxCftL+x7/UGhBdFYWIegpiHvKeavUtCUkhxtDyC8KqVVPPW0StI5GdmUA3WBbnnrNiKqNc5GBmrffd6pDN+Cf9IIjzNNvos/5KXJmBbe/baAzTLkoafeIoDhO451"
-        },
-        {
             "key": "枫眠",
             "name": "枫眠 | 免扫4K",
             "type": 3,
@@ -744,6 +734,36 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://qpcj.69mini.com/api.php/app/"
+        },
+        {
+            "key": "爱影",
+            "name": "爱影 | APP",
+            "type": 3,
+            "api": "csp_AppQi",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": "https://aysappto.oss-cn-chengdu.aliyuncs.com/q26.txt",
+                "dataKey": "0UKM8jkasM8tdzgW",
+                "dataIv": "0UKM8jkasM8tdzgW",
+                "init": "initV122",
+                "ua": "okhttp/3.10.0"
+            }
+        },
+        {
+            "key": "怀桑",
+            "name": "怀桑 | APP",
+            "type": 3,
+            "api": "csp_AppQi",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": "https://daen-1256234123.cos.ap-shanghai.myqcloud.com/MuQi/mqxhqj.txt",
+                "dataKey": "kj37zs29q22jk96t",
+                "dataIv": "kj37zs29q22jk96t",
+                "init": "initV122",
+                "ua": "okhttp/3.10.0"
+            }
         },
         {
             "key": "蓝鹰",
