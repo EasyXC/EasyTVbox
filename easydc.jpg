@@ -2,12 +2,8 @@
 	"urls": [
 
 		{
-			"name": "EasyTV永久线路-org加速",
+			"name": "EasyTV永久线路-org加速（也可自行替换加速节点）",
 			"url": "https://gh-proxy.org/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg"
-		},
-		{
-			"name": "EasyTV永久线路-net加速",
-			"url": "https://ghproxy.net/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg"
 		},
 		{
 			"name": "防失联官网：easy321.top/jk，此处无接口，2026-7-29更新",
