@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 08-06",
+            "name": "本地视频 | 08-10",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -906,21 +906,12 @@
             "name": "七猫 | 短剧",
             "type": 3,
             "api": "csp_QimaoDJ",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
             "genre": "shortdrama"
         },
         {
             "key": "河马短剧",
             "name": "河马 | 短剧",
             "type": 3,
-            "api": "csp_HemaDJ",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
             "genre": "shortdrama"
         },
         {
@@ -928,10 +919,6 @@
             "name": "围观 | 短剧",
             "type": 3,
             "api": "csp_WeiguanDJ",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
             "genre": "shortdrama"
         },
         {
@@ -939,21 +926,13 @@
             "name": "好看 | 短剧",
             "type": 3,
             "api": "csp_HaokanDJ",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
             "genre": "shortdrama"
         },
         {
             "key": "星芽短剧",
             "name": "星芽 | 短剧",
             "type": 3,
-            "api": "./py/星芽短剧.py",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
+            "api": "csp_XingyaDJ",
             "genre": "shortdrama"
         },
         {
