@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 08-10",
+            "name": "本地视频 | 08-11",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -349,51 +349,6 @@
             "timeout": 60
         },
         {
-            "key": "PianKu8",
-            "name": "片库 | 免扫4K",
-            "type": 3,
-            "api": "csp_PianKu8",
-            "jar": "https://tc-new.z.wiki/autoupload/k2fxc/20260802/826v/fish08022249.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "http://qkys.qukanwh.com"
-        },
-        {
-            "key": "BuBu",
-            "name": "布布 | 免扫4K",
-            "type": 3,
-            "api": "csp_BuBu",
-            "jar": "https://tc-new.z.wiki/autoupload/k2fxc/20260802/826v/fish08022249.jar",
-            "searchable": 1,
-            "changeable": 1,
-            "filterable": 1
-        },
-        {
-            "key": "枫眠",
-            "name": "枫眠 | 免扫4K",
-            "type": 3,
-            "api": "csp_App88",
-            "jar": "https://tc-new.z.wiki/autoupload/k2fxc/20260802/826v/fish08022249.jar",
-            "ext": "AdzbT8Ti+fGJ2PrJDEahdT7+zU3sFruyF0fAaUTWAUOCrbG/s0KhC5zQusyXAkmDYai/yhecQAtwKkDfTqbVCQT15T0FDK1GX9GLxT9V3XyFRDT0ATcwcFfw5joxSB+YLlez1nGpT2AW5KomI3yNv3ORTd4B3NqAcM34Cioc6+xwfj3HJ4JO6kQvv4solNApeP7CqF/Ecpt1BCgvvPzswMOr+kgVG/Iu8btrVQFO+pRpY7cfpc/Y59ZqaJlrCTDNLxgwuG20RZ9gVWsW+vd3A9lRgeTiJ39vJPoK46+9LnYGWU9dlDR1qRg4y5ILVQjEnT4el2cKSZexf7nrXHVfF3nOmHH/w/R/OSGllwUB7FCHDMc7eDY7haDYHWAQpEmcn4+BfbC4cipsdZ+nVieVVuuaWSF9s+0xYPWdSYLJMxApplTYkO+/h5z9atdURJUMGQ=="
-        },
-        {
-            "key": "悯善",
-            "name": "悯善 | 免扫4K",
-            "type": 3,
-            "api": "csp_App88",
-            "jar": "https://tc-new.z.wiki/autoupload/k2fxc/20260802/826v/fish08022249.jar",
-            "ext": "AY/LmvuAAyhXffcGv5StyHm1MkGdY4inQLRC3KICnxUJBpq0d5dLhvE0+MW8XruH+M/Q/Ruqd6NayN9rihHGuotzXSTrDHgoZ2/dm2JlJ7GYOYfBorPhMPjuOhTNMg9w/J6oP4DXluvDpXNj9uOKq7g/Cx7vrKF6utOSaE1gUgDQwT251mOGTzGsd3ZrtEeepgI6hOdB2gJ4hHRumNhlbVtWDdpnVMYvhCIuH2HUqJFZWM5T+gEZTMLfeUEJt7ScfaQp90qNZID1YNo/tQOaFLGN12o4CkPtCNoYs+emjhVVqIjJzgfplCPIEyjRADqhur0c48FwCiJyp/XGZFmsMJaPKqvOkO+0H5YMKsR+EMmXCr6n0n1VnwGGpYl3maiq1SB78yDnh16291IjwXdERP1csTe41Vg3ppIixtk6q1etAikUle+6fjSFGvAvDYNr2Q=="
-        },
-        {
-            "key": "长泽",
-            "name": "长泽 | 免扫4K",
-            "type": 3,
-            "api": "csp_App88",
-            "jar": "https://tc-new.z.wiki/autoupload/k2fxc/20260802/826v/fish08022249.jar",
-            "ext": "Aa+WBBIIxghmbVYkWqlC4wrZvlocl4rSZS9+QyJDF6RgWFfYSb+nEM6WkMHPVbQFva551Srt16FqFroyjNssEXemH+xC5pCMj/ewgFuLEIbY2mXCVJ1bJxWRJAggNgH1f3mjwrBxlZA0kGgfAd0os29Mdi3RNJilSo5VMkPpcQPMeF8/PTbZHNymotiTwtICNcA5Q0WXsqe/wJ3HoLU4gBYQs1lBmYdxtAuvsnte3SbumQEFlaQnygFscx6EGrwKMFZLVcmu9egAXxygsf5PmyzN/xvOr+b+HslccoKqDbHNU/C6yWFwaHBawww0ckXRtoJ8fFbV7Xv4NiRcEf6ePm/cd06xYiZmjRts11gE0r8f7D0vx/TgigmU3v8nrgNYDokUGl/jDdza3o7BXyQumCWRD45wYbmKJ1LKb0ybRvNt"
-        },
-        {
             "key": "腾讯视频",
             "name": "📺️腾讯 | 官方",
             "type": 3,
@@ -706,36 +661,6 @@
             }
         },
         {
-            "key": "薯条",
-            "name": "薯条 | APP",
-            "type": 3,
-            "api": "csp_AppDrama",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "appName": "薯条影视",
-                "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
-                "dataKey": "A1VACZJWDKRZY1P3MFV0DDRAZ3F3PT0=",
-                "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-                "pkg": "com.st.standroid",
-                "host": "",
-                "site": "https://dyttandroid-1372779881.cos.ap-guangzhou.myqcloud.com/app_dyttandroid.txt",
-                "version": "5.0.0.1",
-                "decrypt": "0"
-            }
-        },
-        {
-            "key": "飞飞",
-            "name": "飞飞 | APP",
-            "type": 3,
-            "api": "csp_AppYsV2",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://qpcj.69mini.com/api.php/app/"
-        },
-        {
             "key": "爱影",
             "name": "爱影 | APP",
             "type": 3,
@@ -874,70 +799,43 @@
             "api": "csp_SP360"
         },
         {
-            "key": "DJHub",
-            "name": "短剧 | 聚合",
-            "type": 3,
-            "api": "csp_DJHub",
-            "jar": "https://tc-new.z.wiki/autoupload/k2fxc/20260802/826v/fish08022249.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "genre": "shortdrama",
-            "filterable": 1,
-            "changeable": 1
-        },
-        {
-            "key": "HonHon",
-            "name": "红果果 | 短剧",
-            "type": 3,
-            "api": "csp_HonHon",
-            "jar": "https://tc-new.z.wiki/autoupload/k2fxc/20260802/826v/fish08022249.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "genre": "shortdrama",
-            "filterable": 1,
-            "ext": {
-                "host": "https://short.fishcloud.top",
-                "quality": "1080p",
-                "danmu": false
-            }
-        },
-        {
             "key": "七猫短剧",
-            "name": "七猫 | 短剧",
+            "name": "七猫 • 短剧",
             "type": 3,
             "api": "csp_QimaoDJ",
             "genre": "shortdrama"
         },
         {
             "key": "河马短剧",
-            "name": "河马 | 短剧",
+            "name": "河马 • 短剧",
             "type": 3,
+            "api": "csp_HemaDJ",
             "genre": "shortdrama"
         },
         {
             "key": "围观短剧",
-            "name": "围观 | 短剧",
+            "name": "围观 • 短剧",
             "type": 3,
             "api": "csp_WeiguanDJ",
             "genre": "shortdrama"
         },
         {
             "key": "好看短剧",
-            "name": "好看 | 短剧",
+            "name": "好看 • 短剧",
             "type": 3,
             "api": "csp_HaokanDJ",
             "genre": "shortdrama"
         },
         {
             "key": "星芽短剧",
-            "name": "星芽 | 短剧",
+            "name": "星芽 • 短剧",
             "type": 3,
             "api": "csp_XingyaDJ",
             "genre": "shortdrama"
         },
         {
             "key": "果果短剧",
-            "name": "果果 | 短剧",
+            "name": "果果 • 短剧",
             "type": 3,
             "api": "csp_XBPQ",
             "ext": {
@@ -1415,7 +1313,7 @@
         },
         {
             "key": "咖啡体育",
-            "name": "咖啡 | 体育",
+            "name": "咖啡 • 体育",
             "type": 3,
             "api": "csp_KafeiTY",
             "style": {
@@ -1423,17 +1321,8 @@
             }
         },
         {
-            "key": "919体育",
-            "name": "919 | 体育",
-            "type": 3,
-            "api": "csp_919TY",
-            "style": {
-                "type": "list"
-            }
-        },
-        {
             "key": "呦呦DJ",
-            "name": "呦呦 | DJ",
+            "name": "呦呦 • DJ",
             "type": 3,
             "api": "csp_Djuu",
             "style": {
@@ -1442,7 +1331,7 @@
         },
         {
             "key": "轮回DJ",
-            "name": "轮回 | DJ",
+            "name": "轮回 • DJ",
             "type": 3,
             "api": "csp_Djlh",
             "style": {
@@ -1451,7 +1340,7 @@
         },
         {
             "key": "蜻蜓FM",
-            "name": "蜻蜓 | FM",
+            "name": "蜻蜓 • FM",
             "type": 3,
             "api": "csp_QingtingFM",
             "style": {
@@ -1460,9 +1349,19 @@
         },
         {
             "key": "世界听书",
-            "name": "世界 | 听书",
+            "name": "世界 • 听书",
             "type": 3,
             "api": "csp_TingShijie",
+            "style": {
+                "type": "list"
+            }
+        },
+        {
+            "key": "堇夏听书",
+            "name": "堇夏 • 听书",
+            "type": 3,
+            "api": "csp_TingJinxia",
+            "ext": "https://m.ting15.com",
             "style": {
                 "type": "list"
             }
