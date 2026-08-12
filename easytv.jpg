@@ -1376,26 +1376,6 @@
             }
         },
         {
-            "key": "兔小贝",
-            "name": "兔小贝 | 儿童",
-            "type": 3,
-            "api": "csp_TuXiaoBei",
-            "style": {
-                "type": "rect",
-                "ratio": 1.597
-            }
-        },
-        {
-            "key": "贝乐虎",
-            "name": "贝乐虎 | 儿童",
-            "type": 3,
-            "api": "csp_BeiLeHu",
-            "style": {
-                "type": "rect",
-                "ratio": 1.597
-            }
-        },
-        {
             "key": "爱听音乐",
             "name": "爱听 | 音乐",
             "type": 3,
@@ -1493,6 +1473,26 @@
                 "n": "哔哩戏曲",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             },
+            "style": {
+                "type": "rect",
+                "ratio": 1.597
+            }
+        },
+        {
+            "key": "兔小贝",
+            "name": "兔小贝 | 儿童",
+            "type": 3,
+            "api": "csp_TuXiaoBei",
+            "style": {
+                "type": "rect",
+                "ratio": 1.597
+            }
+        },
+        {
+            "key": "贝乐虎",
+            "name": "贝乐虎 | 儿童",
+            "type": 3,
+            "api": "csp_BeiLeHu",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
