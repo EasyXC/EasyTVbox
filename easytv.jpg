@@ -479,6 +479,60 @@
             }
         },
         {
+            "key": "新影视",
+            "name": "New | 影视",
+            "type": 3,
+            "api": "./py/新影视.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "VIP兔",
+            "name": "VIP兔 | 影视",
+            "type": 3,
+            "api": "./py/VIP兔.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "豆花影视",
+            "name": "豆花 | 影视",
+            "type": 3,
+            "api": "./py/豆花影视.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "好剧影视",
+            "name": "好剧 | 影视",
+            "type": 3,
+            "api": "./py/好剧影视.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "可可影视",
+            "name": "可可 | 影视1",
+            "type": 3,
+            "api": "./py/可可影视.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "FreeOK",
+            "name": "FreeOK | 影视",
+            "type": 3,
+            "api": "./py/FreeOK.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
             "key": "酷猫影视",
             "name": "酷猫 | APP",
             "type": 3,
@@ -800,42 +854,42 @@
         },
         {
             "key": "七猫短剧",
-            "name": "七猫 • 短剧",
+            "name": "七猫 | 短剧",
             "type": 3,
             "api": "csp_QimaoDJ",
             "genre": "shortdrama"
         },
         {
             "key": "河马短剧",
-            "name": "河马 • 短剧",
+            "name": "河马 | 短剧",
             "type": 3,
             "api": "csp_HemaDJ",
             "genre": "shortdrama"
         },
         {
             "key": "围观短剧",
-            "name": "围观 • 短剧",
+            "name": "围观 | 短剧",
             "type": 3,
             "api": "csp_WeiguanDJ",
             "genre": "shortdrama"
         },
         {
             "key": "好看短剧",
-            "name": "好看 • 短剧",
+            "name": "好看 | 短剧",
             "type": 3,
             "api": "csp_HaokanDJ",
             "genre": "shortdrama"
         },
         {
             "key": "星芽短剧",
-            "name": "星芽 • 短剧",
+            "name": "星芽 | 短剧",
             "type": 3,
             "api": "csp_XingyaDJ",
             "genre": "shortdrama"
         },
         {
             "key": "果果短剧",
-            "name": "果果 • 短剧",
+            "name": "果果 | 短剧",
             "type": 3,
             "api": "csp_XBPQ",
             "ext": {
