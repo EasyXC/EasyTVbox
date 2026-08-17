@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-# QQ群：807916734
 # 可可影视 Spider — 兼容 FongMi/TV & WebHomeTV
 # 基于 python-spider-guide 新规范编写
 # 注意: 该站有 cdndefend 反爬, 需求解 SHA1 PoW 挑战
+# QQ群：807916734
 import sys
 import re
 import json
