@@ -365,6 +365,60 @@
             "ext": "./lib/B站.js"
         },
         {
+            "key": "新影视",
+            "name": "New | 影视",
+            "type": 3,
+            "api": "./py/新影视.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "VIP兔",
+            "name": "VIP兔 | 影视",
+            "type": 3,
+            "api": "./py/VIP兔.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "豆花影视",
+            "name": "豆花 | 影视",
+            "type": 3,
+            "api": "./py/豆花影视.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "好剧影视",
+            "name": "好剧 | 影视",
+            "type": 3,
+            "api": "./py/好剧影视.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "可可影视",
+            "name": "可可 | 影视1",
+            "type": 3,
+            "api": "./py/可可影视.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "FreeOK",
+            "name": "FreeOK | 影视",
+            "type": 3,
+            "api": "./py/FreeOK.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
             "key": "酷猫影视",
             "name": "酷猫 | APP",
             "type": 3,
