@@ -330,6 +330,33 @@
             "timeout": 60
         },
         {
+            "key": "枫眠",
+            "name": "枫眠❤ | 免扫4K",
+            "type": 3,
+            "api": "csp_AppGet",
+            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": "AWfUDttOwxKXIsxIZto8I5pb8v1yk+QgFQrqkJTMegeLMTRfs9C/EkFDgcQYoGmzdlmg8nek2YH5Oc89IMbRw57jIX3I+pJ82euuxi0ywouJ4IOWiVeQIwKEbV4EejQSdrC22e7dnmi8/WHMY19IRndGP2Aews4RcVt+MnJwibWI"
+        },
+        {
+            "key": "长泽",
+            "name": "长泽❤ | 免扫4K",
+            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
+            "type": 3,
+            "api": "csp_App88",
+            "ext": "Aa+WBBIIxghmbVYkWqlC4wrZvlocl4rSZS9+QyJDF6RgWFfYSb+nEM6WkMHPVbQFva551Srt16FqFroyjNssEXemH+xC5pCMj/ewgFuLEIbY2mXCVJ1bJxWRJAggNgH1f3mjwrBxlZA0kGgfAd0os29Mdi3RNJilSo5VMkPpcQPMeF8/PTbZHNymotiTwtICNcA5Q0WXsqe/wJ3HoLU4gBYQs1lBmYdxtAuvsnte3SbumQEFlaQnygFscx6EGrwKMFZLVcmu9egAXxygsf5PmyzN/xvOr+b+HslccoKqDbHNU/C6yWFwaHBawww0ckXRtoJ8fFbV7Xv4NiRcEf6ePm/cd06xYiZmjRts11gE0r8f7D0vx/TgigmU3v8nrgNYDokUGl/jDdza3o7BXyQumCWRD45wYbmKJ1LKb0ybRvNt"
+        },
+        {
+            "key": "zhiqiu",
+            "name": "知秋❤ | 免扫4K",
+            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
+            "type": 3,
+            "api": "csp_zhiqiu",
+            "searchable": 1,
+            "ext": "http://www.小不点.com/api//2026/zhiqiu.php"
+        },
+        {
             "key": "腾讯视频",
             "name": "📺️腾讯 | 官方",
             "type": 3,
@@ -751,6 +778,34 @@
             "name": "三六零 | 视频",
             "type": 3,
             "api": "csp_SP360"
+        },
+        {
+            "key": "HonHon",
+            "name": "红红 | 短剧",
+            "type": 3,
+            "api": "csp_HonHon",
+            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "genre": "shortdrama",
+            "filterable": 1,
+            "ext": {
+                "host": "https://short.fishcloud.top",
+                "quality": "1080p",
+                "danmu": false
+            }
+        },
+        {
+            "key": "DJHub",
+            "name": "短剧 | 聚合",
+            "type": 3,
+            "api": "csp_DJHub",
+            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "genre": "shortdrama",
+            "filterable": 1,
+            "changeable": 1
         },
         {
             "key": "七猫短剧",
