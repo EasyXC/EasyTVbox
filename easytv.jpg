@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 08-21",
+            "name": "本地视频 | 08-24",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -66,6 +66,7 @@
             "changeable": 1,
             "ext": {
                 "site": [
+					"http://xsayang.fun",
                     "http://38.76.197.172:12521"
                 ]
             },
@@ -209,6 +210,7 @@
             "changeable": 1,
             "ext": {
                 "site": [
+                    "http://xhban.xyz",
                     "http://38.76.197.172:16969"
                 ]
             },
@@ -220,9 +222,7 @@
             "type": 3,
             "api": "csp_SeedHub",
             "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
+            "quickSearch": 0,
             "ext": {
                 "site": [
                     "https://sidhub.cc",
@@ -328,33 +328,6 @@
                 "type": "list"
             },
             "timeout": 60
-        },
-        {
-            "key": "枫眠",
-            "name": "枫眠❤ | 免扫4K",
-            "type": 3,
-            "api": "csp_AppGet",
-            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": "AWfUDttOwxKXIsxIZto8I5pb8v1yk+QgFQrqkJTMegeLMTRfs9C/EkFDgcQYoGmzdlmg8nek2YH5Oc89IMbRw57jIX3I+pJ82euuxi0ywouJ4IOWiVeQIwKEbV4EejQSdrC22e7dnmi8/WHMY19IRndGP2Aews4RcVt+MnJwibWI"
-        },
-        {
-            "key": "长泽",
-            "name": "长泽❤ | 免扫4K",
-            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
-            "type": 3,
-            "api": "csp_App88",
-            "ext": "Aa+WBBIIxghmbVYkWqlC4wrZvlocl4rSZS9+QyJDF6RgWFfYSb+nEM6WkMHPVbQFva551Srt16FqFroyjNssEXemH+xC5pCMj/ewgFuLEIbY2mXCVJ1bJxWRJAggNgH1f3mjwrBxlZA0kGgfAd0os29Mdi3RNJilSo5VMkPpcQPMeF8/PTbZHNymotiTwtICNcA5Q0WXsqe/wJ3HoLU4gBYQs1lBmYdxtAuvsnte3SbumQEFlaQnygFscx6EGrwKMFZLVcmu9egAXxygsf5PmyzN/xvOr+b+HslccoKqDbHNU/C6yWFwaHBawww0ckXRtoJ8fFbV7Xv4NiRcEf6ePm/cd06xYiZmjRts11gE0r8f7D0vx/TgigmU3v8nrgNYDokUGl/jDdza3o7BXyQumCWRD45wYbmKJ1LKb0ybRvNt"
-        },
-        {
-            "key": "zhiqiu",
-            "name": "知秋❤ | 免扫4K",
-            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
-            "type": 3,
-            "api": "csp_zhiqiu",
-            "searchable": 1,
-            "ext": "http://www.小不点.com/api//2026/zhiqiu.php"
         },
         {
             "key": "腾讯视频",
@@ -523,7 +496,6 @@
             "api": "csp_App99",
             "ext": {
                 "host": "http://124.221.3.182:19987/app/bn",
-                "appkey": "d1f0c269eab74d93821fffc9befdbbba",
                 "versionName": "1.2.0",
                 "name": "剧圈圈",
                 "package": "com.qingtangxiaozhuan.xyz",
@@ -538,7 +510,6 @@
             "api": "csp_App99",
             "ext": {
                 "host": "http://103.217.190.91:19987/app/bn",
-                "appkey": "24d625a8a29b4700a1a294c6f3b29e2c",
                 "versionName": "3.5.8",
                 "name": "半日闲",
                 "package": "com.yf.lelian",
@@ -672,31 +643,19 @@
             }
         },
         {
-            "key": "怀桑",
-            "name": "怀桑 | APP",
+            "key": "奇奇",
+            "name": "奇奇 | APP",
             "type": 3,
             "api": "csp_AppQi",
             "searchable": 1,
             "changeable": 1,
             "ext": {
-                "site": "https://daen-1256234123.cos.ap-shanghai.myqcloud.com/MuQi/mqxhqj.txt",
-                "dataKey": "kj37zs29q22jk96t",
-                "dataIv": "kj37zs29q22jk96t",
+                "site": "https://yun-1316442804.cos.ap-guangzhou.myqcloud.com/603.txt",
+                "dataKey": "FTgP4Gq8zPiqbt7M",
+                "dataIv": "FTgP4Gq8zPiqbt7M",
                 "init": "initV122",
-                "ua": "okhttp/3.10.0"
-            }
-        },
-        {
-            "key": "不戳",
-            "name": "不戳 | APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "url": "https://appcmszbc.zbc4k.app",
-                "dataKey": "pYrEkiWRYhBLTUTC",
-                "dataIv": "pYrEkiWRYhBLTUTC"
+                "ua": "okhttp/3.10.0",
+                "search": "searchList8"
             }
         },
         {
@@ -778,34 +737,6 @@
             "name": "三六零 | 视频",
             "type": 3,
             "api": "csp_SP360"
-        },
-        {
-            "key": "HonHon",
-            "name": "红红 | 短剧",
-            "type": 3,
-            "api": "csp_HonHon",
-            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "genre": "shortdrama",
-            "filterable": 1,
-            "ext": {
-                "host": "https://short.fishcloud.top",
-                "quality": "1080p",
-                "danmu": false
-            }
-        },
-        {
-            "key": "DJHub",
-            "name": "短剧 | 聚合",
-            "type": 3,
-            "api": "csp_DJHub",
-            "jar": "https://qiniu.gongxueyun.com/upload/1581765/2026-08-21/training_record/234044207_4_1787290437788.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "genre": "shortdrama",
-            "filterable": 1,
-            "changeable": 1
         },
         {
             "key": "七猫短剧",
@@ -896,25 +827,11 @@
             "ext": "https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"
         },
         {
-            "key": "修罗影视",
-            "name": "修罗 | 影视",
-            "api": "csp_Xlys",
-            "type": 3,
-            "ext": "https://www.xlysw.ggff.net"
-        },
-        {
             "key": "骚火影视",
             "name": "骚火 | 影视",
             "type": 3,
             "api": "csp_SaoHuo",
             "ext": "https://shdy5.us"
-        },
-        {
-            "key": "农民影视",
-            "name": "农民 | 影视",
-            "type": 3,
-            "api": "csp_Wwys",
-            "ext": "https://vip.wwgz.cn:5200"
         },
         {
             "key": "枫叶影视",
@@ -931,18 +848,6 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
-        },
-        {
-            "key": "小镇影视",
-            "name": "小镇 | 影视",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "ext": {
-                "线路数组": "<a data-toggle=\"tab\"&&/a>",
-                "线路标题": ">&&<",
-                "分类url": "http://dyxz.tv/list/{cateId}_{catePg}.html",
-                "分类": "电影$1#电视剧$2#动漫$3#综艺$4"
-            }
         },
         {
             "key": "面包影视",
@@ -1411,12 +1316,6 @@
             "quickSearch": 0,
             "changeable": 0,
             "api": "./py/爱听音乐.py"
-        },
-        {
-            "key": "哔哩直播",
-            "name": "哔哩 | 直播",
-            "type": 3,
-            "api": "./py/哔哩直播.py"
         },
         {
             "key": "网络直播",
