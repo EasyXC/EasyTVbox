@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 08-17",
+            "name": "本地视频 | 08-21",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -610,6 +610,21 @@
                 "url": "http://103.217.190.91:5566",
                 "dataKey": "hagYExMdMkeWfemK",
                 "dataIv": "hagYExMdMkeWfemK",
+                "init": "initV122",
+                "ua": "okhttp/3.10.0"
+            }
+        },
+        {
+            "key": "蓝鸟",
+            "name": "蓝鸟 | APP",
+            "type": 3,
+            "api": "csp_AppQi",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": "https://lanyingjisu.oss-cn-wuhan-lr.aliyuncs.com/lyjszx.txt",
+                "dataKey": "oW5UxZ5kWVr1DI69",
+                "dataIv": "oW5UxZ5kWVr1DI69",
                 "init": "initV122",
                 "ua": "okhttp/3.10.0"
             }
