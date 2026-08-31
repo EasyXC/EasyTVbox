@@ -49,7 +49,7 @@
             "ext": {
                 "site": [
                     "https://www.wogg.live",
-					"https://woggpan.888484.xyz",
+                    "https://woggpan.888484.xyz",
                     "https://wogg.xxooo.cf",
                     "https://woggpan.xxooo.cf"
                 ]
@@ -67,7 +67,7 @@
             "changeable": 1,
             "ext": {
                 "site": [
-					"http://xsayang.fun",
+                    "http://xsayang.fun",
                     "http://38.76.197.172:12521"
                 ]
             },
@@ -393,15 +393,6 @@
             "filterable": 1
         },
         {
-            "key": "好剧影视",
-            "name": "好剧 | 影视",
-            "type": 3,
-            "api": "./py/好剧影视.py",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
             "key": "可可影视",
             "name": "可可 | 影视1",
             "type": 3,
@@ -418,17 +409,6 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
-        },
-        {
-            "key": "酷猫影视",
-            "name": "酷猫 | APP",
-            "type": 3,
-            "api": "https://cdn.jsdmirror.com/gh/ouhaibo1980/tvbox@main/js/drpy2.min.js",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 0,
-            "ext": "https://wp.kayyw.com/f/almPHj/%E9%85%B7%E7%8C%AB.js"
         },
         {
             "key": "热播影视",
