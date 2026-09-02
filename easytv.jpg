@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 08-31",
+            "name": "本地视频 | 9-2",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -242,35 +242,11 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 0,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            },
             "ext": {
                 "site": [
                     "https://www.kfzy.net"
                 ],
                 "cookie": "bbs_sid=qovfaruectri75sqq38blhqt7o; bbs_token=Bvf498_2FJNbnAe_2Fse39EweDe_2BlQnFYo4s_2FpFtyHueqcGKOssB"
-            },
-            "timeout": 60
-        },
-        {
-            "key": "123",
-            "name": "123 | 4K",
-            "type": 3,
-            "api": "csp_PanWebShare123",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            },
-            "ext": {
-                "site": [
-                    "https://123panfx.com",
-                    "https://pan1.me"
-                ]
             },
             "timeout": 60
         },
@@ -312,9 +288,6 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 0,
-            "style": {
-                "type": "list"
-            },
             "timeout": 60
         },
         {
@@ -325,9 +298,6 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 0,
-            "style": {
-                "type": "list"
-            },
             "timeout": 60
         },
         {
