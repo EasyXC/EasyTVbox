@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 9-3",
+            "name": "本地视频 | 9-7",
             "type": 3,
             "api": "csp_LocalFile"
         },
