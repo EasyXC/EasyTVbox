@@ -16,6 +16,7 @@
   搜索       GET /search?wd={keyword}                  -> 视频卡片
   播放API    GET /api/m3u8?origin=超级线路&url={play_id} -> m3u8 master playlist
 防御等级: Lv.1 (无加密/无JS渲染, BS4解析HTML, 搜索限流429)
+
 【遮天法铁律遵守清单】
   ✓ 铁律1: 引号闭合
   ✓ 铁律2: 括号闭合
@@ -27,19 +28,15 @@
   ✓ 铁律8: 自检必跑
   ✓ 铁律9: getName 必补
   ✓ 铁律10: isVideoFormat 必补 (列表推导式)
-【版本】2.0整合修复版 | 【框架】遮天法v3.0+ | 【许可】开源
 
-优化内容：
-✓ 完整filter筛选器(地区/类型/年份/排序)
-✓ xg_video_player_doc.aa双重转义解析
-✓ m3u8 master播放列表递归解析套娃
-✓ 修复分类URL逻辑、解析优先级、播放Referer污染bug
+【版本】1.0 | 【框架】遮天法v3.0+ | 【许可】开源
 """
+
 import sys
 import re
 import json
 import html as html_module
-from urllib.parse import quote, unquote, urljoin, urlencode
+from urllib.parse import quote, unquote, urljoin
 from typing import Dict, List, Optional, Any
 
 try:
@@ -54,12 +51,6 @@ try:
 except ImportError:
     HAS_BS4 = False
 
-try:
-    from lxml import etree
-    HAS_LXML = True
-except ImportError:
-    HAS_LXML = False
-
 # TVBox环境兼容
 try:
     from base.spider import Spider as BaseSpider
@@ -67,19 +58,19 @@ except ImportError:
     class BaseSpider:
         pass
 
+
 # ==================================================================
 #  DEFAULT_CONFIG 配置中心 (铁律5: 禁止硬编码)
 # ==================================================================
+
 DEFAULT_CONFIG = {
     "host": "https://dhvideo.cc",
     "site_name": "豆花电影网",
-    "pic_cdn": "https://pic2.tupian.click",
-    "use_cdn": False,
+
     "endpoints": {
         "home": "/",
         "category_p1": "/{type}.html",
         "category_pn": "/{type}/{pg}.html",
-        "category_filter_base": "/{type}.html",
         "detail_movie": "/movie/{id}.html",
         "detail_tv": "/tv/{id}.html",
         "play_movie": "/movie/{id}.html",
@@ -88,6 +79,7 @@ DEFAULT_CONFIG = {
         "search_paged": "/s.html?name={wd}&page={pg}&sort_field=_id&sion_id={sion_id}",
         "m3u8_api": "/api/m3u8?origin={origin}&url={play_id}",
     },
+
     "headers": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
@@ -100,11 +92,14 @@ DEFAULT_CONFIG = {
         "Upgrade-Insecure-Requests": "1",
         "Cache-Control": "max-age=0",
     },
+
     "timeout": 15,
     "debug": False,
+
+    # sion_id (从用户URL提取, 用于搜索时绕过部分限流)
     "sion_id": "6aa2a9f23a7e88e5a8a87d41",
-    "default_origin": "超级线路",
-    "type_prefixes": {"movie": "/movie/", "tv": "/tv/"},
+
+    # 分类列表 (路由名映射到中文名称)
     "categories": [
         {"type_id": "dianying", "type_name": "电影"},
         {"type_id": "dianshiju", "type_name": "电视剧"},
@@ -112,63 +107,21 @@ DEFAULT_CONFIG = {
         {"type_id": "dongman", "type_name": "动漫"},
         {"type_id": "duanju", "type_name": "短剧"},
     ],
-    "filter_area": [
-        {"n": "全部", "v": ""},
-        {"n": "中国大陆", "v": "中国大陆"},
-        {"n": "中国香港", "v": "中国香港"},
-        {"n": "中国台湾", "v": "中国台湾"},
-        {"n": "美国", "v": "美国"},
-        {"n": "日本", "v": "日本"},
-        {"n": "韩国", "v": "韩国"},
-        {"n": "英国", "v": "英国"},
-        {"n": "法国", "v": "法国"},
-        {"n": "德国", "v": "德国"},
-        {"n": "意大利", "v": "意大利"},
-        {"n": "印度", "v": "印度"},
-        {"n": "泰国", "v": "泰国"},
-        {"n": "加拿大", "v": "加拿大"},
-        {"n": "西班牙", "v": "西班牙"},
-        {"n": "俄罗斯", "v": "俄罗斯"},
-        {"n": "澳大利亚", "v": "澳大利亚"},
-        {"n": "菲律宾", "v": "菲律宾"},
-        {"n": "其他", "v": "其他"},
-    ],
-    "filter_class": [
-        {"n": "全部", "v": ""},
-        {"n": "剧情", "v": "剧情"},
-        {"n": "喜剧", "v": "喜剧"},
-        {"n": "动作", "v": "动作"},
-        {"n": "爱情", "v": "爱情"},
-        {"n": "惊悚", "v": "惊悚"},
-        {"n": "犯罪", "v": "犯罪"},
-        {"n": "恐怖", "v": "恐怖"},
-        {"n": "悬疑", "v": "悬疑"},
-        {"n": "冒险", "v": "冒险"},
-        {"n": "奇幻", "v": "奇幻"},
-        {"n": "科幻", "v": "科幻"},
-        {"n": "院线", "v": "院线"},
-        {"n": "家庭", "v": "家庭"},
-        {"n": "历史", "v": "历史"},
-        {"n": "战争", "v": "战争"},
-        {"n": "纪录片", "v": "纪录片"},
-        {"n": "古装", "v": "古装"},
-        {"n": "音乐", "v": "音乐"},
-        {"n": "动画", "v": "动画"},
-        {"n": "传记", "v": "传记"},
-        {"n": "武侠", "v": "武侠"},
-        {"n": "运动", "v": "运动"},
-        {"n": "短片", "v": "短片"},
-    ],
-    "filter_order": [
-        {"n": "默认", "v": ""},
-        {"n": "最新", "v": "time"},
-        {"n": "最热", "v": "play_hot"},
-    ]
+
+    # 默认播放源 (当详情页未提取到源名称时)
+    "default_origin": "超级线路",
+
+    # 视频详情页URL前缀映射
+    # 电影: /movie/{hex}-{num}.html
+    # 电视剧: /tv/{hex}-{num}.html
+    "type_prefixes": {"movie": "/movie/", "tv": "/tv/"},
 }
+
 
 # ==================================================================
 #  九秘核心能力库
 # ==================================================================
+
 class DouZiMi:
     """斗字秘 - 吞天魔罐: HTML清洗、URL修复、视频卡片解析"""
 
@@ -197,17 +150,7 @@ class DouZiMi:
         return urljoin(host.rstrip("/") + "/", url)
 
     @staticmethod
-    def fix_pic_url(url: str, host: str, cdn: str, use_cdn: bool) -> str:
-        """图片CDN修复逻辑"""
-        fu = DouZiMi.fix_url(url, host)
-        if not use_cdn or not cdn:
-            return fu
-        if fu.startswith(host):
-            fu = cdn + fu[len(host):]
-        return fu
-
-    @staticmethod
-    def parse_video_cards(html_text: str, host: str, cdn: str, use_cdn: bool) -> List[Dict]:
+    def parse_video_cards(html_text: str, host: str) -> List[Dict]:
         """七十二变: 解析视频卡片 (适配vk-theme模板)
         卡片结构: <a href="/movie|tv/{hex}-{num}.html">
                      <img class="lazy-image" data-src="/img/id/{hex}.jpg" alt="标题">
@@ -217,24 +160,28 @@ class DouZiMi:
         results: List[Dict] = []
         if not html_text:
             return results
+
         seen_ids: set = set()
 
-        # 修复：优先级 BS4优先，降级lxml，最后正则
         if HAS_BS4:
             try:
                 soup = BeautifulSoup(html_text, "html.parser")
+                # 找所有含 /movie/ 或 /tv/ 链接的a标签
                 links = soup.find_all("a", href=re.compile(r"/(?:movie|tv)/[a-f0-9]+-\d+\.html"))
                 for a in links:
                     href = a.get("href", "")
                     vid_match = re.search(r"/(?:movie|tv)/([a-f0-9]+-\d+)", href)
                     if not vid_match:
                         continue
-                    vod_id_raw = vid_match.group(1)
-                    if vod_id_raw in seen_ids:
+                    vod_id = vid_match.group(1)
+                    if vod_id in seen_ids:
                         continue
-                    seen_ids.add(vod_id_raw)
+                    seen_ids.add(vod_id)
+
+                    # 类型前缀 (movie/tv)
                     type_prefix = "movie" if "/movie/" in href else "tv"
-                    vod_id = f"{type_prefix}/{vod_id_raw}"
+
+                    # 名称和图片: 必须有img且img有alt属性 (过滤"立即播放"按钮)
                     img = a.find("img")
                     if not img:
                         continue
@@ -244,19 +191,23 @@ class DouZiMi:
                     pic = (img.get("data-src", "") or
                            img.get("data-original", "") or
                            img.get("src", ""))
+
+                    # 备注: 从span获取
                     remark = ""
                     spans = a.find_all("span")
                     for span in spans:
                         text = span.get_text(strip=True)
                         if text and len(text) < 20 and text != name:
+                            # 排除非备注文本(如排序按钮等)
                             if not any(kw in text for kw in ("排序", "筛选", "最新", "最热", "播放最多")):
                                 remark = text
                                 break
+
                     if name and len(name) >= 2:
                         results.append({
-                            "vod_id": vod_id,
+                            "vod_id": f"{type_prefix}/{vod_id}",
                             "vod_name": name.strip(),
-                            "vod_pic": DouZiMi.fix_pic_url(pic, host, cdn, use_cdn),
+                            "vod_pic": DouZiMi.fix_url(pic, host),
                             "vod_remarks": remark,
                         })
                 return results
@@ -264,81 +215,43 @@ class DouZiMi:
                 if DEFAULT_CONFIG.get("debug"):
                     print(f"[DouZiMi] BS4解析失败: {e}")
 
-        if HAS_LXML:
-            try:
-                root = etree.HTML(html_text)
-                cards = root.xpath(
-                    '//div[contains(@class, "grid-cols")]'
-                    '/div[contains(@class, "flex flex-col") and contains(@class, "group")]'
-                )
-                for card in cards:
-                    a_nodes = card.xpath('.//a[contains(@href,"/movie/") or contains(@href,"/tv/")]')
-                    if not a_nodes:
-                        continue
-                    a = a_nodes[0]
-                    href = a.get("href", "")
-                    vid_match = re.search(r"/(?:movie|tv)/([a-f0-9]+-\d+)\.html", href)
-                    if not vid_match:
-                        continue
-                    vod_id_raw = vid_match.group(1)
-                    type_prefix = "movie" if "/movie/" in href else "tv"
-                    vod_id = f"{type_prefix}/{vod_id_raw}"
-                    if vod_id in seen_ids:
-                        continue
-                    seen_ids.add(vod_id)
-                    img = a.xpath(".//img")[0] if a.xpath(".//img") else None
-                    if not img:
-                        continue
-                    name = (img.get("alt") or "").strip()
-                    if len(name) < 2:
-                        continue
-                    pic = img.get("data-src") or img.get("src") or ""
-                    remark = ""
-                    badge_text = card.xpath('.//span[contains(@class,"bg-black/60")]/text()')
-                    if badge_text:
-                        remark = badge_text[0].strip()
-                    results.append({
-                        "vod_id": vod_id,
-                        "vod_name": name,
-                        "vod_pic": DouZiMi.fix_pic_url(pic, host, cdn, use_cdn),
-                        "vod_remarks": remark
-                    })
-                if len(results) > 0:
-                    return results
-            except Exception:
-                pass
-
+        # 正则回退层
         pattern = re.compile(
             r'<a[^>]*href="/((?:movie|tv)/([a-f0-9]+-\d+))\.html"[^>]*>(.*?)</a>',
             re.S
         )
         for m in pattern.finditer(html_text):
-            vod_id_raw = m.group(2)
-            if vod_id_raw in seen_ids:
+            vod_id = m.group(2)
+            if vod_id in seen_ids:
                 continue
-            seen_ids.add(vod_id_raw)
-            type_prefix = m.group(1).split("/")[0]
-            vod_id = f"{type_prefix}/{vod_id_raw}"
+            seen_ids.add(vod_id)
+            type_prefix = m.group(1)
             inner = m.group(3)
+
+            # 名称: 必须有img且img有alt属性 (过滤非卡片链接)
             name = ""
             alt_match = re.search(r'alt="([^"]+)"', inner)
             if alt_match:
                 name = alt_match.group(1)
             else:
-                continue
+                continue  # 没有alt属性, 跳过(不是视频卡片)
+
+            # 图片
             pic = ""
             pic_match = re.search(r'data-src="([^"]+)"', inner)
             if not pic_match:
                 pic_match = re.search(r'src="([^"]+)"', inner)
             if pic_match:
                 pic = pic_match.group(1)
+
             if name and len(name) >= 2:
                 results.append({
-                    "vod_id": vod_id,
+                    "vod_id": f"{type_prefix}/{vod_id}",
                     "vod_name": name.strip(),
-                    "vod_pic": DouZiMi.fix_pic_url(pic, host, cdn, use_cdn),
+                    "vod_pic": DouZiMi.fix_url(pic, host),
                     "vod_remarks": "",
                 })
+
         return results
 
 
@@ -352,15 +265,19 @@ class QianZiMi:
         """
         if not html_text:
             return None
+
+        # 匹配 currentUrl = "..." (含转义字符)
         match = re.search(r'currentUrl\s*=\s*["\']([^"\']+)["\']', html_text)
         if not match:
             return None
+
         raw = match.group(1)
+        # 解码JS转义
         raw = raw.replace("\\/", "/")
         raw = raw.replace("\\u0026", "&")
         raw = raw.replace("\\u0026", "&")
-        if "\\u" in raw:
-            raw = raw.encode("utf-8").decode("unicode_escape", errors="replace")
+        # 处理 \u 编码
+        raw = raw.encode("utf-8").decode("unicode_escape", errors="replace") if "\\u" in raw else raw
         return raw if raw else None
 
     @staticmethod
@@ -371,20 +288,28 @@ class QianZiMi:
         """
         if not html_text:
             return None
+
+        # 匹配 aa: JSON.parse('...')
         aa_pattern = re.compile(r"aa:\s*JSON\.parse\('([^']+)'")
         match = aa_pattern.search(html_text)
         if not match:
             return None
+
         raw_json = match.group(1)
+
+        # 解码 \uXXXX 转义 (处理任意数量的前导反斜杠)
         decoded = re.sub(
             r'\\+u([0-9a-fA-F]{4})',
             lambda m: chr(int(m.group(1), 16)),
             raw_json
         )
+        # 解码 \/
         decoded = decoded.replace("\\/", "/")
+
         try:
             data = json.loads(decoded)
             url = data.get("url", "")
+            # URL内可能仍有转义, 二次解码
             url = url.replace("\\/", "/")
             url = re.sub(
                 r'\\+u([0-9a-fA-F]{4})',
@@ -398,74 +323,6 @@ class QianZiMi:
             }
         except (json.JSONDecodeError, ValueError):
             return None
-
-    @staticmethod
-    def extract_aa_url(html: str) -> Optional[str]:
-        """处理xg_video_player_doc.aa双重JS转义解析"""
-        for pat in (
-            r"aa\s*:\s*JSON\.parse\s*\(\s*'(\{.*?\})'\s*\)",
-            r'aa\s*:\s*JSON\.parse\s*\(\s*"(\{.*?\})"\s*\)',
-        ):
-            m = re.search(pat, html, re.DOTALL)
-            if not m:
-                continue
-            aa_json = m.group(1)
-            aa_json = re.sub(r'\\\\u([0-9a-fA-F]{4})', lambda mm: chr(int(mm.group(1), 16)), aa_json)
-            aa_json = aa_json.replace('\\u0022', '"').replace('\\/', '/')
-            try:
-                aa_data = json.loads(aa_json)
-                url = (aa_data.get("url") or "").strip()
-                if url:
-                    return url
-            except Exception:
-                continue
-        return None
-
-    @staticmethod
-    def resolve_m3u8_play_url(session, url: str, host: str, headers: dict, max_depth=10) -> str:
-        """递归解析master m3u8多码率播放列表套娃"""
-        visited = set()
-        current = DouZiMi.fix_url(url, host)
-        for _ in range(max_depth):
-            if current in visited:
-                break
-            visited.add(current)
-            try:
-                resp = session.get(current, headers=headers, timeout=15, allow_redirects=True)
-            except Exception:
-                return current
-            final_url = resp.url or current
-            text = resp.text or ""
-            if "#EXT-X-STREAM-INF" in text:
-                sub_urls = []
-                for line in text.splitlines():
-                    ln = line.strip()
-                    if ln and not ln.startswith("#"):
-                        sub_urls.append(urljoin(final_url, ln))
-                if not sub_urls:
-                    return final_url
-                fallback = None
-                for sub in sub_urls:
-                    if sub in visited:
-                        continue
-                    try:
-                        sr = session.get(sub, headers=headers, timeout=12, allow_redirects=True)
-                        sf = sr.url or sub
-                        st = sr.text or ""
-                        if ".m3u8" in sf.lower() and "#EXTINF" in st:
-                            return sf
-                        if fallback is None and "#EXTINF" in st:
-                            fallback = sf
-                    except Exception:
-                        continue
-                if fallback:
-                    return fallback
-                current = sub_urls[0]
-                continue
-            if "#EXTINF" in text or QianZiMi.is_direct_video(final_url):
-                return final_url
-            return final_url
-        return current
 
     @staticmethod
     def is_direct_video(url: str) -> bool:
@@ -503,9 +360,11 @@ class LieZiMi:
             "Referer": referer,
         }
 
+
 # ==================================================================
 #  Spider 主类 (道宫境 - HTML解析)
 # ==================================================================
+
 class Spider(BaseSpider):
     """豆花电影网 - TVBox爬虫"""
 
@@ -520,9 +379,11 @@ class Spider(BaseSpider):
             self.session = requests.Session()
             self.session.headers.update(self.config.get("headers", {}))
             self.session.verify = False
+            # 设置sion_id cookie (从配置或extend中获取)
             sion_id = self.config.get("sion_id", "")
             if sion_id:
                 self.session.cookies.set("sion_id", sion_id, domain="dhvideo.cc")
+        # extend参数使用: 解析配置
         if extend:
             try:
                 ext = json.loads(extend)
@@ -530,9 +391,11 @@ class Spider(BaseSpider):
                     self.site_url = ext["siteUrl"]
                     if self.session:
                         self.session.headers["Referer"] = self.site_url + "/"
+                # 从extend中提取sion_id
                 if "sion_id" in ext and self.session:
                     self.session.cookies.set("sion_id", ext["sion_id"], domain="dhvideo.cc")
             except (json.JSONDecodeError, TypeError):
+                # extend可能是纯URL, 尝试提取sion_id
                 if "sion_id=" in extend and self.session:
                     import urllib.parse as up
                     parsed = up.urlparse(extend)
@@ -562,9 +425,6 @@ class Spider(BaseSpider):
     def _fix_url(self, url: str) -> str:
         return DouZiMi.fix_url(url, self.site_url)
 
-    def _fix_pic(self, url: str) -> str:
-        return DouZiMi.fix_pic_url(url, self.site_url, self.config["pic_cdn"], self.config["use_cdn"])
-
     def _fetch_html(self, url: str, params: dict = None) -> Optional[str]:
         """安全获取HTML (铁律7: 异常分级)"""
         if not self.session:
@@ -578,6 +438,7 @@ class Spider(BaseSpider):
                 if self.config.get("debug"):
                     print(f"[_fetch_html] HTTP {resp.status_code}: {url}")
                 return None
+            # 正确编码处理
             enc = resp.encoding
             if not enc or enc.lower() in ("iso-8859-1", "ascii"):
                 resp.encoding = "utf-8"
@@ -595,18 +456,6 @@ class Spider(BaseSpider):
                 print(f"[_fetch_html] 异常: {e}")
             return None
 
-    def _build_filter_dict(self):
-        """构建首页filter筛选字典"""
-        filter_out = {}
-        for cat in self.config["categories"]:
-            filter_out[cat["type_id"]] = [
-                {"key": "area", "name": "地区", "value": self.config["filter_area"]},
-                {"key": "class", "name": "分类", "value": self.config["filter_class"]},
-                {"key": "year", "name": "年份", "value": [{"n": "全部", "v": ""}] + [{"n": str(y), "v": str(y)} for y in range(2026, 2001, -1)]},
-                {"key": "order", "name": "排序", "value": self.config["filter_order"]}
-            ]
-        return filter_out
-
     def _parse_title_from_html(self, html_text: str) -> str:
         """从HTML标题提取视频名称
         格式: 邻家小姐_电影_免费观看完整版_豆花电影网 -> 邻家小姐
@@ -615,6 +464,7 @@ class Spider(BaseSpider):
         if not title_match:
             return ""
         title = title_match.group(1).strip()
+        # 按下划线分割取第一部分
         parts = title.split("_")
         if parts:
             return parts[0].strip()
@@ -625,31 +475,44 @@ class Spider(BaseSpider):
         info: dict = {}
         if not html_text:
             return info
+
         if HAS_BS4:
             try:
                 soup = BeautifulSoup(html_text, "html.parser")
+
+                # 标题 (从<title>提取)
                 info["vod_name"] = self._parse_title_from_html(html_text)
+
+                # 封面: 找 /img/cover/ 或 /img/id/ 的图片
                 vod_pic = ""
                 for img in soup.find_all("img"):
                     src = img.get("src", "") or img.get("data-src", "")
                     if "/img/cover/" in src or "/img/id/" in src:
+                        # 排除相关视频缩略图(在列表中)
                         parent = img.find_parent("a")
                         if parent and parent.get("href", ""):
                             href = parent.get("href", "")
+                            # 如果链接指向其他视频详情页, 是相关推荐, 跳过
                             if re.search(r"/(?:movie|tv)/[a-f0-9]+-\d+\.html", href):
                                 continue
                         vod_pic = src
                         break
                 info["vod_pic"] = vod_pic
+
+                # 元信息: 从页面文本提取
                 text = soup.get_text()
+
+                # 年份
                 year_match = re.search(r"(\d{4})", text)
                 if year_match:
                     year = year_match.group(1)
                     if 1900 <= int(year) <= 2030:
                         info["vod_year"] = year
+
+                # 地区/类型/导演/主演: 从文本块提取
                 for p in soup.find_all(["p", "div", "span", "li"]):
                     ptext = p.get_text(strip=True)
-                    if "地区" in ptext:
+                    if "地区" in ptext or "地区" in ptext:
                         area_match = re.search(r"地区[：:]\s*([^\n\r·•|]+)", ptext)
                         if area_match:
                             info["vod_area"] = area_match.group(1).strip()
@@ -665,24 +528,22 @@ class Spider(BaseSpider):
                         type_match = re.search(r"类型[：:]\s*([^\n\r·•|]+)", ptext)
                         if type_match:
                             info["vod_type_name"] = type_match.group(1).strip()
+
+                # 简介
                 intro_el = soup.find(class_=re.compile(r"reset-style|intro|desc|content|jianjie|brief"))
                 if intro_el:
                     intro = intro_el.get_text(" ", strip=True)
                     if len(intro) > 20:
                         info["vod_content"] = intro[:2000]
+
             except Exception as e:
                 if self.config.get("debug"):
                     print(f"[_parse_detail_info] BS4解析失败: {e}")
-        if not info.get("vod_name") and HAS_LXML:
-            try:
-                root = etree.HTML(html_text)
-                title_tag = root.xpath("//title/text()")
-                if title_tag:
-                    info["vod_name"] = title_tag[0].strip().split("_")[0].strip()
-            except Exception:
-                pass
+
+        # 图片URL修复
         if info.get("vod_pic"):
-            info["vod_pic"] = self._fix_pic(info["vod_pic"])
+            info["vod_pic"] = self._fix_url(info["vod_pic"])
+
         return info
 
     def _parse_play_sources(self, html_text: str) -> tuple:
@@ -691,13 +552,19 @@ class Spider(BaseSpider):
         """
         play_from_list: List[str] = []
         play_url_list: List[str] = []
+
         if not html_text:
             return play_from_list, play_url_list
+
         if HAS_BS4:
             try:
                 soup = BeautifulSoup(html_text, "html.parser")
+
+                # 电视剧: 优先查找选集链接 (有?origin=参数)
+                # 选集: /tv/{hex}/{num}.html?origin={src}&p={ep}
                 ep_links = soup.find_all("a", href=re.compile(r"/(?:movie|tv)/[a-f0-9]+/\d+\.html\?"))
                 if ep_links:
+                    # 播放源tab: /tv/{hex}-{num}.html?origin={src} (横杠)
                     source_names: dict = {}
                     source_tabs = soup.find_all("a", href=re.compile(r"/(?:movie|tv)/[a-f0-9]+-\d+\.html\?"))
                     for tab in source_tabs:
@@ -706,9 +573,12 @@ class Spider(BaseSpider):
                         if origin_match:
                             origin = origin_match.group(1)
                             name = tab.get_text(strip=True) or origin
+                            # 清理名称: 去掉 [N] 前缀
                             name = re.sub(r"^\[\d+\]", "", name).strip() or origin
                             if origin not in source_names:
                                 source_names[origin] = name
+
+                    # 按origin和p分组
                     episodes_by_source: dict = {}
                     for ep in ep_links:
                         href = ep.get("href", "").replace("&amp;", "&")
@@ -717,6 +587,7 @@ class Spider(BaseSpider):
                             origin = ep_match.group(1)
                             ep_num = int(ep_match.group(2))
                             ep_name = ep.get_text(strip=True) or f"第{ep_num + 1}集"
+                            # 清理选集名: 去掉 [N] 前缀, 过长/分辨率/非正常名用默认
                             ep_name = re.sub(r"^\[\d+\]", "", ep_name).strip()
                             if (not ep_name or len(ep_name) > 20 or
                                     re.match(r"^[\d\.\s]+$", ep_name) or
@@ -729,44 +600,59 @@ class Spider(BaseSpider):
                             if origin not in episodes_by_source:
                                 episodes_by_source[origin] = []
                             episodes_by_source[origin].append((ep_num, ep_name, href))
+
+                    # 组装结果
                     for origin, eps in episodes_by_source.items():
                         eps.sort(key=lambda x: x[0])
                         src_name = source_names.get(origin, origin)
                         play_from_list.append(src_name)
                         url_list = [f"{name}${href}" for _, name, href in eps]
                         play_url_list.append("#".join(url_list))
+
                     if play_from_list:
                         return play_from_list, play_url_list
+
+                # 电影: 找"立即播放"按钮 (无query参数的链接)
+                # <a href="/movie/{hex}/{num}.html">立即播放</a>
                 play_btn = None
                 for a in soup.find_all("a", href=re.compile(r"/(?:movie|tv)/[a-f0-9]+/\d+\.html")):
                     href = a.get("href", "")
+                    # 排除有query参数的链接(选集)
                     if "?" not in href:
                         play_btn = a
                         break
+                    # 或者含"立即播放"文字
                     text = a.get_text(strip=True)
                     if "立即播放" in text or "播放" in text:
                         play_btn = a
                         break
+
                 if play_btn:
                     href = play_btn.get("href", "").replace("&amp;", "&")
                     play_from_list.append("默认源")
                     play_url_list.append(f"正片${href}")
                     return play_from_list, play_url_list
+
+                # 兜底: 找任何播放链接
                 all_play_links = soup.find_all("a", href=re.compile(r"/(?:movie|tv)/[a-f0-9]+/\d+\.html"))
                 if all_play_links:
                     eps_list = []
                     for a in all_play_links:
                         href = a.get("href", "").replace("&amp;", "&")
                         name = a.get_text(strip=True) or "播放"
-                        if "?" not in href:
+                        if "?" not in href:  # 排除选集链接
                             eps_list.append(f"{name}${href}")
                     if eps_list:
                         play_from_list.append("默认源")
                         play_url_list.append("#".join(eps_list))
+
             except Exception as e:
                 if self.config.get("debug"):
                     print(f"[_parse_play_sources] BS4解析失败: {e}")
+
+        # 正则回退
         if not play_from_list:
+            # 电视剧选集
             ep_pattern = re.compile(
                 r'href="(/(?:movie|tv)/[a-f0-9]+/\d+\.html)\?origin=([^&]+)&p=(\d+)"[^>]*>([^<]+)'
             )
@@ -779,12 +665,17 @@ class Spider(BaseSpider):
                 if origin not in eps_by_src:
                     eps_by_src[origin] = []
                 eps_by_src[origin].append((ep_num, name, f"{href}?origin={origin}&p={ep_num}"))
+
             for origin, eps in eps_by_src.items():
                 eps.sort(key=lambda x: x[0])
                 play_from_list.append(origin)
-                play_url_list.append("#".join([f"{n}${h}" for _, n, h in eps]))
+                url_list = [f"{n}${h}" for _, n, h in eps]
+                play_url_list.append("#".join(url_list))
+
             if play_from_list:
                 return play_from_list, play_url_list
+
+            # 电影播放按钮 (无query参数)
             movie_play = re.search(
                 r'href="(/(?:movie|tv)/[a-f0-9]+/\d+\.html)"[^>]*>[^<]*立即播放',
                 html_text
@@ -792,7 +683,10 @@ class Spider(BaseSpider):
             if movie_play:
                 play_from_list.append("默认源")
                 play_url_list.append(f"正片${movie_play.group(1)}")
+
         return play_from_list, play_url_list
+
+    # ==================== TVBox 六接口 ====================
 
     def homeContent(self, filter: bool = False) -> dict:
         """首页: 分类列表 + 推荐视频 (filter参数使用)"""
@@ -803,16 +697,19 @@ class Spider(BaseSpider):
                 {"type_id": c["type_id"], "type_name": c["type_name"]}
                 for c in categories
             ]
-            if filter:
-                result["filters"] = self._build_filter_dict()
+
             home_url = self._fix_url(self.config["endpoints"]["home"])
             html_text = self._fetch_html(home_url)
             if html_text:
-                videos = DouZiMi.parse_video_cards(html_text, self.site_url, self.config["pic_cdn"], self.config["use_cdn"])
+                videos = DouZiMi.parse_video_cards(html_text, self.site_url)
                 result["list"] = videos[:30]
+
         except Exception as e:
             if self.config.get("debug"):
                 print(f"[homeContent] 异常: {e}")
+
+        if filter:
+            result["filters"] = {c["type_id"]: [] for c in categories}
         return result
 
     def homeVideoContent(self) -> dict:
@@ -820,7 +717,7 @@ class Spider(BaseSpider):
             home_url = self._fix_url(self.config["endpoints"]["home"])
             html_text = self._fetch_html(home_url)
             if html_text:
-                return {"list": DouZiMi.parse_video_cards(html_text, self.site_url, self.config["pic_cdn"], self.config["use_cdn"])[:30]}
+                return {"list": DouZiMi.parse_video_cards(html_text, self.site_url)[:30]}
         except Exception as e:
             if self.config.get("debug"):
                 print(f"[homeVideoContent] 异常: {e}")
@@ -828,48 +725,50 @@ class Spider(BaseSpider):
 
     def categoryContent(self, tid: str, pg: Any = 1, filter: bool = False, extend: dict = None) -> dict:
         """分类: 视频列表 (tid/pg/filter/extend参数全部使用)
-        分页: 区分无筛选路径分页 / 有筛选query参数分页
+        分页: 第1页 /{type}.html, 第N页 /{type}/{N}.html
         """
         page = int(pg) if pg else 1
+
         result: dict = {"list": [], "page": page, "pagecount": 1, "limit": 24, "total": 0}
+
+        # tid使用: 构建分类页URL
         endpoints = self.config["endpoints"]
-        qs_params = {}
-        if extend and isinstance(extend, dict):
-            for k in ("area", "class", "year", "order"):
-                v = extend.get(k)
-                if v:
-                    qs_params[k] = v
-        has_filter = bool(qs_params)
-
-        if has_filter:
-            site_page = page - 1
-            base_url = self._fix_url(endpoints["category_filter_base"].format(type=tid))
-            qs_params["page"] = site_page
-            url = f"{base_url}?{urlencode(qs_params)}"
+        if page <= 1:
+            url = self._fix_url(endpoints["category_p1"].format(type=tid))
         else:
-            if page <= 1:
-                url = self._fix_url(endpoints["category_p1"].format(type=tid))
-            else:
-                url = self._fix_url(endpoints["category_pn"].format(type=tid, pg=page))
+            url = self._fix_url(endpoints["category_pn"].format(type=tid, pg=page))
 
-        if self.config.get("debug"):
-            print(f"[categoryContent] 生成URL={url} has_filter={has_filter}")
+        # extend使用: 合并额外参数
+        params = None
+        if extend and isinstance(extend, dict) and extend:
+            params = dict(extend)
+
         try:
-            html_text = self._fetch_html(url)
+            html_text = self._fetch_html(url, params=params)
             if not html_text:
                 return result
-            videos = DouZiMi.parse_video_cards(html_text, self.site_url, self.config["pic_cdn"], self.config["use_cdn"])
+
+            videos = DouZiMi.parse_video_cards(html_text, self.site_url)
             result["list"] = videos
             result["limit"] = len(videos) if videos else 24
+
+            # 解析分页: 找 /{type}/\d+.html 格式的最大页码
             page_matches = re.findall(rf"/{re.escape(tid)}/(\d+)\.html", html_text)
-            page_matches2 = re.findall(r"\?page=(\d+)", html_text)
-            max_page = 1
             if page_matches:
                 max_page = max(int(p) for p in page_matches)
-            if page_matches2:
-                max_page = max(max_page, max(int(p) for p in page_matches2) + 1)
-            result["pagecount"] = max_page
-            result["total"] = result["limit"] * result["pagecount"]
+                result["pagecount"] = max_page
+                result["total"] = result["limit"] * result["pagecount"]
+            else:
+                # 也检查 ?page= 格式
+                page_matches2 = re.findall(r"\?page=(\d+)", html_text)
+                if page_matches2:
+                    max_page = max(int(p) for p in page_matches2) + 1
+                    result["pagecount"] = max_page
+                    result["total"] = result["limit"] * result["pagecount"]
+                else:
+                    result["pagecount"] = page
+                    result["total"] = len(videos)
+
         except requests.exceptions.Timeout as e:
             if self.config.get("debug"):
                 print(f"[categoryContent] 超时: {e}")
@@ -879,6 +778,7 @@ class Spider(BaseSpider):
         except Exception as e:
             if self.config.get("debug"):
                 print(f"[categoryContent] 异常: {e}")
+
         if filter:
             result["filters"] = {}
         return result
@@ -889,28 +789,41 @@ class Spider(BaseSpider):
         """
         if not ids:
             return {"list": []}
+
         vod_id = str(ids[0]) if ids else ""
         if not vod_id:
             return {"list": []}
+
+        # 解析vod_id: "movie/6a9dce8b268d04369d773013-70569" -> type=movie, id=6a9dce8b268d04369d773013-70569
         parts = vod_id.split("/", 1)
         if len(parts) != 2:
             return {"list": []}
-        vtype = parts[0]
-        vid = parts[1]
+        vtype = parts[0]  # "movie" or "tv"
+        vid = parts[1]     # "6a9dce8b268d04369d773013-70569"
+
         endpoints = self.config["endpoints"]
+        # 详情页URL: /movie/{hex}-{num}.html 或 /tv/{hex}-{num}.html
         detail_key = f"detail_{vtype}" if f"detail_{vtype}" in endpoints else "detail_movie"
         url = self._fix_url(endpoints[detail_key].format(id=vid))
+
         try:
             html_text = self._fetch_html(url)
             if not html_text:
                 return {"list": []}
+
+            # 提取元信息
             info = self._parse_detail_info(html_text)
             info["vod_id"] = vod_id
+
+            # 提取播放源和选集
             play_from, play_url = self._parse_play_sources(html_text)
             info["vod_play_from"] = "$$$".join(play_from) if play_from else "默认源"
             info["vod_play_url"] = "$$$".join(play_url) if play_url else ""
+
+            # 修复播放URL为绝对路径
             if info.get("vod_play_url"):
                 urls = info["vod_play_url"]
+                # 分隔符拆分后修复每个URL
                 fixed_sources = []
                 for src_urls in urls.split("$$$"):
                     fixed_eps = []
@@ -923,7 +836,9 @@ class Spider(BaseSpider):
                             fixed_eps.append(ep)
                     fixed_sources.append("#".join(fixed_eps))
                 info["vod_play_url"] = "$$$".join(fixed_sources)
+
             return {"list": [info]}
+
         except requests.exceptions.Timeout as e:
             if self.config.get("debug"):
                 print(f"[detailContent] 超时 (id={vod_id}): {e}")
@@ -938,6 +853,7 @@ class Spider(BaseSpider):
     def playerContent(self, flag: str, id: str, vipFlags: list = None) -> dict:
         """播放: 从播放页提取m3u8地址 (flag/id/vipFlags参数全部使用)
         id是播放页URL: /movie/{hex}/{num}.html 或 /tv/{hex}/{num}.html?origin={src}&p={ep}
+
         提取策略 (按可靠性排序):
           1. xg_video_player_doc.aa -> 当前选集的直链m3u8或API路径
           2. currentUrl变量 -> API路径
@@ -945,46 +861,70 @@ class Spider(BaseSpider):
           4. iframe播放器 (parse=1)
         """
         play_url = self._fix_url(id)
+
         headers = LieZiMi.build_headers(self.site_url + "/")
         result: dict = {
             "parse": 1,
             "url": play_url,
             "header": json.dumps(headers),
         }
+
+        # 如果已经是m3u8/mp4直链
         if QianZiMi.is_direct_video(play_url):
             result["parse"] = 0
             return result
+
         try:
+            # 获取播放页HTML
             html_text = self._fetch_html(play_url)
             if not html_text:
                 return result
-            aa_raw = QianZiMi.extract_aa_url(html_text)
-            if aa_raw:
-                final_url = QianZiMi.resolve_m3u8_play_url(self.session, aa_raw, self.site_url, headers)
-                result["parse"] = 0
-                result["url"] = final_url
-                return result
+
+            # 策略1: 前字秘 - 从 xg_video_player_doc.aa 提取当前选集数据
+            current_ep = QianZiMi.extract_current_episode(html_text)
+            if current_ep:
+                ep_url = current_ep.get("url", "")
+                if ep_url:
+                    if ep_url.startswith("http") and ".m3u8" in ep_url:
+                        # 直链m3u8 (电影类型)
+                        result["parse"] = 0
+                        result["url"] = ep_url
+                        return result
+                    elif ep_url.startswith("/api/"):
+                        # API路径 (电视剧类型), 转绝对路径
+                        api_url = self._fix_url(ep_url)
+                        result["parse"] = 0
+                        result["url"] = api_url
+                        return result
+
+            # 策略2: 前字秘 - 提取 currentUrl 变量 (旧格式兼容)
             current_url = QianZiMi.extract_current_url(html_text)
             if current_url:
-                final_url = QianZiMi.resolve_m3u8_play_url(self.session, current_url, self.site_url, headers)
+                m3u8_api_url = self._fix_url(current_url)
                 result["parse"] = 0
-                result["url"] = final_url
+                result["url"] = m3u8_api_url
                 return result
+
+            # 策略3: 在播放页HTML中找m3u8/mp4直链
             m3u8_match = re.search(r'(https?://[^\s"<>\\]+\.m3u8[^\s"<>\\]*)', html_text)
             if m3u8_match:
                 result["parse"] = 0
                 result["url"] = m3u8_match.group(1).replace("\\/", "/")
                 return result
+
             mp4_match = re.search(r'(https?://[^\s"<>\\]+\.mp4[^\s"<>\\]*)', html_text)
             if mp4_match:
                 result["parse"] = 0
                 result["url"] = mp4_match.group(1).replace("\\/", "/")
                 return result
+
+            # 策略4: iframe播放器 (需要客户端解析)
             iframe_match = re.search(r'<iframe[^>]*src="([^"]+)"', html_text)
             if iframe_match:
                 result["parse"] = 1
                 result["url"] = self._fix_url(iframe_match.group(1))
                 return result
+
         except requests.exceptions.Timeout as e:
             if self.config.get("debug"):
                 print(f"[playerContent] 超时: {e}")
@@ -994,11 +934,14 @@ class Spider(BaseSpider):
         except Exception as e:
             if self.config.get("debug"):
                 print(f"[playerContent] 异常: {e}")
+
+        # vipFlags使用: 检查是否为VIP标识
         if vipFlags and isinstance(vipFlags, list):
             for vf in vipFlags:
                 if vf and str(vf).lower() in flag.lower():
                     result["parse"] = 1
                     break
+
         result["url"] = play_url
         result["parse"] = 1
         return result
@@ -1012,14 +955,20 @@ class Spider(BaseSpider):
         """
         page = int(pg) if pg else 1
         result: dict = {"list": [], "page": page, "pagecount": 1}
+
         if not key:
             return result
+
+        # quick使用: 快速模式只搜第一页
         if quick and page > 1:
             return result
+
         try:
             endpoints = self.config["endpoints"]
             sion_id = self.config.get("sion_id", "")
+            # 站点分页0-indexed: TVBox pg=1 -> site page=0
             page0 = page - 1
+
             if page <= 1:
                 search_url = self._fix_url(
                     endpoints["search"].format(wd=quote(key), sion_id=sion_id)
@@ -1030,17 +979,26 @@ class Spider(BaseSpider):
                         wd=quote(key), pg=page0, sion_id=sion_id
                     )
                 )
+
+            # 搜索前确保已访问首页 (获取sion_id cookie)
             if self.session and not self.session.cookies.get("sion_id"):
                 try:
                     self.session.get(self.site_url + "/", timeout=10)
                 except Exception:
                     pass
+
             html_text = self._fetch_html(search_url)
+
+            # 429重试: 尝试PoW验证后重试
             if not html_text and self.session:
                 html_text = self._search_with_retry(search_url, key, sion_id)
+
             if not html_text:
                 return result
-            videos = DouZiMi.parse_video_cards(html_text, self.site_url, self.config["pic_cdn"], self.config["use_cdn"])
+
+            videos = DouZiMi.parse_video_cards(html_text, self.site_url)
+
+            # 解析分页: 找 page=N 格式的最大页码
             page_matches = re.findall(r"[?&]page=(\d+)", html_text)
             if page_matches:
                 max_site_page = max(int(p) for p in page_matches)
@@ -1048,7 +1006,9 @@ class Spider(BaseSpider):
             else:
                 if f"page={page0 + 1}" in html_text:
                     result["pagecount"] = page + 1
+
             result["list"] = videos
+
         except requests.exceptions.Timeout as e:
             if self.config.get("debug"):
                 print(f"[searchContent] 超时 (key={key}): {e}")
@@ -1058,6 +1018,7 @@ class Spider(BaseSpider):
         except Exception as e:
             if self.config.get("debug"):
                 print(f"[searchContent] 异常 (key={key}): {e}")
+
         return result
 
     def _search_with_retry(self, search_url: str, key: str, sion_id: str) -> Optional[str]:
@@ -1067,46 +1028,67 @@ class Spider(BaseSpider):
         """
         if not self.session:
             return None
+
         try:
+            # 1. 重新请求搜索URL, 获取429页面内容
             resp = self.session.get(search_url, timeout=self.config.get("timeout", 15))
             if resp.status_code != 429:
+                # 不是429, 可能是其他问题
                 if resp.status_code == 200:
                     return resp.text
                 return None
+
             html_429 = resp.text
             if self.config.get("debug"):
                 print(f"[_search_with_retry] 429页面长度: {len(html_429)}")
+
+            # 2. 从429页面提取 hash 和 target
             hash_match = re.search(r"var\s+hash\s*=\s*'([a-f0-9]+)'", html_429)
             target_match = re.search(r"var\s+target\s*=\s*'([a-f0-9]+)'", html_429)
+
             if not hash_match or not target_match:
                 if self.config.get("debug"):
                     print("[_search_with_retry] 未找到PoW挑战参数")
                 return None
+
             hash_val = hash_match.group(1)
             target_val = target_match.group(1)
+
             if self.config.get("debug"):
                 print(f"[_search_with_retry] PoW: hash={hash_val[:20]}... target={target_val[:20]}...")
+
+            # 3. 计算PoW nonce (sha1(hash + i) === target)
             nonce = QianZiMi.solve_pow(hash_val, target_val)
             if nonce is None:
                 if self.config.get("debug"):
                     print("[_search_with_retry] PoW计算失败")
                 return None
+
             if self.config.get("debug"):
                 print(f"[_search_with_retry] PoW solved: nonce={nonce}")
+
+            # 4. 用attack_key重试搜索
+            # 429页面的JS逻辑: currentUrl + separator + 'attack_key=' + i
             retry_url = search_url
             if "attack_key=" in retry_url:
+                # 已有attack_key, 替换
                 retry_url = re.sub(
                     r"([?&])attack_key=[^&]*",
                     rf"\1attack_key={nonce}",
                     retry_url
                 )
             else:
+                # 添加attack_key
                 separator = "&" if "?" in retry_url else "?"
                 retry_url = retry_url + separator + f"attack_key={nonce}"
+
             if self.config.get("debug"):
                 print(f"[_search_with_retry] 重试URL: {retry_url[:120]}...")
+
+            # 5. 用attack_key重试
             html_text = self._fetch_html(retry_url)
             return html_text
+
         except requests.exceptions.Timeout as e:
             if self.config.get("debug"):
                 print(f"[_search_with_retry] 超时: {e}")
@@ -1116,6 +1098,7 @@ class Spider(BaseSpider):
         except Exception as e:
             if self.config.get("debug"):
                 print(f"[_search_with_retry] 异常: {e}")
+
         return None
 
     def searchContentPage(self, key: str, quick: bool, pg: int) -> dict:
@@ -1142,14 +1125,18 @@ class Spider(BaseSpider):
                     print(f"[localProxy] 异常: {e}")
         return result
 
+
 # ==================================================================
 #  自检入口 (铁律8)
 # ==================================================================
+
 if __name__ == "__main__":
     import urllib3
     urllib3.disable_warnings()
+
     spider = Spider()
     spider.init()
+
     print("=" * 60)
     print("  豆花电影网 TVBox爬虫源 - 自检")
     print(f"  站点: {spider.site_url}")
@@ -1158,11 +1145,10 @@ if __name__ == "__main__":
 
     print("\n=== homeContent ===")
     try:
-        home = spider.homeContent(filter=True)
+        home = spider.homeContent()
         print(f"分类数: {len(home.get('class', []))}")
-        for c in home.get('class', []):
+        for c in home.get("class", []):
             print(f"  {c['type_name']}: {c['type_id']}")
-        print(f"筛选器数量: {len(home.get('filters', {}))}")
         print(f"推荐视频数: {len(home.get('list', []))}")
         if home.get("list"):
             v = home["list"][0]
@@ -1172,7 +1158,6 @@ if __name__ == "__main__":
         print(f"homeContent 失败: {e}")
 
     print("\n=== categoryContent (电影) ===")
-    cat = None
     try:
         cat = spider.categoryContent("dianying", "1", False, {})
         print(f"视频数: {len(cat.get('list', []))}")
@@ -1186,7 +1171,6 @@ if __name__ == "__main__":
         print(f"categoryContent 失败: {e}")
 
     print("\n=== categoryContent (电视剧) ===")
-    cat2 = None
     try:
         cat2 = spider.categoryContent("dianshiju", "1", False, {})
         print(f"视频数: {len(cat2.get('list', []))}")
@@ -1199,7 +1183,7 @@ if __name__ == "__main__":
 
     print("\n=== detailContent ===")
     try:
-        if cat and cat.get("list"):
+        if cat.get("list"):
             test_id = cat["list"][0]["vod_id"]
             detail = spider.detailContent([test_id])
             if detail.get("list"):
@@ -1220,7 +1204,7 @@ if __name__ == "__main__":
 
     print("\n=== detailContent (电视剧) ===")
     try:
-        if cat2 and cat2.get("list"):
+        if cat2.get("list"):
             test_id2 = cat2["list"][0]["vod_id"]
             detail2 = spider.detailContent([test_id2])
             if detail2.get("list"):
@@ -1229,6 +1213,7 @@ if __name__ == "__main__":
                 print(f"播放源: {d2.get('vod_play_from', '')[:100]}")
                 play_url2 = d2.get('vod_play_url', '')
                 print(f"播放URL片段: {play_url2[:200]}")
+                # 计算选集数
                 if play_url2:
                     first_src = play_url2.split("$$$")[0]
                     ep_count = len(first_src.split("#"))
@@ -1248,7 +1233,7 @@ if __name__ == "__main__":
 
     print("\n=== playerContent ===")
     try:
-        if cat and cat.get("list"):
+        if cat.get("list"):
             test_id = cat["list"][0]["vod_id"]
             detail = spider.detailContent([test_id])
             if detail.get("list") and detail["list"][0].get("vod_play_url"):
@@ -1262,13 +1247,9 @@ if __name__ == "__main__":
                     player = spider.playerContent(first_flag, ep_url, [])
                     print(f"parse: {player.get('parse')}")
                     print(f"url: {player.get('url', '')[:120]}")
-            else:
-                print("无播放地址, 跳过playerContent测试")
-        else:
-            print("无分类数据, 跳过playerContent测试")
     except Exception as e:
         print(f"playerContent 失败: {e}")
 
     print("\n" + "=" * 60)
-    print("  自检结束")
+    print("  自检完成")
     print("=" * 60)
