@@ -42,7 +42,7 @@
             "name": "🎮小霸王 | 游戏",
             "type": 3,
             "api": "csp_Yikm",
-            "jar": "game-20260915-125808.jar",
+            "jar": "./jar/game-20260915-125808.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
