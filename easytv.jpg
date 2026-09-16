@@ -42,7 +42,7 @@
             "name": "🎮小霸王 | 游戏",
             "type": 3,
             "api": "csp_Yikm",
-            "jar": "./jar/game-20260915-125808.jar",
+            "jar": "game-20260915-125808.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
@@ -756,13 +756,6 @@
             }
         },
         {
-            "key": "剧圈影视",
-            "name": "剧圈 | 影视",
-            "type": 3,
-            "api": "csp_XYQHiker",
-            "ext": "./XYQHiker/剧圈影视.json"
-        },
-        {
             "key": "1905",
             "name": "1905 | 影视",
             "type": 3,
@@ -858,20 +851,6 @@
             }
         },
         {
-            "key": "路漫漫",
-            "name": "路漫漫 | 动漫",
-            "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/路漫漫.js"
-        },
-        {
-            "key": "去看吧",
-            "name": "去看吧 | 动漫",
-            "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/去看吧.js"
-        },
-        {
             "key": "荐片",
             "name": "荐片 | 磁力",
             "api": "csp_JianPian",
@@ -905,16 +884,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://xunlei8.me"
-        },
-        {
-            "key": "电影港",
-            "name": "电影港 | 磁力",
-            "type": 3,
-            "api": "csp_XYQHiker",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./XYQHiker/电影港.json"
         },
         {
             "key": "阿里云盘",
@@ -1061,18 +1030,6 @@
             "name": "呦呦 | DJ",
             "type": 3,
             "api": "csp_Djuu",
-            "searchable": 1,
-            "quickSearch": 0,
-            "changeable": 0,
-            "style": {
-                "type": "list"
-            }
-        },
-        {
-            "key": "轮回DJ",
-            "name": "轮回 | DJ",
-            "type": 3,
-            "api": "csp_Djlh",
             "searchable": 1,
             "quickSearch": 0,
             "changeable": 0,
