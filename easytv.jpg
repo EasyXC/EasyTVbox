@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 9-17",
+            "name": "本地视频 | 9-17.1",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -42,7 +42,7 @@
             "name": "🎮小霸王 | 游戏",
             "type": 3,
             "api": "csp_Yikm",
-            "jar": "./py/game-20260915-125808.jar",
+            "jar": "./py/xbw.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
