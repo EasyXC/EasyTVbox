@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 09-17",
+            "name": "本地视频 | 09-17.1",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -584,15 +584,6 @@
             "name": "FreeOK | 影视",
             "type": 3,
             "api": "./py/FreeOK.py",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
-            "key": "饭团影视",
-            "name": "饭团 | 影视",
-            "type": 3,
-            "api": "./py/饭团影视.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
