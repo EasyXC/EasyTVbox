@@ -589,10 +589,10 @@
             "filterable": 1
         },
         {
-            "key": "饭团",
+            "key": "饭团影视",
             "name": "饭团 | 影视",
             "type": 3,
-            "api": "./py/饭团.py",
+            "api": "./py/饭团影视.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
