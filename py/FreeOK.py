@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# QQ群：807916734
+# QQ群：807916734 @Easy
 """FreeOK (freeok.in) dr_py source.
 
 站点: https://www.freeok.in (MacCMS V10 + MX 主题)
