@@ -589,6 +589,15 @@
             "filterable": 1
         },
         {
+            "key": "饭团",
+            "name": "饭团 | 影视",
+            "type": 3,
+            "api": "./py/饭团.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
             "key": "哔哩合集",
             "name": "哔哩 | 合集",
             "type": 3,
