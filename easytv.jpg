@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 09-17.1",
+            "name": "本地视频 | 09-18",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -1326,16 +1326,6 @@
             "timeout": 10,
             "changeable": 1,
             "playerType": 2
-        },
-        {
-            "name": "migu",
-            "type": 0,
-            "url": "https://develop202.github.io/migu_video/interface.txt",
-            "playerType": 1,
-            "ua": "okhttp/3.8.1",
-            "timeout": 20,
-            "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}",
-            "logo": "https://logo.wyfc.qzz.io/{name}.png"
         }
     ],
     "parses": [
