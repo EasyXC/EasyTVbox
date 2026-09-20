@@ -6,7 +6,7 @@
     "sites": [
         {
             "key": "豆瓣",
-            "name": "EasyTV | Q群：807916734",
+            "name": "公众号：熵侦",
             "type": 3,
             "api": "csp_Douban",
             "searchable": 0
