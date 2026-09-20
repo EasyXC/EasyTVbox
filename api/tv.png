@@ -1,5 +1,4 @@
 央视频道,#genre#
-CCTV-1综合,http://112.30.73.119:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-1综合,http://183.129.255.66:8480/hls/1/index.m3u8
 CCTV-1综合,http://120.76.248.139/live/bfgd/4200000488.m3u8
 CCTV-1综合,http://36.110.54.118:866/hls/1/index.m3u8
@@ -24,7 +23,6 @@ CCTV-1综合,http://bztv.tvbus.cc:8081/cdnlive/cctv1.m3u8
 CCTV-1综合,http://107.150.60.122/live/CCTV-1hd.m3u8
 CCTV-1综合,http://38.75.136.137:98/gslb/dsdqpub/CCTV-1hd.m3u8?auth=testpub
 CCTV-1综合,http://192.151.150.154/live/CCTV-1hd.m3u8
-CCTV-2财经,http://112.30.73.119:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-2财经,http://183.129.255.66:8480/hls/2/index.m3u8
 CCTV-2财经,http://120.76.248.139/live/bfgd/4200000061.m3u8
 CCTV-2财经,http://36.110.54.118:866/hls/2/index.m3u8
@@ -47,7 +45,6 @@ CCTV-2财经,http://45.78.61.93:1234/631780532
 CCTV-2财经,http://38.75.136.137:98/gslb/dsdqpub/CCTV-2hd.m3u8?auth=testpub
 CCTV-2财经,http://107.150.60.122/live/CCTV-2hd.m3u8
 CCTV-2财经,http://192.151.150.154/live/CCTV-2hd.m3u8
-CCTV-3综艺,http://112.30.73.119:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-3综艺,http://36.110.54.118:866/hls/3/index.m3u8
 CCTV-3综艺,http://183.129.255.66:8480/hls/3/index.m3u8
 CCTV-3综艺,http://120.76.248.139/live/bfgd/4200000062.m3u8
@@ -67,7 +64,6 @@ CCTV-3综艺,http://222.134.19.49:8090/624878271
 CCTV-3综艺,http://192.151.150.154/live/CCTV-3hd.m3u8
 CCTV-3综艺,http://38.75.136.137:98/gslb/dsdqpub/CCTV-3hd.m3u8?auth=testpub
 CCTV-3综艺,http://107.150.60.122/live/CCTV-3hd.m3u8
-CCTV-4中文国际,http://112.30.73.119:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-4中文国际,http://36.110.54.118:866/hls/4/index.m3u8
 CCTV-4中文国际,http://183.129.255.66:8480/hls/4/index.m3u8
 CCTV-4中文国际,http://120.76.248.139/live/bfgd/4200000063.m3u8
@@ -96,7 +92,6 @@ CCTV-5体育,http://2280.eu.org:1234/641886683
 CCTV-5体育,http://112.92.129.95:9898/hls/22/index.m3u8
 CCTV-5体育,http://124.221.146.169:7001/641886683
 CCTV-5体育,http://www.ikerobot.com:1234/641886683
-CCTV-5体育,http://112.30.73.119:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-5体育,http://222.213.105.65:7788/641886683
 CCTV-5体育,http://119.233.255.62:1234/641886683
 CCTV-5体育,http://www.frankgb.cn:4022/udp/239.49.8.75:8000
@@ -120,7 +115,6 @@ CCTV-5+体育赛事,http://222.134.19.49:8090/641886773
 CCTV-5+体育赛事,http://38.75.136.137:98/gslb/dsdqpub/CCTV-5p.m3u8?auth=testpub
 CCTV-5+体育赛事,http://119.233.255.62:1234/641886773
 CCTV-5+体育赛事,http://107.150.60.122/live/CCTV-5p.m3u8
-CCTV-6电影,http://112.30.73.119:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-6电影,http://36.110.54.118:866/hls/6/index.m3u8
 CCTV-6电影,http://183.129.255.66:8480/hls/7/index.m3u8
 CCTV-6电影,http://www.frankgb.cn:4022/udp/239.49.8.76:8000
@@ -161,7 +155,6 @@ CCTV-7国防军事,http://107.150.60.122/live/CCTV-7hd.m3u8
 CCTV-7国防军事,http://119.233.255.62:1234/673168121
 CCTV-7国防军事,http://45.78.61.93:1234/673168121
 CCTV-7国防军事,http://222.134.19.49:8090/673168121
-CCTV-8电视剧,http://112.30.73.119:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-8电视剧,http://183.129.255.66:8480/hls/9/index.m3u8
 CCTV-8电视剧,http://36.110.54.118:866/hls/8/index.m3u8
 CCTV-8电视剧,http://www.frankgb.cn:4022/udp/239.49.8.77:8000
@@ -182,7 +175,6 @@ CCTV-8电视剧,http://192.151.150.154/live/CCTV-8hd.m3u8
 CCTV-8电视剧,http://38.75.136.137:98/gslb/dsdqpub/CCTV-8hd.m3u8?auth=testpub
 CCTV-8电视剧,http://107.150.60.122/live/CCTV-8hd.m3u8
 CCTV-8电视剧,http://222.134.19.49:8090/624878356
-CCTV-9纪录,http://112.30.73.119:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-9纪录,http://183.129.255.66:8480/hls/10/index.m3u8
 CCTV-9纪录,http://36.110.54.118:866/hls/9/index.m3u8
 CCTV-9纪录,http://120.76.248.139/live/bfgd/4200000128.m3u8
@@ -223,7 +215,6 @@ CCTV-10科教,http://119.233.255.62:1234/624878405
 CCTV-10科教,http://38.75.136.137:98/gslb/dsdqpub/CCTV-10hd.m3u8?auth=testpub
 CCTV-10科教,http://107.150.60.122/live/CCTV-10hd.m3u8
 CCTV-10科教,http://192.151.150.154/live/CCTV-10hd.m3u8
-CCTV-11戏曲,http://112.30.73.119:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-11戏曲,http://183.129.255.66:8480/hls/12/index.m3u8
 CCTV-11戏曲,http://120.76.248.139/live/bfgd/4200000130.m3u8
 CCTV-11戏曲,http://112.92.129.95:9898/hls/29/index.m3u8
@@ -243,7 +234,6 @@ CCTV-11戏曲,http://107.150.60.122/live/CCTV-11hd.m3u8
 CCTV-11戏曲,http://38.75.136.137:98/gslb/dsdqpub/CCTV-11hd.m3u8?auth=testpub
 CCTV-11戏曲,http://192.151.150.154/live/CCTV-11hd.m3u8
 CCTV-12社会与法,http://183.129.255.66:8480/hls/13/index.m3u8
-CCTV-12社会与法,http://112.30.73.119:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-12社会与法,http://36.110.54.118:866/hls/11/index.m3u8
 CCTV-12社会与法,http://112.92.129.95:9898/hls/30/index.m3u8
 CCTV-12社会与法,http://113.98.11.46:3000/673168185
@@ -262,7 +252,6 @@ CCTV-12社会与法,http://222.134.19.49:8090/673168185
 CCTV-12社会与法,http://38.75.136.137:98/gslb/dsdqpub/CCTV-12hd.m3u8?auth=testpub
 CCTV-12社会与法,http://107.150.60.122/live/CCTV-12hd.m3u8
 CCTV-12社会与法,http://192.151.150.154/live/CCTV-12hd.m3u8
-CCTV-13新闻,http://112.30.73.119:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-13新闻,http://120.76.248.139/live/bfgd/4200000067.m3u8
 CCTV-13新闻,http://183.129.255.66:8480/hls/14/index.m3u8
 CCTV-13新闻,http://112.92.129.95:9898/hls/31/index.m3u8
@@ -281,7 +270,6 @@ CCTV-13新闻,http://38.75.136.137:98/gslb/dsdqpub/CCTV-13hd.m3u8?auth=testpub
 CCTV-13新闻,http://45.78.61.93:1234/608807423
 CCTV-13新闻,http://107.150.60.122/live/CCTV-13hd.m3u8
 CCTV-13新闻,http://222.134.19.49:8090/608807423
-CCTV-14少儿,http://112.30.73.119:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-14少儿,http://183.129.255.66:8480/hls/15/index.m3u8
 CCTV-14少儿,http://36.110.54.118:866/hls/12/index.m3u8
 CCTV-14少儿,http://112.92.129.95:9898/hls/32/index.m3u8
@@ -308,7 +296,6 @@ CCTV-15音乐,http://2280.eu.org:1234/673168223
 CCTV-15音乐,http://120.76.248.139/live/bfgd/4200000133.m3u8
 CCTV-15音乐,http://222.213.105.65:7788/673168223
 CCTV-15音乐,http://www.ikerobot.com:1234/673168223
-CCTV-15音乐,http://112.30.73.119:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-15音乐,http://smzb.bypbwxx.top/lvdou/zhibojm-yangshi.php?token=5fec3df34e3f435ce242458fb86a74
 CCTV-15音乐,http://119.233.255.62:1234/673168223
 CCTV-15音乐,http://120.48.113.49:6006/673168223
@@ -742,7 +729,6 @@ CGTN俄语,http://113.98.11.46:3000/609006446
 浙江卫视HD,http://107.150.60.122/live/zjwshd.m3u8
 浙江卫视HD,http://198.204.228.26/live/zjwshd.m3u8
 秒播卫视,#genre#
-北京卫视,http://112.30.73.119:9901/tsfile/live/1034_1.m3u8?key=txiptv&playlive=0&authid=0
 北京卫视,http://183.129.255.66:8480/hls/29/index.m3u8
 北京卫视,http://120.76.248.139/live/bfgd/4200000083.m3u8
 北京卫视,http://112.92.129.95:9898/hls/37/index.m3u8
@@ -773,7 +759,6 @@ CGTN俄语,http://113.98.11.46:3000/609006446
 湖南卫视,http://173.208.212.130:8181/720p/hnws.m3u8
 湖南卫视,http://192.151.150.154/live/hnwshd.m3u8
 湖南卫视,http://207.56.13.146:81/cdnlive/hnws.m3u8
-浙江卫视,http://112.30.73.119:9901/tsfile/live/1032_1.m3u8?key=txiptv&playlive=0&authid=0
 浙江卫视,http://120.76.248.139/live/bfgd/4200000094.m3u8
 浙江卫视,http://183.129.255.66:8480/hls/27/index.m3u8
 浙江卫视,http://112.92.129.95:9898/hls/55/index.m3u8
@@ -782,7 +767,6 @@ CGTN俄语,http://113.98.11.46:3000/609006446
 浙江卫视,http://173.208.212.130:8181/720p/zjws.m3u8
 浙江卫视,http://207.56.13.146:81/cdnlive/zjws.m3u8
 浙江卫视,http://192.151.150.154/live/zjwshd.m3u8
-东方卫视,http://112.30.73.119:9901/tsfile/live/1033_1.m3u8?key=txiptv&playlive=0&authid=0
 东方卫视,http://by4.nty.tv189.cn/live/tm-xpdfws-4000k.m3u8
 东方卫视,http://112.92.129.95:9898/hls/36/index.m3u8
 东方卫视,http://183.129.255.66:8480/hls/30/index.m3u8
@@ -852,14 +836,12 @@ CGTN俄语,http://113.98.11.46:3000/609006446
 重庆卫视,http://45.78.61.93:1234/738910914
 重庆卫视,http://192.151.150.154/live/cqwshd.m3u8
 四川卫视,http://183.129.255.66:8480/hls/36/index.m3u8
-四川卫视,http://112.30.73.119:9901/tsfile/live/1410_1.m3u8?key=txiptv&playlive=0&authid=0
 四川卫视,http://112.92.129.95:9898/hls/47/index.m3u8
 四川卫视,http://www.frankgb.cn:4022/udp/239.49.8.110:8000
 四川卫视,http://120.76.248.139/live/bfgd/4200000103.m3u8
 四川卫视,http://bztv.tvbus.cc:8081/cdnlive/scws.m3u8
 四川卫视,http://smzb.bypbwxx.top/lvdou/zhibojm-weishi-ws.php?token=69387da4efbaeb81a8cb31db6ff08a
 四川卫视,http://192.151.150.154/live/scwshd.m3u8
-东南卫视,http://112.30.73.119:9901/tsfile/live/1041_1.m3u8?key=txiptv&playlive=0&authid=0
 东南卫视,http://by4.nty.tv189.cn/live/tm-dxdnws-4000k.m3u8
 东南卫视,http://120.76.248.139/live/bfgd/4200000483.m3u8
 东南卫视,http://112.92.129.95:9898/hls/101/index.m3u8
@@ -902,8 +884,6 @@ CGTN俄语,http://113.98.11.46:3000/609006446
 广东卫视,http://192.151.150.154/live/gdwshd.m3u8
 广东卫视,http://45.78.61.93:1234/608831231
 广东卫视,http://173.208.212.130:8181/720p/gdws.m3u8
-广西卫视,http://112.30.73.119:9901/tsfile/live/1044_1.m3u8?key=txiptv&playlive=0&authid=0
-广西卫视,http://112.30.73.119:9901/tsfile/live/1405_1.m3u8?key=txiptv&playlive=0&authid=0
 广西卫视,http://120.76.248.139/live/bfgd/4200000116.m3u8
 广西卫视,http://112.92.129.95:9898/hls/64/index.m3u8
 广西卫视,http://www.frankgb.cn:4022/udp/239.49.8.10:8000
@@ -911,7 +891,6 @@ CGTN俄语,http://113.98.11.46:3000/609006446
 广西卫视,http://smzb.bypbwxx.top/lvdou/zhibojm-weishi-ws.php?token=b7d7c4fa4106f21c79f5a14740b77b
 广西卫视,http://bztv.tvbus.cc:8081/cdnlive/gxws.m3u8
 广西卫视,http://192.151.150.154/live/gxwshd.m3u8
-甘肃卫视,http://112.30.73.119:9901/tsfile/live/1406_1.m3u8?key=txiptv&playlive=0&authid=0
 甘肃卫视,http://by4.nty.tv189.cn/tm-dxgsws-4000k.m3u8
 甘肃卫视,http://120.76.248.139/live/bfgd/4200000119.m3u8
 甘肃卫视,http://www.frankgb.cn:4022/udp/239.49.0.250:8000
@@ -1154,7 +1133,6 @@ CGTN俄语,http://113.98.11.46:3000/609006446
 天津卫视,http://207.56.13.146:81/cdnlive/tjws.m3u8
 天津卫视,http://192.151.150.154/live/tjwshd.m3u8
 山西卫视,http://183.129.255.66:8480/hls/45/index.m3u8
-山西卫视,http://112.30.73.119:9901/tsfile/live/1051_1.m3u8?key=txiptv&playlive=0&authid=0
 山西卫视,http://bztv.tvbus.cc:8081/cdnlive/sxws.m3u8
 山西卫视,http://smzb.bypbwxx.top/lvdou/zhibojm-weishi-ws.php?token=2cf22581b8a439ae76eea3a8e4edbf
 山西卫视,http://192.151.150.154/live/sxwshd.m3u8
@@ -1175,7 +1153,6 @@ CGTN俄语,http://113.98.11.46:3000/609006446
 陕西卫视,http://45.78.61.93:1234/738910838
 陕西卫视,http://192.151.150.154/live/snwshd.m3u8
 陕西卫视,http://103.236.77.86:29824/738910838
-兵团卫视,http://112.30.73.119:9901/tsfile/live/1061_1.m3u8?key=txiptv&playlive=0&authid=0
 兵团卫视,http://by4.nty.tv189.cn/live/tm-ysbtws-4000k.m3u8
 兵团卫视,http://112.92.129.95:9898/hls/77/index.m3u8
 兵团卫视,http://124.221.146.169:7001/956923145
