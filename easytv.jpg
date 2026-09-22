@@ -271,6 +271,17 @@
             "timeout": 60
         },
         {
+            "name": "嗷呜瓜子 ┃ 秒播",
+            "key": "Guazi",
+            "type": 3,
+            "api": "csp_GuaziAmns",
+			"jar": "https://nos.netease.com/vcloud-statistic/nrtc/17aeb464-6132-4b0e-9c1d-d3c3653c8c89.png",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "ext": "Guazi"
+        },
+        {
             "name": "嗷呜①线 | 秒播",
             "key": "AppV7Fz",
             "type": 3,
