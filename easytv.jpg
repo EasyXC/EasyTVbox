@@ -1484,14 +1484,12 @@
             "playerType": 2
         },
         {
-            "name": "migu",
+            "name": "IPTV-有效期2026-09-29",
             "type": 0,
-            "url": "https://develop202.github.io/migu_video/interface.txt",
-            "playerType": 1,
-            "ua": "okhttp/3.8.1",
-            "timeout": 20,
-            "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}",
-            "logo": "https://logo.wyfc.qzz.io/{name}.png"
+            "url": "http://45.192.97.170:5211/311758",
+            "timeout": 10,
+            "changeable": 1,
+            "playerType": 2
         }
     ],
     "parses": [
