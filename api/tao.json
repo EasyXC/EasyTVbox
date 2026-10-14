@@ -1,5 +1,5 @@
 {
-	"spider": "https://gh-proxy.com/https://raw.githubusercontent.com/taoBox2620/taoBox2620/main/js/danmu.jar",
+	"spider": "https://gh-proxy.com/https://github.com/EasyXC/EasyTVbox/raw/refs/heads/main/jar/easy10.10.jar",
 	"wallpaper": "http://tool.teyonds.com/api/","logo":"https://raw.githubusercontent.com/taoBox2620/taoBox2620/main/js/java/logo.jpg",
 	"notice": "【TAO】",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
