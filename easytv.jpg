@@ -1,5 +1,5 @@
 {
-    "spider": "https://gitee.com/easy999/test1/raw/main/easy10.16.png;md5;123b2449928590f6f26ceb44038bbe57",
+    "spider": "https://gitee.com/easy999/test1/raw/main/easy1016.png;md5;97f5aef3cd7df2ab547c229a5e13aa6b",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "./logo.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
@@ -180,6 +180,22 @@
             },
             "timeout": 60
         },
+     {
+      "key": "茉莉",
+      "name": "茉莉 | 4K",
+      "type": 3,
+      "api": "csp_HDmoli",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "site": [
+          "https://www.hdmoli.com",
+          "https://www.hdmoli.pro"
+        ]
+      },
+      "timeout": 60
+    },
         {
             "key": "花卷",
             "name": "花卷 | 4K",
