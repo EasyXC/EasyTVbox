@@ -1478,9 +1478,15 @@
         {
             "name": "EasyTV",
             "type": 0,
-            "url": "./tv.png",
+            "url": "./api/tv.png",
             "timeout": 10,
             "changeable": 1,
+            "playerType": 2
+        },
+        {
+            "name": "用于切换接口",
+            "type": 0,
+            "url": "https://down.nigx.cn/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
             "playerType": 2
         }
     ],
