@@ -1,7 +1,7 @@
 {
     "spider": "https://gitee.com/easy999/test1/raw/main/easy10.16.png;md5;123b2449928590f6f26ceb44038bbe57",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
-    "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
+    "logo": "./logo.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
     "sites": [
         {
@@ -1478,7 +1478,7 @@
         {
             "name": "EasyTV",
             "type": 0,
-            "url": "https://easyzz.dpdns.org/api/tv.png",
+            "url": "./tv.png",
             "timeout": 10,
             "changeable": 1,
             "playerType": 2
