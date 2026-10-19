@@ -1,7 +1,7 @@
 {
-    "spider": "https://gitee.com/easy999/test1/raw/main/easy1018.png;md5;155a64d75ff665e2761a7a190196c7ed",
+    "spider": "https://gitee.com/easy999/test1/raw/main/easy10.19.png;md5;f30fbcb9b3d8421a90744c06227e1608",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
-    "logo": "./logo.gif",
+    "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
     "sites": [
         {
@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 10.19.3",
+            "name": "本地视频 | 10.19",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -341,7 +341,7 @@
             "key": "AppV7Fz",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
+            "jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -352,7 +352,7 @@
             "key": "AppV7Xy",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
+            "jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -363,7 +363,7 @@
             "key": "AppV7Zjdr",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
+            "jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -374,7 +374,7 @@
             "key": "AppV7Xyz",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
+            "jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -385,7 +385,7 @@
             "key": "AppV7Xnm",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
+            "jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -396,7 +396,7 @@
             "key": "AppV7Mtq",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
+            "jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -407,7 +407,7 @@
             "key": "AppV7Llq",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
+            "jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -418,7 +418,7 @@
             "key": "AppV7Xsz",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
+            "jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -429,7 +429,7 @@
             "key": "AppV7Xhr",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
+            "jar": "https://file.icve.com.cn/file_doc/997/227/F9538F89E13ADF0CFBCA7909AE555AB6.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -503,8 +503,8 @@
             }
         },
         {
-            "key": "马猴影视",
-            "name": "马猴 | APP",
+            "key": "大马猴影视",
+            "name": "大马猴 | APP",
             "type": 3,
             "api": "csp_App3Q",
             "ext": {
@@ -1265,7 +1265,7 @@
                 "type": "list"
             }
         },
-		{
+        {
             "key": "听友听书",
             "name": "听友 | 听书",
             "type": 3,
