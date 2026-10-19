@@ -1,11 +1,11 @@
 {
     "urls": [
         {
-            "name": "EasyTV 主力",
+            "name": "EasyTV主力",
             "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg"
         },
         {
-            "name": "EasyTV 备用",
+            "name": "EasyTV备用",
             "url": "https://easyzz.dpdns.org/easytv.jpg"
         },
         {
