@@ -1,7 +1,7 @@
 {
     "spider": "https://gitee.com/easy999/test1/raw/main/easy1018.png;md5;155a64d75ff665e2761a7a190196c7ed",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
-    "logo": "./logo.gif",
+    "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
     "sites": [
         {
@@ -180,22 +180,6 @@
             },
             "timeout": 60
         },
-     {
-      "key": "茉莉",
-      "name": "茉莉 | 4K",
-      "type": 3,
-      "api": "csp_HDmoli",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "site": [
-          "https://www.hdmoli.com",
-          "https://www.hdmoli.pro"
-        ]
-      },
-      "timeout": 60
-    },
         {
             "key": "花卷",
             "name": "花卷 | 4K",
@@ -241,6 +225,37 @@
             "ext": {
                 "site": [
                     "https://4kxc.com"
+                ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "小丑",
+            "name": "小丑 | 4K",
+            "type": 3,
+            "api": "csp_4KZhinan",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "site": [
+                    "https://4kxc.com"
+                ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "茉莉",
+            "name": "茉莉 | 4K",
+            "type": 3,
+            "api": "csp_HDmoli",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "site": [
+                    "https://www.hdmoli.com",
+                    "https://www.hdmoli.pro"
                 ]
             },
             "timeout": 60
@@ -300,7 +315,7 @@
             "key": "AppV7Fz",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -311,7 +326,7 @@
             "key": "AppV7Xy",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -322,7 +337,7 @@
             "key": "AppV7Zjdr",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -333,7 +348,7 @@
             "key": "AppV7Xyz",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -344,7 +359,7 @@
             "key": "AppV7Xnm",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -355,7 +370,7 @@
             "key": "AppV7Mtq",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -366,7 +381,7 @@
             "key": "AppV7Llq",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -377,7 +392,7 @@
             "key": "AppV7Xsz",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -388,7 +403,7 @@
             "key": "AppV7Xhr",
             "type": 3,
             "api": "csp_AppV7Amns",
-			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -1214,7 +1229,7 @@
                 "type": "list"
             }
         },
-		{
+        {
             "key": "听友听书",
             "name": "听友 | 听书",
             "type": 3,
@@ -1499,7 +1514,7 @@
         {
             "name": "EasyTV",
             "type": 0,
-            "url": "./api/tv.png",
+            "url": "https://easyzz.dpdns.org/api/tv.png",
             "timeout": 10,
             "changeable": 1,
             "playerType": 2
