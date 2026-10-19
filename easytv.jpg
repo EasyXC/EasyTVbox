@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 10.18",
+            "name": "本地视频 | 10.19",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -224,7 +224,7 @@
             "filterable": 1,
             "ext": {
                 "site": [
-                    "https://4kxc.com"
+                    "https://4kzn.cc"
                 ]
             },
             "timeout": 60
