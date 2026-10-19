@@ -38,6 +38,17 @@
             "searchable": 0
         },
         {
+            "key": "央视PY",
+            "name": "央视 | 栏目",
+            "type": 3,
+            "api": "./py/央视.py",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "playerType": 2
+        },
+        {
             "key": "玩偶",
             "name": "玩偶 | 4K",
             "type": 3,
@@ -224,7 +235,7 @@
             "filterable": 1,
             "ext": {
                 "site": [
-                    "https://4kxc.com"
+                    "https://4kzn.cc"
                 ]
             },
             "timeout": 60
@@ -315,7 +326,7 @@
             "key": "AppV7Fz",
             "type": 3,
             "api": "csp_AppV7Amns",
-            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -326,7 +337,7 @@
             "key": "AppV7Xy",
             "type": 3,
             "api": "csp_AppV7Amns",
-            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -337,7 +348,7 @@
             "key": "AppV7Zjdr",
             "type": 3,
             "api": "csp_AppV7Amns",
-            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -348,7 +359,7 @@
             "key": "AppV7Xyz",
             "type": 3,
             "api": "csp_AppV7Amns",
-            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -359,7 +370,7 @@
             "key": "AppV7Xnm",
             "type": 3,
             "api": "csp_AppV7Amns",
-            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -370,7 +381,7 @@
             "key": "AppV7Mtq",
             "type": 3,
             "api": "csp_AppV7Amns",
-            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -381,7 +392,7 @@
             "key": "AppV7Llq",
             "type": 3,
             "api": "csp_AppV7Amns",
-            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -392,7 +403,7 @@
             "key": "AppV7Xsz",
             "type": 3,
             "api": "csp_AppV7Amns",
-            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -403,7 +414,7 @@
             "key": "AppV7Xhr",
             "type": 3,
             "api": "csp_AppV7Amns",
-            "jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
+			"jar": "https://file.icve.com.cn/file_doc/305/994/4C4F8A2CE645A5539405DEFE99D17FA3.png",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -713,7 +724,7 @@
         },
         {
             "key": "TVB云播app",
-            "name": "TVB | 云播",
+            "name": "TVB | 免扫4K",
             "type": 3,
             "api": "./py/TVB云播代理版@easy.py",
             "searchable": 1,
@@ -1239,7 +1250,7 @@
                 "type": "list"
             }
         },
-        {
+		{
             "key": "听友听书",
             "name": "听友 | 听书",
             "type": 3,
@@ -1524,7 +1535,7 @@
         {
             "name": "EasyTV",
             "type": 0,
-            "url": "https://easyzz.dpdns.org/api/tv.png",
+            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/api/tv.png",
             "timeout": 10,
             "changeable": 1,
             "playerType": 2
