@@ -4,7 +4,7 @@
 EasyTV多仓：
 https://easyzz.dpdns.org/easydc.jpg
 
-EasyTV单仓：
+EasyTV单仓
 
 主力：
 https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg
@@ -14,6 +14,7 @@ https://easyzz.dpdns.org/easytv.jpg
 
 # Easy接口导航APP
 Easy接口导航App已更新2.1.6
+
 App官网：https://easy321.top/jkapp/
 
 # 防失联
