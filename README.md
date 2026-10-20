@@ -1,9 +1,11 @@
 # Easy接口
 注意：EasyTV接口导航已更新，复制下面的网址，直接放入空壳的点播里即可。
+
 EasyTV多仓：
 https://easyzz.dpdns.org/easydc.jpg
 
 EasyTV单仓：
+
 主力：
 https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg
 
