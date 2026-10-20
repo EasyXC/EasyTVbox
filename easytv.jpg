@@ -1569,6 +1569,11 @@
             "url": "Web"
         },
         {
+            "name": "小白解析",
+            "type": 1,
+            "url": "https://api.52xiaobai.cn/api/parse.php?token=8a7abd612eea54992353d426ea37f0a0&url="
+        },
+        {
             "name": "虾米",
             "type": 0,
             "url": "https://jx.xmflv.com/?url=",
