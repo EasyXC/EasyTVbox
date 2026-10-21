@@ -1,5 +1,5 @@
 {
-    "spider": "https://gitee.com/easy999/test1/raw/main/easy10.20.png;md5;89e4b4da711039208b57fd5f5d576817",
+    "spider": "https://gitee.com/easy999/test1/raw/main/easy10.21.png;md5;ce13cc36fbc765b14bbd794c4e62bfa",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 10.20",
+            "name": "本地视频 | 10.21",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -1231,6 +1231,18 @@
             "name": "咖啡 | 体育",
             "type": 3,
             "api": "csp_SportsKafei",
+            "searchable": 0,
+            "quickSearch": 0,
+            "changeable": 0,
+            "style": {
+                "type": "list"
+            }
+        },
+        {
+            "key": "球通体育",
+            "name": "球通 | 体育",
+            "type": 3,
+            "api": "csp_SportQiutong",
             "searchable": 0,
             "quickSearch": 0,
             "changeable": 0,
