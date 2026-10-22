@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 10.21",
+            "name": "本地视频 | 10.22",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -438,7 +438,7 @@
         },
         {
             "key": "热播影视",
-            "name": "热播 | APP",
+            "name": "热播 | 免扫4K",
             "type": 3,
             "api": "csp_AppRJ",
             "searchable": 1,
@@ -450,7 +450,7 @@
         },
         {
             "key": "一起影视",
-            "name": "一起 | APP",
+            "name": "一起 | 免扫4K",
             "type": 3,
             "api": "csp_AppYQK",
             "searchable": 1,
@@ -459,7 +459,7 @@
         },
         {
             "key": "番茄影视",
-            "name": "番茄 | APP",
+            "name": "番茄 | 免扫4K",
             "type": 3,
             "api": "csp_AppFQ",
             "searchable": 1,
@@ -468,7 +468,7 @@
         },
         {
             "key": "咕噜",
-            "name": "咕噜 | APP",
+            "name": "咕噜 | 免扫4K",
             "type": 3,
             "api": "csp_Gulu",
             "searchable": 1,
@@ -477,7 +477,7 @@
         },
         {
             "key": "布布",
-            "name": "布布 | APP",
+            "name": "布布 | 免扫4K",
             "type": 3,
             "api": "csp_YunDuo",
             "searchable": 1,
@@ -494,7 +494,7 @@
         },
         {
             "key": "大马猴影视",
-            "name": "大马猴 | APP",
+            "name": "大马猴 | 免扫4K",
             "type": 3,
             "api": "csp_App3Q",
             "ext": {
@@ -510,13 +510,13 @@
         },
         {
             "key": "韩圈",
-            "name": "韩圈 | APP",
+            "name": "韩圈 | 免扫4K",
             "type": 3,
             "api": "csp_Hxq"
         },
         {
             "key": "剧圈99",
-            "name": "剧圈 | APP",
+            "name": "剧圈 | 免扫4K",
             "type": 3,
             "api": "csp_App99",
             "ext": {
@@ -530,7 +530,7 @@
         },
         {
             "key": "半日99",
-            "name": "半日 | APP",
+            "name": "半日 | 免扫4K",
             "type": 3,
             "api": "csp_App99",
             "ext": {
@@ -544,7 +544,7 @@
         },
         {
             "key": "天堂",
-            "name": "天堂 | APP",
+            "name": "天堂 | 免扫4K",
             "type": 3,
             "api": "csp_AppDrama",
             "searchable": 1,
@@ -564,7 +564,7 @@
         },
         {
             "key": "苹果",
-            "name": "苹果 | APP",
+            "name": "苹果 | 免扫4K",
             "type": 3,
             "api": "csp_AppDrama",
             "searchable": 1,
@@ -584,8 +584,28 @@
             }
         },
         {
+            "key": "橘汁",
+            "name": "橘汁 | 免扫4K",
+            "type": 3,
+            "api": "csp_AppDrama",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "appName": "橘汁",
+                "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
+                "dataKey": "OW1WBLFZCLJ0WTNJQMRSZ2DYSGNBPT0=",
+                "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+                "pkg": "com.mxj.wylcjbxyx",
+                "host": "",
+                "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
+                "version": "3.0.2.4",
+                "decrypt": "1"
+            }
+        },
+        {
             "key": "华谊",
-            "name": "华谊 | APP",
+            "name": "华谊 | 免扫4K",
             "type": 3,
             "api": "csp_AppDrama",
             "searchable": 1,
@@ -605,7 +625,7 @@
         },
         {
             "key": "苹果",
-            "name": "苹果 | APP",
+            "name": "苹果 | 免扫4K",
             "type": 3,
             "api": "csp_AppDrama",
             "searchable": 1,
@@ -625,7 +645,7 @@
         },
         {
             "key": "蓝鹰",
-            "name": "蓝鹰 | APP",
+            "name": "蓝鹰 | 免扫4K",
             "type": 3,
             "api": "csp_AppQi",
             "searchable": 1,
@@ -640,7 +660,7 @@
         },
         {
             "key": "蓝鸟",
-            "name": "蓝鸟 | APP",
+            "name": "蓝鸟 | 免扫4K",
             "type": 3,
             "api": "csp_AppQi",
             "searchable": 1,
@@ -655,7 +675,7 @@
         },
         {
             "key": "魔方",
-            "name": "魔方 | APP",
+            "name": "魔方 | 免扫4K",
             "type": 3,
             "api": "csp_AppGet",
             "searchable": 1,
@@ -668,7 +688,7 @@
         },
         {
             "key": "王子",
-            "name": "王子 | APP",
+            "name": "王子 | 免扫4K",
             "type": 3,
             "api": "csp_AppGet",
             "searchable": 1,
@@ -681,7 +701,7 @@
         },
         {
             "key": "茉莉",
-            "name": "茉莉 | APP",
+            "name": "茉莉 | 免扫4K",
             "type": 3,
             "api": "csp_AppGet",
             "searchable": 1,
@@ -751,15 +771,6 @@
             "name": "VIP兔 | 影视",
             "type": 3,
             "api": "./py/VIP兔.py",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
-            "key": "豆花影视",
-            "name": "豆花 | 影视",
-            "type": 3,
-            "api": "./py/豆花电影.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -1231,18 +1242,6 @@
             "name": "咖啡 | 体育",
             "type": 3,
             "api": "csp_SportsKafei",
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 0,
-            "style": {
-                "type": "list"
-            }
-        },
-        {
-            "key": "球通体育",
-            "name": "球通 | 体育",
-            "type": 3,
-            "api": "csp_SportQiutong",
             "searchable": 0,
             "quickSearch": 0,
             "changeable": 0,
