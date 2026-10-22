@@ -476,6 +476,18 @@
             "filterable": 1
         },
         {
+            "key": "极影",
+            "name": "极影 | 免扫4K",
+            "type": 3,
+            "api": "./js/极影.js",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "playable": 1,
+            "ext": "http://cmsyun2.qijiyun.vip/api.php/app/"
+        },
+        {
             "key": "布布",
             "name": "布布 | 免扫4K",
             "type": 3,
@@ -792,18 +804,6 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
-        },
-        {
-            "key": "极影",
-            "name": "极影",
-            "type": 3,
-            "api": "./js/极影.js",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "playable": 1,
-            "ext": "http://cmsyun2.qijiyun.vip/api.php/app/"
         },
         {
             "key": "哔哩合集",
