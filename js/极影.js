@@ -107,7 +107,7 @@ async function home(filter) {
                     const typeId = jObj.type_id;
                     const newCls = {
                         type_id: typeId,
-                        type_name: (typeName || "").replace(/奇迹云|-加q群[:：]?\s*\d+\s*获取更多免费资源/g, ''),
+                        type_name: typeName,
                     };
                     const typeExtend = jObj.type_extend;
                     if (filter) {
@@ -435,7 +435,7 @@ async function detail(ids) {
                 let newLines = [];
                 for (let line of lines) {
                     if (line && line.toLowerCase().includes('qijiyun4k')) {
-                        newLines.push('');
+                        newLines.push('拒绝收费');
                     } else {
                         newLines.push((line || "").replace(/奇迹云/g, ''));
                     }
@@ -479,7 +479,7 @@ async function detail(ids) {
                 let newLines = [];
                 for (let line of lines) {
                     if (line && line.toLowerCase().includes('qijiyun4k')) {
-                        newLines.push('');
+                        newLines.push('拒绝收费');
                     } else {
                         newLines.push((line || "").replace(/奇迹云/g, ''));
                     }
