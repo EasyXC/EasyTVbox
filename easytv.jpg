@@ -438,7 +438,7 @@
         },
         {
             "key": "EmbyJS",
-            "name": "果然EMBY❤ | 免扫4K",
+            "name": "果然EMBY | 免扫4K",
             "type": 3,
             "api": "./js/Emby.js",
             "searchable": 1,
