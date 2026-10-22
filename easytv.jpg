@@ -777,7 +777,7 @@
         },
         {
             "key": "可可影视",
-            "name": "可可 | 影视1",
+            "name": "可可 | 影视",
             "type": 3,
             "api": "./py/可可影视.py",
             "searchable": 1,
@@ -792,6 +792,18 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
+        },
+        {
+            "key": "极影",
+            "name": "极影",
+            "type": 3,
+            "api": "./js/极影.js",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "playable": 1,
+            "ext": "http://cmsyun2.qijiyun.vip/api.php/app/"
         },
         {
             "key": "哔哩合集",
