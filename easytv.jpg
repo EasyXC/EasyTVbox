@@ -1250,6 +1250,18 @@
             }
         },
         {
+            "key": "球通体育",
+            "name": "球通 | 体育",
+            "type": 3,
+            "api": "csp_SportQiutong",
+            "searchable": 0,
+            "quickSearch": 0,
+            "changeable": 0,
+            "style": {
+                "type": "list"
+            }
+        },
+        {
             "key": "呦呦DJ",
             "name": "呦呦 | DJ",
             "type": 3,
