@@ -440,7 +440,7 @@
             "key": "EmbyJS",
             "name": "果然EMBY | 免扫4K",
             "type": 3,
-            "api": "./js/Emby.js",
+            "api": "https://raw.giteeusercontent.com/easy999/test1/raw/main/emby.js",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
