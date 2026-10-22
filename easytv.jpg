@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 10.22",
+            "name": "本地视频 | 10.22.1",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -435,6 +435,16 @@
             "quickSearch": 1,
             "changeable": 1,
             "ext": "AppV7Dsx"
+        },
+        {
+            "key": "EmbyJS",
+            "name": "果然EMBY❤ | 免扫4K",
+            "type": 3,
+            "api": "./js/Emby.js",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1
         },
         {
             "key": "热播影视",
@@ -1582,7 +1592,7 @@
         {
             "name": "EasyTV",
             "type": 0,
-            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/api/tv.png",
+            "url": "./api/tv.png",
             "timeout": 10,
             "changeable": 1,
             "playerType": 2
