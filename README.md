@@ -13,7 +13,7 @@ https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/eas
 https://easyzz.dpdns.org/easytv.jpg
 
 # Easy接口导航APP
-Easy接口导航App已更新2.1.6
+Easy接口导航App已更新2.1.7
 
 App官网：https://easy321.top/jkapp/
 
