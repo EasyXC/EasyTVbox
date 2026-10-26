@@ -1132,7 +1132,7 @@
         },
         {
             "key": "阿里云盘",
-            "name": "阿里 | 云盘",
+            "name": "阿里 | 网盘",
             "type": 3,
             "api": "csp_PanAli",
             "searchable": 0,
@@ -1184,7 +1184,7 @@
         },
         {
             "key": "迅雷云盘",
-            "name": "迅雷 | 云盘",
+            "name": "迅雷 | 网盘",
             "type": 3,
             "api": "csp_PanXunlei",
             "searchable": 0,
@@ -1210,7 +1210,7 @@
         },
         {
             "key": "天翼云盘",
-            "name": "天翼 | 云盘",
+            "name": "天翼 | 网盘",
             "type": 3,
             "api": "csp_PanTianyi",
             "searchable": 0,
@@ -1223,7 +1223,7 @@
         },
         {
             "key": "123云盘",
-            "name": "123 | 云盘",
+            "name": "123 | 网盘",
             "type": 3,
             "api": "csp_Pan123",
             "searchable": 0,
@@ -1369,7 +1369,7 @@
         },
         {
             "key": "戏曲多多",
-            "name": "戏曲 | 多多",
+            "name": "戏曲多多 | 戏曲",
             "type": 3,
             "api": "csp_AppLY",
             "searchable": 0,
@@ -1381,7 +1381,7 @@
         },
         {
             "key": "童趣",
-            "name": "童趣 | 儿童",
+            "name": "童趣 | 知识",
             "type": 3,
             "api": "csp_TongQu",
             "searchable": 1,
@@ -1394,7 +1394,7 @@
         },
         {
             "key": "兔小贝",
-            "name": "兔小贝 | 儿童",
+            "name": "兔小贝 | 知识",
             "type": 3,
             "api": "csp_TuXiaoBei",
             "searchable": 1,
@@ -1407,7 +1407,7 @@
         },
         {
             "key": "贝乐虎",
-            "name": "贝乐虎 | 儿童",
+            "name": "贝乐虎 | 知识",
             "type": 3,
             "api": "csp_BeiLeHu",
             "searchable": 1,
@@ -1505,7 +1505,7 @@
         },
         {
             "key": "少儿教育",
-            "name": "少儿 | 教育",
+            "name": "少儿 | 知识",
             "type": 3,
             "api": "csp_Bili",
             "searchable": 0,
@@ -1522,7 +1522,7 @@
         },
         {
             "key": "小学课堂",
-            "name": "小学 | 课堂",
+            "name": "小学 | 知识",
             "type": 3,
             "api": "csp_Bili",
             "searchable": 0,
@@ -1539,7 +1539,7 @@
         },
         {
             "key": "初中课堂",
-            "name": "初中 | 课堂",
+            "name": "初中 | 知识",
             "type": 3,
             "api": "csp_Bili",
             "searchable": 0,
@@ -1556,7 +1556,7 @@
         },
         {
             "key": "高中课堂",
-            "name": "高中 | 课堂",
+            "name": "高中 | 知识",
             "type": 3,
             "api": "csp_Bili",
             "searchable": 0,
@@ -1573,7 +1573,7 @@
         },
         {
             "key": "急救教学",
-            "name": "急救 | 教学",
+            "name": "急救 | 知识",
             "type": 3,
             "api": "csp_FirstAid",
             "searchable": 0,
