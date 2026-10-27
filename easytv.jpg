@@ -1611,7 +1611,7 @@
         {
             "name": "Easy-体育赛事",
             "type": 0,
-            "url": "./api/sports.m3u",
+            "url": "https://sports.easyzz.dpdns.org/live.m3u=719752",
             "timeout": 10,
             "changeable": 1,
             "playerType": 2
