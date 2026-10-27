@@ -1609,9 +1609,9 @@
             "playerType": 2
         },
         {
-            "name": "用于切换接口",
+            "name": "（NBA）用于切换接口",
             "type": 0,
-            "url": "https://down.nigx.cn/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+            "url": "./api/nba.m3u",
             "playerType": 2
         }
     ],
