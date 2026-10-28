@@ -1,5 +1,5 @@
 {
-    "spider": "https://gitee.com/easy999/test1/raw/main/easy10.26.png;md5;73b445ddf6df68f349536d36ba77c456",
+    "spider": "https://gitee.com/easy999/test1/raw/main/easy10.28.png;md5;d87c28d8bbbf4cb60e716061f6cbb9db",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 10.27",
+            "name": "本地视频 | 10.28",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -467,6 +467,15 @@
             "filterable": 1
         },
         {
+            "key": "八戒影视",
+            "name": "八戒 | 免扫4K",
+            "type": 3,
+            "api": "csp_AppBJ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1
+        },
+        {
             "key": "热播影视",
             "name": "热播 | 免扫4K",
             "type": 3,
@@ -495,6 +504,15 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
+        },
+        {
+            "key": "影探4K",
+            "name": "影探 | 免扫4K",
+            "type": 3,
+            "api": "csp_AppYT",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1
         },
         {
             "key": "TVB云播app",
@@ -1603,7 +1621,7 @@
         {
             "name": "EasyTV",
             "type": 0,
-            "url": "./api/tv.png",
+            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/api/tv.png",
             "timeout": 10,
             "changeable": 1,
             "playerType": 2
