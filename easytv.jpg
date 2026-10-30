@@ -1,5 +1,5 @@
 {
-    "spider": "https://gitee.com/easy999/test1/raw/main/easy10.28.png;md5;d87c28d8bbbf4cb60e716061f6cbb9db",
+    "spider": "https://gitee.com/easy999/test1/raw/main/easy10.30.png;md5;5ac1623ba3b7237beaec4498b68ec37e",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 10.28",
+            "name": "本地视频 | 10.30",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -56,7 +56,7 @@
             "key": "央视PY",
             "name": "央视 | 栏目",
             "type": 3,
-            "api": "./py/央视.py",
+            "api": "https://easy888.dpdns.org/py/央视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -337,6 +337,16 @@
             "timeout": 60
         },
         {
+            "key": "TVB云播app",
+            "name": "TVB | 免扫4K",
+            "type": 3,
+            "api": "https://easy888.dpdns.org/py/TVB云播代理版@easy.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 1
+        },
+        {
             "name": "嗷呜①线 | 秒播",
             "key": "AppV7Fz",
             "type": 3,
@@ -447,20 +457,20 @@
             "ext": "AppV7Dsx"
         },
         {
-            "key": "Easy-EmbyJS",
-            "name": "Easy | Emby免扫4K",
+            "key": "枫叶4K",
+            "name": "枫叶 | 免扫4K",
             "type": 3,
-            "api": "./js/Emby-Easy.js",
+            "api": "csp_AppFENGYE",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
             "filterable": 1
         },
         {
-            "key": "as080900-EmbyJS",
-            "name": "果然 | Emby免扫4K",
+            "key": "山楂4K",
+            "name": "山楂 | 免扫4K",
             "type": 3,
-            "api": "./js/Emby-as080900.js",
+            "api": "csp_AppSHANZ",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -506,29 +516,10 @@
             "filterable": 1
         },
         {
-            "key": "影探4K",
-            "name": "影探 | 免扫4K",
-            "type": 3,
-            "api": "csp_AppYT",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1
-        },
-        {
-            "key": "TVB云播app",
-            "name": "TVB | 免扫4K",
-            "type": 3,
-            "api": "./py/TVB云播代理版@easy.py",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "filterable": 1
-        },
-        {
             "key": "极影",
             "name": "极影 | 免扫4K",
             "type": 3,
-            "api": "./js/极影.js",
+            "api": "https://easy888.dpdns.org/js/极影.js",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
@@ -655,12 +646,12 @@
             "ext": {
                 "appName": "橘汁",
                 "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
-                "dataKey": "OW1WBLFZCLJ0WTNJQMRSZ2DYSGNBPT0=",
+                "dataKey": "ZU1DSFFWNENKMDYXVUQRN0ZJDUC4PQ==",
                 "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-                "pkg": "com.mxj.wylcjbxyx",
+                "pkg": "com.asjdhjhd.mgd.p3",
                 "host": "",
                 "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
-                "version": "3.0.2.4",
+                "version": "3.0.7.0",
                 "decrypt": "1"
             }
         },
@@ -774,45 +765,65 @@
             }
         },
         {
+            "key": "Easy-EmbyJS",
+            "name": "Easy | Emby免扫4K",
+            "type": 3,
+            "api": "https://easy888.dpdns.org/js/Emby-Easy.js",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
+            "key": "as080900-EmbyJS",
+            "name": "果然 | Emby免扫4K",
+            "type": 3,
+            "api": "https://easy888.dpdns.org/js/Emby-as080900.js",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
             "key": "腾讯视频",
             "name": "📺️腾讯 | 官方",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./lib/腾讯.js"
+            "api": "https://easy888.dpdns.org/js/drpy2.min.js",
+            "ext": "https://easy888.dpdns.org/lib/腾讯.js"
         },
         {
             "key": "爱奇艺视频",
             "name": "📺️爱奇艺 | 官方",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./lib/爱奇艺.js"
+            "api": "https://easy888.dpdns.org/js/drpy2.min.js",
+            "ext": "https://easy888.dpdns.org/lib/爱奇艺.js"
         },
         {
             "key": "优酷视频",
             "name": "📺️优酷 | 官方",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./lib/优酷.js"
+            "api": "https://easy888.dpdns.org/js/drpy2.min.js",
+            "ext": "https://easy888.dpdns.org/lib/优酷.js"
         },
         {
             "key": "芒果视频",
             "name": "📺️芒果 | 官方",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./lib/芒果.js"
+            "api": "https://easy888.dpdns.org/js/drpy2.min.js",
+            "ext": "https://easy888.dpdns.org/lib/芒果.js"
         },
         {
             "key": "哔哩哔哩",
             "name": "📺️B站 | 官方",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./lib/B站.js"
+            "api": "https://easy888.dpdns.org/js/drpy2.min.js",
+            "ext": "https://easy888.dpdns.org/lib/B站.js"
         },
         {
             "key": "新影视",
             "name": "New | 影视",
             "type": 3,
-            "api": "./py/新影视.py",
+            "api": "https://easy888.dpdns.org/py/新影视.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -821,7 +832,7 @@
             "key": "VIP兔",
             "name": "VIP兔 | 影视",
             "type": 3,
-            "api": "./py/VIP兔.py",
+            "api": "https://easy888.dpdns.org/py/VIP兔.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -830,7 +841,7 @@
             "key": "可可影视",
             "name": "可可 | 影视",
             "type": 3,
-            "api": "./py/可可影视.py",
+            "api": "https://easy888.dpdns.org/py/可可影视.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -839,7 +850,7 @@
             "key": "FreeOK",
             "name": "FreeOK | 影视",
             "type": 3,
-            "api": "./py/FreeOK.py",
+            "api": "https://easy888.dpdns.org/py/FreeOK.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -889,7 +900,7 @@
             "key": "红果短剧",
             "name": "红果 | 短剧",
             "type": 3,
-            "api": "./py/红果短剧.py",
+            "api": "https://easy888.dpdns.org/py/红果短剧.py",
             "genre": "shortdrama"
         },
         {
@@ -1099,19 +1110,19 @@
             "key": "巴士动漫",
             "name": "巴士 | 动漫",
             "type": 3,
-            "api": "csp_XBPQ",
-            "ext": {
-                "请求头": "User-Agent$MOBILE_UA#Accept$text/html#accept-language$zh-CN,zh;q=0.8",
-                "分类url": "https://dmbus.cc/show-{cateId}--{by}-{class}--{year}-{catePg}.html",
-                "分类": "国漫$1#日漫$2#欧美动漫$3#电影$4",
-                "数组": "class=\"item\">&&</li>",
-                "简介": "剧情：&&</p>",
-                "标题": "title=\"&&在线观看\"",
-                "副标题": "desc\">&&</span>",
-                "图片": "data-bg=\"&&\"",
-                "搜索url": "https://dmbus.cc/s----------.html?wd={wd}",
-                "倒序": "1"
-            }
+            "api": "csp_AnimeBashi"
+        },
+        {
+            "key": "吉里动漫",
+            "name": "吉里 | 动漫",
+            "type": 3,
+            "api": "csp_AnimeGiri"
+        },
+        {
+            "key": "花子动漫",
+            "name": "花子 | 动漫",
+            "type": 3,
+            "api": "csp_AnimeHuazi"
         },
         {
             "key": "荐片",
@@ -1147,19 +1158,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://xunlei8.me"
-        },
-        {
-            "key": "阿里云盘",
-            "name": "阿里 | 网盘",
-            "type": 3,
-            "api": "csp_PanAli",
-            "searchable": 0,
-            "filterable": 0,
-            "changeable": 0,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            }
         },
         {
             "key": "夸克网盘",
@@ -1205,6 +1203,19 @@
             "name": "迅雷 | 网盘",
             "type": 3,
             "api": "csp_PanXunlei",
+            "searchable": 0,
+            "filterable": 0,
+            "changeable": 0,
+            "style": {
+                "type": "list",
+                "ratio": 1.433
+            }
+        },
+        {
+            "key": "阿里云盘",
+            "name": "阿里 | 网盘",
+            "type": 3,
+            "api": "csp_PanAli",
             "searchable": 0,
             "filterable": 0,
             "changeable": 0,
@@ -1352,7 +1363,7 @@
             "key": "世界听书",
             "name": "世界 | 听书",
             "type": 3,
-            "api": "./py/世界听书.py",
+            "api": "https://easy888.dpdns.org/py/世界听书.py",
             "searchable": 1,
             "quickSearch": 0,
             "changeable": 0,
@@ -1530,7 +1541,7 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "./json/少儿教育.json",
+                "json": "https://easy888.dpdns.org/json/少儿教育.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             },
             "style": {
@@ -1547,7 +1558,7 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "./json/小学课堂.json",
+                "json": "https://easy888.dpdns.org/json/小学课堂.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             },
             "style": {
@@ -1564,7 +1575,7 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "./json/初中课堂.json",
+                "json": "https://easy888.dpdns.org/json/初中课堂.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             },
             "style": {
@@ -1581,7 +1592,7 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "./json/高中课堂.json",
+                "json": "https://easy888.dpdns.org/json/高中课堂.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             },
             "style": {
@@ -1629,7 +1640,7 @@
         {
             "name": "Easy-体育赛事",
             "type": 0,
-            "url": "https://sports.easyzz.dpdns.org/live.m3u=719752",
+            "url": "https://stymei.pages.dev/live.m3u",
             "timeout": 10,
             "changeable": 1,
             "playerType": 2
