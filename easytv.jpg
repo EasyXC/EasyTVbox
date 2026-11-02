@@ -1,5 +1,5 @@
 {
-    "spider": "https://gitee.com/easy999/test1/raw/main/easy10.30.png;md5;5ac1623ba3b7237beaec4498b68ec37e",
+    "spider": "https://gitee.com/easy999/test1/raw/main/easy11.02.png;md5;fb6661c1301c2c1522f6a8342c4cafbe",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 10.30",
+            "name": "本地视频 | 11.02",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -639,21 +639,10 @@
             "key": "橘汁",
             "name": "橘汁 | 免扫4K",
             "type": 3,
-            "api": "csp_AppDrama",
+            "api": "csp_AppJZ",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "appName": "橘汁",
-                "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
-                "dataKey": "ZU1DSFFWNENKMDYXVUQRN0ZJDUC4PQ==",
-                "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-                "pkg": "com.asjdhjhd.mgd.p3",
-                "host": "",
-                "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
-                "version": "3.0.7.0",
-                "decrypt": "1"
-            }
+            "filterable": 1
         },
         {
             "key": "华谊",
@@ -1160,6 +1149,15 @@
             "ext": "https://xunlei8.me"
         },
         {
+            "key": "电影港",
+            "name": "电影港 | 磁力",
+            "type": 3,
+            "api": "csp_DianYingG",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
             "key": "夸克网盘",
             "name": "夸克 | 网盘",
             "type": 3,
@@ -1187,7 +1185,7 @@
         },
         {
             "key": "百度网盘",
-            "name": "百度 | 网盘",
+            "name": "百度 | 云盘",
             "type": 3,
             "api": "csp_PanBaidu",
             "searchable": 0,
@@ -1200,7 +1198,7 @@
         },
         {
             "key": "迅雷云盘",
-            "name": "迅雷 | 网盘",
+            "name": "迅雷 | 云盘",
             "type": 3,
             "api": "csp_PanXunlei",
             "searchable": 0,
@@ -1213,7 +1211,7 @@
         },
         {
             "key": "阿里云盘",
-            "name": "阿里 | 网盘",
+            "name": "阿里 | 云盘",
             "type": 3,
             "api": "csp_PanAli",
             "searchable": 0,
@@ -1226,7 +1224,7 @@
         },
         {
             "key": "光鸭网盘",
-            "name": "光鸭 | 网盘",
+            "name": "光鸭 | 云盘",
             "type": 3,
             "api": "csp_PanGuangya",
             "searchable": 0,
@@ -1239,7 +1237,7 @@
         },
         {
             "key": "天翼云盘",
-            "name": "天翼 | 网盘",
+            "name": "天翼 | 云盘",
             "type": 3,
             "api": "csp_PanTianyi",
             "searchable": 0,
@@ -1252,7 +1250,7 @@
         },
         {
             "key": "123云盘",
-            "name": "123 | 网盘",
+            "name": "123 | 云盘",
             "type": 3,
             "api": "csp_Pan123",
             "searchable": 0,
@@ -1640,7 +1638,7 @@
         {
             "name": "Easy-体育赛事",
             "type": 0,
-            "url": "https://sports.easyzz.dpdns.org/live.m3u=719752",
+            "url": "https://stymei.pages.dev/live.m3u",
             "timeout": 10,
             "changeable": 1,
             "playerType": 2
