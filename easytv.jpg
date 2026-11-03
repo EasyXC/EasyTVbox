@@ -1,5 +1,5 @@
 {
-    "spider": "https://gitee.com/easy999/test1/raw/main/easy11.02.png;md5;fb6661c1301c2c1522f6a8342c4cafbe",
+    "spider": "https://gitee.com/easy999/test1/raw/main/easy11.03.png;md5;e8dc6bb0f6a1f7a987885fac6173a235",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 11.02",
+            "name": "本地视频 | 11.03",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -496,6 +496,16 @@
             "ext": {
                 "url": "http://v.rbotv.cn"
             }
+        },
+        {
+            "key": "快映fox",
+            "name": "快映 | 免扫4K",
+            "type": 3,
+            "api": "csp_AppFox",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0,
+            "ext": "https://www.pjb777.top/ky4kbgq7b273.json"
         },
         {
             "key": "一起影视",
@@ -1094,6 +1104,12 @@
                 "dataKey": "nKfZ8KX6JTNWRzTD",
                 "dataIv": "nKfZ8KX6JTNWRzTD"
             }
+        },
+        {
+            "key": "稀饭",
+            "name": "稀饭 | 动漫",
+            "type": 3,
+            "api": "csp_AnimeXifan"
         },
         {
             "key": "巴士动漫",
