@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 11.04",
+            "name": "本地视频 | 11.04-2",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -486,15 +486,6 @@
             "filterable": 1
         },
         {
-            "key": "八戒影视",
-            "name": "八戒 | 免扫4K",
-            "type": 3,
-            "api": "csp_AppBJ",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1
-        },
-        {
             "key": "热播影视",
             "name": "热播 | 免扫4K",
             "type": 3,
@@ -835,6 +826,15 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
+        },
+        {
+            "key": "八戒影视",
+            "name": "八戒 | 影视",
+            "type": 3,
+            "api": "csp_AppBJ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1
         },
         {
             "key": "新影视",
