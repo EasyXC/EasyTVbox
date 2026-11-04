@@ -1,12 +1,12 @@
 {
-    "spider": "https://gitee.com/easy999/test1/raw/main/easy11.03.png;md5;e8dc6bb0f6a1f7a987885fac6173a235",
+    "spider": "https://gitee.com/easy999/test1/raw/main/easy11.04.png;md5;30533158bb1bda578e3995fbbb3d5000",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
     "sites": [
         {
             "key": "豆瓣",
-            "name": "防失联公众号：熵侦（shāng zhēn）",
+            "name": "公众号：熵侦（shāng zhēn）",
             "type": 3,
             "api": "csp_Douban",
             "searchable": 0
@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 11.03",
+            "name": "本地视频 | 11.04",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -457,6 +457,15 @@
             "ext": "AppV7Dsx"
         },
         {
+            "key": "河豚4K",
+            "name": "河豚 | 免扫4K",
+            "type": 3,
+            "api": "csp_AppHT",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
             "key": "枫叶4K",
             "name": "枫叶 | 免扫4K",
             "type": 3,
@@ -817,6 +826,15 @@
             "type": 3,
             "api": "https://easy888.dpdns.org/js/drpy2.min.js",
             "ext": "https://easy888.dpdns.org/lib/B站.js"
+        },
+        {
+            "key": "DODOTV",
+            "name": "DODOTV | 无字幕韩剧",
+            "type": 3,
+            "api": "csp_AppDODO",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
         },
         {
             "key": "新影视",
