@@ -1,5 +1,5 @@
 {
-    "spider": "https://gitee.com/easy999/test1/raw/main/easy11.04.png;md5;7ad35e8f7a1256e9fed9b9a092ed8af9",
+    "spider": "https://gitee.com/easy999/test1/raw/main/easy11.05.png;md5;c07ab2794d358d27d4a4e842712d3c16",
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "https://pan.gt68.cn/view.php/f0415fd5eb3457d4b897056374a8a5c0.gif",
     "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
@@ -26,7 +26,7 @@
         },
         {
             "key": "本地",
-            "name": "本地视频 | 11.04-2",
+            "name": "本地视频 | 11.05",
             "type": 3,
             "api": "csp_LocalFile"
         },
@@ -340,7 +340,7 @@
             "key": "TVB云播app",
             "name": "TVB | 免扫4K",
             "type": 3,
-            "api": "https://easy888.dpdns.org/py/TVB云播代理版@easy.py",
+            "api": "csp_AppTVB",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
@@ -1105,13 +1105,6 @@
             "api": "csp_MiaoWu"
         },
         {
-            "key": "魔都动漫",
-            "name": "魔都 | 动漫",
-            "type": 3,
-            "searchable": 1,
-            "api": "csp_MoDu"
-        },
-        {
             "key": "咕咕动漫",
             "name": "咕咕 | 动漫",
             "type": 3,
@@ -1151,7 +1144,13 @@
             "key": "荐片",
             "name": "荐片 | 磁力",
             "api": "csp_JianPian",
-            "type": 3
+            "type": 3,
+            "ext": {
+                "site": [
+                    "https://www.whhyn.com",
+                    "https://www.zxfmj.com"
+                ]
+            }
         },
         {
             "key": "New6v",
@@ -1670,7 +1669,7 @@
             "playerType": 2
         },
         {
-            "name": "Easy-体育赛事",
+            "name": "Easy-体育赛事1112",
             "type": 0,
             "url": "https://sports.easyzz.dpdns.org/live.m3u=187675",
             "timeout": 10,
