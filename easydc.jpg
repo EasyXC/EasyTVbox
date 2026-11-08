@@ -1,11 +1,7 @@
 {
     "urls": [
         {
-            "name": "EasyTV主力",
-            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg"
-        },
-        {
-            "name": "EasyTV凯速",
+            "name": "EasyTV",
             "url": "https://15318.kstore.space/easytv.jpg"
         },
         {
