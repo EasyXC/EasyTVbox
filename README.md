@@ -1,16 +1,12 @@
 # Easy接口
-注意：EasyTV接口导航已更新，复制下面的网址，直接放入空壳的点播里即可。
+注意：EasyTV接口导航已更新，复制下面的网址，直接放入空壳的点播（配置）里即可。
 
 EasyTV多仓：
-https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easydc.jpg
+https://15318.kstore.space/easydc.jpg
 
-EasyTV单仓
-
-主力：
+EasyTV单仓：
 https://15318.kstore.space/easytv.jpg
 
-备用：
-https://gh-proxy.com/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/easytv.jpg
 
 # Easy接口导航APP
 Easy接口导航App已更新2.1.8
