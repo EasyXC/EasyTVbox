@@ -2,7 +2,7 @@
 注意：EasyTV接口导航已更新，复制下面的网址，直接放入空壳的点播（配置）里即可。
 
 EasyTV多仓：
-https://15318.kstore.space/easydc.jpg
+https://15318.kstore.space/easydc.json
 
 EasyTV单仓：
 https://15318.kstore.space/easytv.jpg
